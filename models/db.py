@@ -258,8 +258,8 @@ db.define_table('detail_data',
     Field('register_time', 'datetime', default=now, label=T('Time')),
     Field('register_user', db.auth_user, label=T('Input User')),
     Field('reference', db.main_data, label=T('Reference'), comment=T('Lugar de estudio')),
-    Field('study_group', db.groups, label=T('Group'), comment=T('Grupo objeto de estudio')),
-    Field('individual', db.individuals, label=T('Person'), comment=T('Sujeto de estudio')),
+    Field('study_group', 'integer', label=T('Group'), comment=T('Grupo objeto de estudio')),
+    Field('individual', 'integer', label=T('Person'), comment=T('Sujeto de estudio')),
     Field('element_tree', db.project_tree, label=T('Activity'), comment=T('Actividad seleccionada')),
     Field('choice', 'text', label=T('Answer'), comment=T('Desarrollo de la actividad (Respuesta)'), notnull=True),
     Field('comments', 'text', label=T('Comment'), comment=T('Comentarios')),
@@ -297,12 +297,15 @@ def project_tree_value(id_val, mode=0):
 #db.choices.kind.requires = IS_IN_SET(answer_type)
 #db.contents.data_type.requires = IS_IN_SET(data_type)
 #db.choices.kind.requires = IS_IN_DB(db, 'answer_types.id')
-db.contents.data_type.requires = IS_IN_DB(db, 'data_types.id')
-db.areas.requires = IS_IN_DB(db, 'areas.id')
-db.topics.requires = IS_IN_DB(db, 'topics.id')
-db.detail_data.requires = IS_IN_DB(db, 'contents.id')
+db.contents.data_type.requires = IS_IN_DB(db, 'data_types.id' , '%(name)s')
+#db.areas.requires = IS_IN_DB(db, 'areas.id')
+#db.topics.requires = IS_IN_DB(db, 'topics.id')
+#db.detail_data.requires = IS_IN_DB(db, 'contents.id')
 #db.zones.dependence.requires = IS_IN_DB(db,'zones.id','%(name)s')
+#db.detail_data.study_group.requires = IS_IN_DB(db,'groups.id','%(name)s')
+#db.detail_data.individual.requires = IS_IN_DB(db,'individuals.id','%(name)s')
 db.project_tree.id.represent = lambda value, row: project_tree_value(value)
+db.contents.data_type.represent = lambda value, row: db.data_types(value).name
 db.areas.environment.widget = SQLFORM.widgets.autocomplete(request, db.environments.name, limitby=(0,10), id_field= db.environments.id, min_length=2)
 db.areas.dependence.widget = SQLFORM.widgets.autocomplete(request, db.areas.name, limitby=(0,10), id_field= db.areas.id, min_length=2)
 db.places.area.widget = SQLFORM.widgets.autocomplete(request, db.areas.name, limitby=(0,10), id_field= db.areas.id, min_length=2)
@@ -315,4 +318,7 @@ db.detail_data.individual.widget = SQLFORM.widgets.autocomplete(request, db.indi
 
 #db.detail_data.element_tree.widget = SQLFORM.widgets.autocomplete(request, db.project_tree.id, limitby=(0,10), id_field= db.project_tree.id, min_length=2)
 db.detail_data.content_data.widget = SQLFORM.widgets.autocomplete(request, db.contents.name, limitby=(0,10), id_field= db.contents.id, min_length=2)
+db.detail_data.study_group.widget = SQLFORM.widgets.autocomplete(request, db.groups.name, limitby=(0,10), id_field= db.groups.id, min_length=2)
+db.detail_data.individual.widget = SQLFORM.widgets.autocomplete(request, db.individuals.name, limitby=(0,10), id_field= db.individuals.id, min_length=2)
+
 #db.activities.topic.widget = SQLFORM.widgets.autocomplete(request, db.topics.name, limitby=(0,10), id_field= db.topics.id, min_length=2)

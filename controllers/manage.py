@@ -15,7 +15,7 @@ def users_manage():
 
 
 @auth.requires(restrictions)
-def users_group():
+def users_groups():
     form = SQLFORM.grid(db.auth_group)
     return dict(form=form)
 

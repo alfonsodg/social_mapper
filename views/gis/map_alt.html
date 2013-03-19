@@ -101,51 +101,9 @@
             {{counter += 1}}
             {{pass}}
 
-            var centros_poblados = new OpenLayers.Layer.Vector("Centros Poblados", {
-                projection: utmProjection,
-                displayProjection : wgs84Projection,
-                visibility: false,
-                style: {
-                    'fillColor': '#0000AA',
-                    'fillOpacity': .8,
-                    'strokeColor': '#aaee77',
-                    'strokeWidth': 3,
-                    'pointRadius': 8
-                },
-                strategies: [new OpenLayers.Strategy.Fixed()],
-                protocol: new OpenLayers.Protocol.HTTP({
-                    url: "{{=URL('static','data/centros_poblados.geojson')}}",
-                    format: new OpenLayers.Format.GeoJSON()
-                }),
-//                eventListeners:{
-//                    'featureselected':function(evt){
-//                        var feature = evt.feature;
-//                        var popup = new OpenLayers.Popup.FramedCloud("popup",
-//                            OpenLayers.LonLat.fromString(feature.geometry.toShortString()),
-//                            null,
-//                            "<div style='font-size:.8em'>Poblacion: " + feature.data.NOMBRE +"<br>Ubicacion: " + feature.data.NOMBRE+"</div>",
-//                            null,
-//                            true
-//                        );
-//                        feature.popup = popup;
-//                        map.addPopup(popup);
-//                    },
-//                    'featureunselected':function(evt){
-//                        var feature = evt.feature;
-//                        map.removePopup(feature.popup);
-//                        feature.popup.destroy();
-//                        feature.popup = null;
-//                    }
-//                }
-            
-            });
-
 
 //AGREGAR AQUI EL NOMBRE DE LA CAPA, separada por comas
             map.addLayers(layer_data);
-
-            //void_layer.setVisibility(false);
-
             map.setCenter(new OpenLayers.LonLat(lon, lat).transform(wgs84Projection, sphericalMProjection), zoom);
 
 

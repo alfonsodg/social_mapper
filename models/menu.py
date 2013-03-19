@@ -43,7 +43,7 @@ config = [
     ]),
     ]
 inputdata = [
-    (T('Project Input'), False, False,[
+    (T('Projects'), False, False,[
         (T('Place Definition'), False, URL('data', 'main_data')),
         (T('Detailed Information'), False, URL('data', 'detail_data')),
         #(T('Content Data'), False, URL('data', 'content_data')),
