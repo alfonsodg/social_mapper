@@ -1,0 +1,9 @@
+cache/*
+errors/*
+private/*
+sessions/*
+uploads/*
+databases/*.table
+databases/*.log
+*.pyc
+*~

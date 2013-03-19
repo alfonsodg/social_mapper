@@ -1,0 +1,428 @@
+{
+"type": "FeatureCollection",
+                                                                                
+"features": [
+{ "type": "Feature", "id": 0, "properties": { "PC": 0, "NOMBRE": "DUCHAYACU", "ESTADO": "Instalado", "CATEGORIA": "Refugio", "CATEG_EST": "Refugio Instalado", "CATEG_EXIS": "Refugio" }, "geometry": { "type": "Point", "coordinates": [ 320123.0, 9122614.0 ] } }
+,
+{ "type": "Feature", "id": 1, "properties": { "PC": 0, "NOMBRE": "PUCACUNGA", "ESTADO": "Instalado", "CATEGORIA": "Refugio", "CATEG_EST": "Refugio Instalado", "CATEG_EXIS": "Refugio" }, "geometry": { "type": "Point", "coordinates": [ 320527.0, 9144286.0 ] } }
+,
+{ "type": "Feature", "id": 2, "properties": { "PC": 0, "NOMBRE": "JULIO HUAYUNA", "ESTADO": "Instalado", "CATEGORIA": "Refugio", "CATEG_EST": "Refugio Instalado", "CATEG_EXIS": "Refugio" }, "geometry": { "type": "Point", "coordinates": [ 321868.0, 9127974.0 ] } }
+,
+{ "type": "Feature", "id": 3, "properties": { "PC": 0, "NOMBRE": "CATARATA EL AGUILA", "ESTADO": "Instalado", "CATEGORIA": "Refugio", "CATEG_EST": "Refugio Instalado", "CATEG_EXIS": "Refugio" }, "geometry": { "type": "Point", "coordinates": [ 380712.0, 9040876.0 ] } }
+,
+{ "type": "Feature", "id": 4, "properties": { "PC": 0, "NOMBRE": "ALTO CRISTO REY", "ESTADO": "Instalado", "CATEGORIA": "Refugio", "CATEG_EST": "Refugio Instalado", "CATEG_EXIS": "Refugio" }, "geometry": { "type": "Point", "coordinates": [ 384871.0, 9022846.0 ] } }
+,
+{ "type": "Feature", "id": 5, "properties": { "PC": 16, "NOMBRE": "IZQUIERDO", "ESTADO": "Instalado", "CATEGORIA": "Refugio", "CATEG_EST": "Refugio Instalado", "CATEG_EXIS": "Refugio" }, "geometry": { "type": "Point", "coordinates": [ 384669.0, 9245472.0 ] } }
+,
+{ "type": "Feature", "id": 6, "properties": { "PC": 16, "NOMBRE": "LAG. MUNDO PERDIDO", "ESTADO": "Instalado", "CATEGORIA": "Refugio", "CATEG_EST": "Refugio Instalado", "CATEG_EXIS": "Refugio" }, "geometry": { "type": "Point", "coordinates": [ 404082.0, 9253728.0 ] } }
+,
+{ "type": "Feature", "id": 7, "properties": { "PC": 16, "NOMBRE": "EL SUDADO", "ESTADO": "Instalado", "CATEGORIA": "Refugio", "CATEG_EST": "Refugio Instalado", "CATEG_EXIS": "Refugio" }, "geometry": { "type": "Point", "coordinates": [ 372921.0, 9184667.0 ] } }
+,
+{ "type": "Feature", "id": 8, "properties": { "PC": 16, "NOMBRE": "AGUANAL NUEVO", "ESTADO": "Instalado", "CATEGORIA": "Refugio", "CATEG_EST": "Refugio Instalado", "CATEG_EXIS": "Refugio" }, "geometry": { "type": "Point", "coordinates": [ 398367.0, 9217316.0 ] } }
+,
+{ "type": "Feature", "id": 9, "properties": { "PC": 0, "NOMBRE": "CHAMBIRA", "ESTADO": "Instalado", "CATEGORIA": "Refugio", "CATEG_EST": "Refugio Instalado", "CATEG_EXIS": "Refugio" }, "geometry": { "type": "Point", "coordinates": [ 420027.0, 9207940.0 ] } }
+,
+{ "type": "Feature", "id": 10, "properties": { "PC": 0, "NOMBRE": "VALENTIN", "ESTADO": "Instalado", "CATEGORIA": "Refugio", "CATEG_EST": "Refugio Instalado", "CATEG_EXIS": "Refugio" }, "geometry": { "type": "Point", "coordinates": [ 386348.0, 9176695.0 ] } }
+,
+{ "type": "Feature", "id": 11, "properties": { "PC": 20, "NOMBRE": "LA PALTA", "ESTADO": "Instalado", "CATEGORIA": "Refugio", "CATEG_EST": "Refugio Instalado", "CATEG_EXIS": "Refugio" }, "geometry": { "type": "Point", "coordinates": [ 371533.0, 9171365.0 ] } }
+,
+{ "type": "Feature", "id": 12, "properties": { "PC": 0, "NOMBRE": "PUNTO BUHO", "ESTADO": "Instalado", "CATEGORIA": "Refugio", "CATEG_EST": "Refugio Instalado", "CATEG_EXIS": "Refugio" }, "geometry": { "type": "Point", "coordinates": [ 357659.0, 9156191.0 ] } }
+,
+{ "type": "Feature", "id": 13, "properties": { "PC": 17, "NOMBRE": "SHANSHUYCO", "ESTADO": "Instalado Activo", "CATEGORIA": "Refugio", "CATEG_EST": "Refugio Instalado Activo", "CATEG_EXIS": "Refugio" }, "geometry": { "type": "Point", "coordinates": [ 387120.0, 9186403.0 ] } }
+,
+{ "type": "Feature", "id": 14, "properties": { "PC": 0, "NOMBRE": "EL PALOMAR", "ESTADO": "Instalado", "CATEGORIA": "Refugio", "CATEG_EST": "Refugio Instalado", "CATEG_EXIS": "Refugio" }, "geometry": { "type": "Point", "coordinates": [ 386160.0, 9183165.0 ] } }
+,
+{ "type": "Feature", "id": 15, "properties": { "PC": 0, "NOMBRE": "MAQUISHAL", "ESTADO": "Instalado", "CATEGORIA": "Refugio", "CATEG_EST": "Refugio Instalado", "CATEG_EXIS": "Refugio" }, "geometry": { "type": "Point", "coordinates": [ 388646.0, 9187746.0 ] } }
+,
+{ "type": "Feature", "id": 16, "properties": { "PC": 106, "NOMBRE": "VARADERO PONGO DE AGUIRRE", "ESTADO": "Instalado", "CATEGORIA": "Refugio", "CATEG_EST": "Refugio Instalado", "CATEG_EXIS": "Refugio" }, "geometry": { "type": "Point", "coordinates": [ 409686.0, 9179834.0 ] } }
+,
+{ "type": "Feature", "id": 17, "properties": { "PC": 106, "NOMBRE": "PUCAYACU", "ESTADO": "Instalado", "CATEGORIA": "Refugio", "CATEG_EST": "Refugio Instalado", "CATEG_EXIS": "Refugio" }, "geometry": { "type": "Point", "coordinates": [ 444629.0, 9221288.0 ] } }
+,
+{ "type": "Feature", "id": 18, "properties": { "PC": 0, "NOMBRE": null, "ESTADO": "Proyectado", "CATEGORIA": "Punto de Aterrizaje de Emergencia", "CATEG_EST": "Punto de Aterrizaje de Emergencia Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 389402.116600000299513, 9053739.3215 ] } }
+,
+{ "type": "Feature", "id": 19, "properties": { "PC": 0, "NOMBRE": null, "ESTADO": "Proyectado", "CATEGORIA": "Punto de Aterrizaje de Emergencia", "CATEG_EST": "Punto de Aterrizaje de Emergencia Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 421114.811300000175834, 9068590.1285 ] } }
+,
+{ "type": "Feature", "id": 20, "properties": { "PC": 0, "NOMBRE": null, "ESTADO": "Proyectado", "CATEGORIA": "Punto de Aterrizaje de Emergencia", "CATEG_EST": "Punto de Aterrizaje de Emergencia Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 393475.178399999625981, 9088173.2716 ] } }
+,
+{ "type": "Feature", "id": 21, "properties": { "PC": 0, "NOMBRE": null, "ESTADO": "Proyectado", "CATEGORIA": "Punto de Aterrizaje de Emergencia", "CATEG_EST": "Punto de Aterrizaje de Emergencia Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 398928.437199999578297, 9154971.4845 ] } }
+,
+{ "type": "Feature", "id": 22, "properties": { "PC": 0, "NOMBRE": null, "ESTADO": "Proyectado", "CATEGORIA": "Punto de Aterrizaje de Emergencia", "CATEG_EST": "Punto de Aterrizaje de Emergencia Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 409451.071100000292063, 9181850.6503 ] } }
+,
+{ "type": "Feature", "id": 23, "properties": { "PC": 0, "NOMBRE": null, "ESTADO": "Proyectado", "CATEGORIA": "Punto de Aterrizaje de Emergencia", "CATEG_EST": "Punto de Aterrizaje de Emergencia Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 405023.9359, 9196206.6467 ] } }
+,
+{ "type": "Feature", "id": 24, "properties": { "PC": 0, "NOMBRE": null, "ESTADO": "Proyectado", "CATEGORIA": "Punto de Aterrizaje de Emergencia", "CATEG_EST": "Punto de Aterrizaje de Emergencia Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 394423.63300000037998, 9212639.6309 ] } }
+,
+{ "type": "Feature", "id": 25, "properties": { "PC": 0, "NOMBRE": null, "ESTADO": "Proyectado", "CATEGORIA": "Punto de Aterrizaje de Emergencia", "CATEG_EST": "Punto de Aterrizaje de Emergencia Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 403552.1848, 9253032.0507 ] } }
+,
+{ "type": "Feature", "id": 26, "properties": { "PC": 0, "NOMBRE": "SAN JUAN", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 372893.0, 9249666.0 ] } }
+,
+{ "type": "Feature", "id": 27, "properties": { "PC": 0, "NOMBRE": "SAPOTILLO", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 370365.0, 9243519.0 ] } }
+,
+{ "type": "Feature", "id": 28, "properties": { "PC": 0, "NOMBRE": "EL PARAISO", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 375186.0, 9244206.0 ] } }
+,
+{ "type": "Feature", "id": 29, "properties": { "PC": 0, "NOMBRE": "STA ROSA DE CHIPAOTA", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 379959.6722, 9273002.9834 ] } }
+,
+{ "type": "Feature", "id": 30, "properties": { "PC": 0, "NOMBRE": "CANAYO", "ESTADO": "Proyectado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 381225.0, 9274010.0 ] } }
+,
+{ "type": "Feature", "id": 31, "properties": { "PC": 0, "NOMBRE": "CHAMBIRA LLAKTAYNI", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 377735.603699999861419, 9220614.1714 ] } }
+,
+{ "type": "Feature", "id": 32, "properties": { "PC": 0, "NOMBRE": "CUEVAS Y CASCADAS", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 380997.0, 9226598.0 ] } }
+,
+{ "type": "Feature", "id": 33, "properties": { "PC": 0, "NOMBRE": "SOL NACIENTE", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 380821.0, 9220080.0 ] } }
+,
+{ "type": "Feature", "id": 34, "properties": { "PC": 0, "NOMBRE": "POLVORA", "ESTADO": "En Construcción", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación en Construcción", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 316021.999900000169873, 9125553.0 ] } }
+,
+{ "type": "Feature", "id": 35, "properties": { "PC": 0, "NOMBRE": "GOCEN", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 376903.0, 9049599.0 ] } }
+,
+{ "type": "Feature", "id": 36, "properties": { "PC": 0, "NOMBRE": "MARONILLA", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 376589.0, 9040676.0 ] } }
+,
+{ "type": "Feature", "id": 37, "properties": { "PC": 0, "NOMBRE": "CACHIYACU", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 314471.0, 9118838.0 ] } }
+,
+{ "type": "Feature", "id": 38, "properties": { "PC": 0, "NOMBRE": "STA ROSA DE SHAPAJA", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 349815.0, 9082823.0 ] } }
+,
+{ "type": "Feature", "id": 39, "properties": { "PC": 0, "NOMBRE": "BELAUNDE", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 451130.0, 9194377.0 ] } }
+,
+{ "type": "Feature", "id": 40, "properties": { "PC": 0, "NOMBRE": "NUEVO SAN MARTIN", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 449575.463399999774992, 9193831.311 ] } }
+,
+{ "type": "Feature", "id": 41, "properties": { "PC": 11, "NOMBRE": "ROBASHCA", "ESTADO": "Instalado", "CATEGORIA": "Puesto de Control", "CATEG_EST": "Puesto de Control Instalado", "CATEG_EXIS": "Puesto de Control" }, "geometry": { "type": "Point", "coordinates": [ 386285.8215, 9258229.2963 ] } }
+,
+{ "type": "Feature", "id": 42, "properties": { "PC": 15, "NOMBRE": "MISHQUIYAQUILLO", "ESTADO": "Instalado", "CATEGORIA": "Puesto de Control", "CATEG_EST": "Puesto de Control Instalado", "CATEG_EXIS": "Puesto de Control" }, "geometry": { "type": "Point", "coordinates": [ 382702.0, 9233025.0 ] } }
+,
+{ "type": "Feature", "id": 43, "properties": { "PC": 16, "NOMBRE": "CHAMBIRILLO", "ESTADO": "Instalado", "CATEGORIA": "Puesto de Control", "CATEG_EST": "Puesto de Control Instalado", "CATEG_EXIS": "Puesto de Control" }, "geometry": { "type": "Point", "coordinates": [ 387872.0, 9218484.0 ] } }
+,
+{ "type": "Feature", "id": 44, "properties": { "PC": 17, "NOMBRE": "IPURURO", "ESTADO": "Instalado", "CATEGORIA": "Puesto de Control", "CATEG_EST": "Puesto de Control Instalado", "CATEG_EXIS": "Puesto de Control" }, "geometry": { "type": "Point", "coordinates": [ 379000.0, 9189000.0 ] } }
+,
+{ "type": "Feature", "id": 45, "properties": { "PC": 18, "NOMBRE": "CEDRO SISA", "ESTADO": "Instalado", "CATEGORIA": "Puesto de Control", "CATEG_EST": "Puesto de Control Instalado", "CATEG_EXIS": "Puesto de Control" }, "geometry": { "type": "Point", "coordinates": [ 368793.0, 9189198.0 ] } }
+,
+{ "type": "Feature", "id": 46, "properties": { "PC": 19, "NOMBRE": "TORNILLAL", "ESTADO": "Instalado", "CATEGORIA": "Puesto de Control", "CATEG_EST": "Puesto de Control Instalado", "CATEG_EXIS": "Puesto de Control" }, "geometry": { "type": "Point", "coordinates": [ 365254.0, 9182335.0 ] } }
+,
+{ "type": "Feature", "id": 47, "properties": { "PC": 20, "NOMBRE": "MOJARRA", "ESTADO": "Instalado", "CATEGORIA": "Puesto de Control", "CATEG_EST": "Puesto de Control Instalado", "CATEG_EXIS": "Puesto de Control" }, "geometry": { "type": "Point", "coordinates": [ 367405.0, 9161987.0 ] } }
+,
+{ "type": "Feature", "id": 48, "properties": { "PC": 21, "NOMBRE": "CACHATIGRE", "ESTADO": "Instalado", "CATEGORIA": "Puesto de Control", "CATEG_EST": "Puesto de Control Instalado", "CATEG_EXIS": "Puesto de Control" }, "geometry": { "type": "Point", "coordinates": [ 350336.0, 9148566.0 ] } }
+,
+{ "type": "Feature", "id": 49, "properties": { "PC": 106, "NOMBRE": "BOCA PAUYA", "ESTADO": "Instalado", "CATEGORIA": "Puesto de Control", "CATEG_EST": "Puesto de Control Instalado", "CATEG_EXIS": "Puesto de Control" }, "geometry": { "type": "Point", "coordinates": [ 435900.0, 9191900.0 ] } }
+,
+{ "type": "Feature", "id": 50, "properties": { "PC": 89, "NOMBRE": "PISQUI", "ESTADO": "Instalado", "CATEGORIA": "Puesto de Control", "CATEG_EST": "Puesto de Control Instalado", "CATEG_EXIS": "Puesto de Control" }, "geometry": { "type": "Point", "coordinates": [ 427545.0, 9089882.0 ] } }
+,
+{ "type": "Feature", "id": 51, "properties": { "PC": 0, "NOMBRE": "CAÑO NEGRO", "ESTADO": "Instalado", "CATEGORIA": "Refugio", "CATEG_EST": "Refugio Instalado", "CATEG_EXIS": "Refugio" }, "geometry": { "type": "Point", "coordinates": [ 353093.0, 9142606.0 ] } }
+,
+{ "type": "Feature", "id": 52, "properties": { "PC": 0, "NOMBRE": "NUEVO TIWINSA", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 322097.0, 9148384.0 ] } }
+,
+{ "type": "Feature", "id": 53, "properties": { "PC": 0, "NOMBRE": "PUCACUNGA", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 320552.0, 9144102.0 ] } }
+,
+{ "type": "Feature", "id": 54, "properties": { "PC": 0, "NOMBRE": "ASAÑIMA", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 400605.0, 9271280.0 ] } }
+,
+{ "type": "Feature", "id": 55, "properties": { "PC": 0, "NOMBRE": "SIAMBAYO", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 393957.0, 9268764.0 ] } }
+,
+{ "type": "Feature", "id": 56, "properties": { "PC": 0, "NOMBRE": "SICSI", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 400198.0, 9275420.0 ] } }
+,
+{ "type": "Feature", "id": 57, "properties": { "PC": 0, "NOMBRE": "GARRAPATAYOC", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 403298.0, 9282214.0 ] } }
+,
+{ "type": "Feature", "id": 58, "properties": { "PC": 0, "NOMBRE": "LLUWIOC", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 407872.0, 9280732.0 ] } }
+,
+{ "type": "Feature", "id": 59, "properties": { "PC": 0, "NOMBRE": "ALTO MAJAMBILLO", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 415592.0, 9270882.0 ] } }
+,
+{ "type": "Feature", "id": 60, "properties": { "PC": 0, "NOMBRE": "PONGO COLLPA", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 417876.0, 9266284.0 ] } }
+,
+{ "type": "Feature", "id": 61, "properties": { "PC": 0, "NOMBRE": "CASHUERA CUSHMA", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 415065.0, 9181574.0 ] } }
+,
+{ "type": "Feature", "id": 62, "properties": { "PC": 0, "NOMBRE": "Q. RETAMA", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 420246.0, 9177800.0 ] } }
+,
+{ "type": "Feature", "id": 63, "properties": { "PC": 0, "NOMBRE": "HORCON RAYA", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 430325.0, 9208516.0 ] } }
+,
+{ "type": "Feature", "id": 64, "properties": { "PC": 0, "NOMBRE": "CRUCE CINCO PUNTOS", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 421397.0, 9210680.0 ] } }
+,
+{ "type": "Feature", "id": 65, "properties": { "PC": 0, "NOMBRE": "PUCACURILLO", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 419014.0, 9210810.0 ] } }
+,
+{ "type": "Feature", "id": 66, "properties": { "PC": 0, "NOMBRE": "HORCON SOROCHE", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 444747.0, 9220331.0 ] } }
+,
+{ "type": "Feature", "id": 67, "properties": { "PC": 0, "NOMBRE": "YANAYACU", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 389674.0, 9256228.0 ] } }
+,
+{ "type": "Feature", "id": 68, "properties": { "PC": 0, "NOMBRE": "HUICUNGUYOC", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 389384.0, 9254470.0 ] } }
+,
+{ "type": "Feature", "id": 69, "properties": { "PC": 0, "NOMBRE": "SUNGAL", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 384007.0, 9234651.0 ] } }
+,
+{ "type": "Feature", "id": 70, "properties": { "PC": 0, "NOMBRE": "MISHQUIYAQUILLO", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 383901.0, 9233196.0 ] } }
+,
+{ "type": "Feature", "id": 71, "properties": { "PC": 0, "NOMBRE": "CHAMBIRA", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 384595.0, 9221817.0 ] } }
+,
+{ "type": "Feature", "id": 72, "properties": { "PC": 0, "NOMBRE": "CASHIMBO", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 385642.0, 9219582.0 ] } }
+,
+{ "type": "Feature", "id": 73, "properties": { "PC": 0, "NOMBRE": "HUASCAYACU", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 387418.0, 9212534.0 ] } }
+,
+{ "type": "Feature", "id": 74, "properties": { "PC": 0, "NOMBRE": "SHANSHUYCO", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 387800.0, 9187000.0 ] } }
+,
+{ "type": "Feature", "id": 75, "properties": { "PC": 0, "NOMBRE": "PALOMAR", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 386175.0, 9183156.0 ] } }
+,
+{ "type": "Feature", "id": 76, "properties": { "PC": 0, "NOMBRE": "IPURURO", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 379208.0, 9187350.0 ] } }
+,
+{ "type": "Feature", "id": 77, "properties": { "PC": 0, "NOMBRE": "YURACYACU", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 353213.0, 9153425.0 ] } }
+,
+{ "type": "Feature", "id": 78, "properties": { "PC": 0, "NOMBRE": "LA ESCALERA", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 349021.0, 9152190.0 ] } }
+,
+{ "type": "Feature", "id": 79, "properties": { "PC": 0, "NOMBRE": "CAÑO NEGRO", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 353017.0, 9142615.0 ] } }
+,
+{ "type": "Feature", "id": 80, "properties": { "PC": 0, "NOMBRE": "ALTO IPURURO", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 371029.0, 9185526.0 ] } }
+,
+{ "type": "Feature", "id": 81, "properties": { "PC": 0, "NOMBRE": "CUESTA MIRADOR", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 369447.0, 9184438.0 ] } }
+,
+{ "type": "Feature", "id": 82, "properties": { "PC": 0, "NOMBRE": "MIRADOR", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 365831.0, 9182864.0 ] } }
+,
+{ "type": "Feature", "id": 83, "properties": { "PC": 0, "NOMBRE": "LA COLINA", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 366527.0, 9185470.0 ] } }
+,
+{ "type": "Feature", "id": 84, "properties": { "PC": 0, "NOMBRE": "ALTO SHIMBILLAL", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 369397.0, 9174432.0 ] } }
+,
+{ "type": "Feature", "id": 85, "properties": { "PC": 0, "NOMBRE": "SHIMBILLAL", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 372661.0, 9164915.0 ] } }
+,
+{ "type": "Feature", "id": 86, "properties": { "PC": 0, "NOMBRE": "MOJARRA", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 368439.0, 9161350.0 ] } }
+,
+{ "type": "Feature", "id": 87, "properties": { "PC": 0, "NOMBRE": "PIQUIYACU", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 332302.0, 9143772.0 ] } }
+,
+{ "type": "Feature", "id": 88, "properties": { "PC": 0, "NOMBRE": "SEJA GUAYACAN", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 321500.0, 9140492.0 ] } }
+,
+{ "type": "Feature", "id": 89, "properties": { "PC": 0, "NOMBRE": "ALTO BALSAYACU", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 320261.0, 9133745.0 ] } }
+,
+{ "type": "Feature", "id": 90, "properties": { "PC": 0, "NOMBRE": "PALMICHAL", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 322682.0, 9128852.0 ] } }
+,
+{ "type": "Feature", "id": 91, "properties": { "PC": 0, "NOMBRE": "AGUAS VERDES", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 320893.0, 9122768.0 ] } }
+,
+{ "type": "Feature", "id": 92, "properties": { "PC": 0, "NOMBRE": "AGUILA", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 381940.0, 9040696.0 ] } }
+,
+{ "type": "Feature", "id": 93, "properties": { "PC": 0, "NOMBRE": "ALTO PIZANA I", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 323549.0, 9115848.0 ] } }
+,
+{ "type": "Feature", "id": 94, "properties": { "PC": 0, "NOMBRE": "PESCADERO", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 365362.0, 9095815.0 ] } }
+,
+{ "type": "Feature", "id": 95, "properties": { "PC": 0, "NOMBRE": "ALTO CRISTO REY", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 386349.0, 9022844.0 ] } }
+,
+{ "type": "Feature", "id": 96, "properties": { "PC": 0, "NOMBRE": "CHIMBADILLO", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 384461.0, 9244150.0 ] } }
+,
+{ "type": "Feature", "id": 97, "properties": { "PC": 0, "NOMBRE": "LIMITE CAMOTE", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 429401.0, 9259156.0 ] } }
+,
+{ "type": "Feature", "id": 98, "properties": { "PC": 0, "NOMBRE": "LIMITE HUANGANAPOZA", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 435620.0, 9255130.0 ] } }
+,
+{ "type": "Feature", "id": 99, "properties": { "PC": 0, "NOMBRE": "ATUN POZO", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 423569.0, 9261721.0 ] } }
+,
+{ "type": "Feature", "id": 100, "properties": { "PC": 0, "NOMBRE": "CHUINIA", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 420641.0, 9133382.0 ] } }
+,
+{ "type": "Feature", "id": 101, "properties": { "PC": 0, "NOMBRE": "YAMIA", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 418966.0, 9127000.0 ] } }
+,
+{ "type": "Feature", "id": 102, "properties": { "PC": 0, "NOMBRE": "HORCON NOAYA", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 417310.0, 9119350.0 ] } }
+,
+{ "type": "Feature", "id": 103, "properties": { "PC": 0, "NOMBRE": "SHAIPAYA", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 416738.0, 9110009.0 ] } }
+,
+{ "type": "Feature", "id": 104, "properties": { "PC": 0, "NOMBRE": "LIMITE INSAYA", "ESTADO": "Proyectado", "CATEGORIA": "Letrero", "CATEG_EST": "Letrero Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 461574.0, 9233472.0 ] } }
+,
+{ "type": "Feature", "id": 105, "properties": { "PC": 0, "NOMBRE": "AFLUENTE SHAYPAYA", "ESTADO": "Proyectado", "CATEGORIA": "Letrero", "CATEG_EST": "Letrero Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 420206.0, 9102932.0 ] } }
+,
+{ "type": "Feature", "id": 106, "properties": { "PC": 0, "NOMBRE": "Q. MASHPAYA", "ESTADO": "Proyectado", "CATEGORIA": "Letrero", "CATEG_EST": "Letrero Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 424095.0, 9097313.0 ] } }
+,
+{ "type": "Feature", "id": 107, "properties": { "PC": 0, "NOMBRE": "R. PISQUI", "ESTADO": "Proyectado", "CATEGORIA": "Letrero", "CATEG_EST": "Letrero Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 426737.0, 9091433.0 ] } }
+,
+{ "type": "Feature", "id": 108, "properties": { "PC": 0, "NOMBRE": "R. PINTOYACU  (H", "ESTADO": "Proyectado", "CATEGORIA": "Letrero", "CATEG_EST": "Letrero Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 412100.0, 9020600.0 ] } }
+,
+{ "type": "Feature", "id": 109, "properties": { "PC": 27, "NOMBRE": "POLVORA", "ESTADO": "Instalado", "CATEGORIA": "Centro de Guardaparques", "CATEG_EST": "Centro de Guardaparques Instalado", "CATEG_EXIS": "Centro de Guardaparques" }, "geometry": { "type": "Point", "coordinates": [ 316022.0, 9125553.0 ] } }
+,
+{ "type": "Feature", "id": 110, "properties": { "PC": 53, "NOMBRE": "SHAPAJA", "ESTADO": "Instalado", "CATEGORIA": "Centro de Guardaparques", "CATEG_EST": "Centro de Guardaparques Instalado", "CATEG_EXIS": "Centro de Guardaparques" }, "geometry": { "type": "Point", "coordinates": [ 347322.102800000458956, 9084430.1752 ] } }
+,
+{ "type": "Feature", "id": 111, "properties": { "PC": 63, "NOMBRE": "PUCAYACU", "ESTADO": "Instalado", "CATEGORIA": "Centro de Guardaparques", "CATEG_EST": "Centro de Guardaparques Instalado", "CATEG_EXIS": "Centro de Guardaparques" }, "geometry": { "type": "Point", "coordinates": [ 376719.0, 9032665.0 ] } }
+,
+{ "type": "Feature", "id": 112, "properties": { "PC": 0, "NOMBRE": "PANGUANUYO", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 461072.649400000460446, 9234499.3345 ] } }
+,
+{ "type": "Feature", "id": 113, "properties": { "PC": 0, "NOMBRE": "STA CATALINA", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 453044.71860000025481, 9248064.9817 ] } }
+,
+{ "type": "Feature", "id": 114, "properties": { "PC": 0, "NOMBRE": "SARAYAQUILLO", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 457640.0016, 9239970.0166 ] } }
+,
+{ "type": "Feature", "id": 115, "properties": { "PC": 98, "NOMBRE": "BOCA NOAYA", "ESTADO": "Instalado", "CATEGORIA": "Puesto de Control", "CATEG_EST": "Puesto de Control Instalado", "CATEG_EXIS": "Puesto de Control" }, "geometry": { "type": "Point", "coordinates": [ 438559.0, 9125200.0 ] } }
+,
+{ "type": "Feature", "id": 116, "properties": { "PC": 0, "NOMBRE": "AGUANO MUYUNA", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 373094.0, 9269137.0 ] } }
+,
+{ "type": "Feature", "id": 117, "properties": { "PC": 0, "NOMBRE": "CALLANAYACU", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 397800.0, 9273250.0 ] } }
+,
+{ "type": "Feature", "id": 118, "properties": { "PC": 0, "NOMBRE": "MANCO CAPAC", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 436726.0, 9119982.0 ] } }
+,
+{ "type": "Feature", "id": 119, "properties": { "PC": 0, "NOMBRE": "CAHUIDE", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 356763.0, 9079817.0 ] } }
+,
+{ "type": "Feature", "id": 120, "properties": { "PC": 0, "NOMBRE": "SAN JOSE DE YANAYACU", "ESTADO": "Instalado", "CATEGORIA": "Centro de Guardaparques", "CATEG_EST": "Centro de Guardaparques Instalado", "CATEG_EXIS": "Centro de Guardaparques" }, "geometry": { "type": "Point", "coordinates": [ 429515.0, 9275052.0 ] } }
+,
+{ "type": "Feature", "id": 121, "properties": { "PC": 0, "NOMBRE": "YANAYACU", "ESTADO": "Desestimado", "CATEGORIA": "Centro de Guardaparques", "CATEG_EST": "Centro de Guardaparques desestimado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 400773.047399999573827, 9282339.2859 ] } }
+,
+{ "type": "Feature", "id": 122, "properties": { "PC": 0, "NOMBRE": "DOMINGO PUESTO", "ESTADO": "Instalado", "CATEGORIA": "Punto de Aterrizaje de Emergencia", "CATEG_EST": "Punto de Aterrizaje de Emergencia Instalado", "CATEG_EXIS": "Punto de Aterrizaje de Emergencia" }, "geometry": { "type": "Point", "coordinates": [ 402519.0, 9251676.0 ] } }
+,
+{ "type": "Feature", "id": 123, "properties": { "PC": 0, "NOMBRE": "PONGO PAUYA", "ESTADO": "Instalado", "CATEGORIA": "Punto de Aterrizaje de Emergencia", "CATEG_EST": "Punto de Aterrizaje de Emergencia Instalado", "CATEG_EXIS": "Punto de Aterrizaje de Emergencia" }, "geometry": { "type": "Point", "coordinates": [ 409609.0, 9181268.0 ] } }
+,
+{ "type": "Feature", "id": 124, "properties": { "PC": 0, "NOMBRE": "PASTIAL BIAVO", "ESTADO": "Instalado", "CATEGORIA": "Punto de Aterrizaje de Emergencia", "CATEG_EST": "Punto de Aterrizaje de Emergencia Instalado", "CATEG_EXIS": "Punto de Aterrizaje de Emergencia" }, "geometry": { "type": "Point", "coordinates": [ 358270.0, 9146173.0 ] } }
+,
+{ "type": "Feature", "id": 125, "properties": { "PC": 0, "NOMBRE": "PUCAYACU", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 405073.0, 9282712.0 ] } }
+,
+{ "type": "Feature", "id": 126, "properties": { "PC": 0, "NOMBRE": "S\/N", "ESTADO": "Proyectado", "CATEGORIA": "Letrero", "CATEG_EST": "Letrero Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 385298.1882, 9227880.8296 ] } }
+,
+{ "type": "Feature", "id": 127, "properties": { "PC": 0, "NOMBRE": "S\/N", "ESTADO": "Proyectado", "CATEGORIA": "Letrero", "CATEG_EST": "Letrero Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 385376.936700000427663, 9220617.4198 ] } }
+,
+{ "type": "Feature", "id": 128, "properties": { "PC": 0, "NOMBRE": "JABONCILLO", "ESTADO": "Proyectado", "CATEGORIA": "Letrero", "CATEG_EST": "Letrero Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 387454.885099999606609, 9208462.7113 ] } }
+,
+{ "type": "Feature", "id": 129, "properties": { "PC": 0, "NOMBRE": "S\/N", "ESTADO": "Proyectado", "CATEGORIA": "Letrero", "CATEG_EST": "Letrero Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 390815.538200000301003, 9261644.4713 ] } }
+,
+{ "type": "Feature", "id": 130, "properties": { "PC": 0, "NOMBRE": "BOMBONAJILLO", "ESTADO": "Proyectado", "CATEGORIA": "Letrero", "CATEG_EST": "Letrero Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 386574.0, 9191270.0 ] } }
+,
+{ "type": "Feature", "id": 131, "properties": { "PC": 0, "NOMBRE": "YURACYACU", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 353030.0, 9154382.0 ] } }
+,
+{ "type": "Feature", "id": 132, "properties": { "PC": 0, "NOMBRE": "SANTA ROSA", "ESTADO": "Proyectado", "CATEGORIA": "Letrero", "CATEG_EST": "Letrero Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 378067.0, 9229832.0 ] } }
+,
+{ "type": "Feature", "id": 133, "properties": { "PC": 0, "NOMBRE": "LEJIA", "ESTADO": "Proyectado", "CATEGORIA": "Letrero", "CATEG_EST": "Letrero Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 380997.0, 9226598.0 ] } }
+,
+{ "type": "Feature", "id": 134, "properties": { "PC": 0, "NOMBRE": "CALLANAYACU", "ESTADO": "Instalado", "CATEGORIA": "Letrero Informativo Limítrofe", "CATEG_EST": "Letrero Informativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Informativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 397800.0, 9273250.0 ] } }
+,
+{ "type": "Feature", "id": 135, "properties": { "PC": 0, "NOMBRE": "AGUANO MUYUNA", "ESTADO": "Proyectado", "CATEGORIA": "Letrero", "CATEG_EST": "Letrero Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 373094.0, 9269137.0 ] } }
+,
+{ "type": "Feature", "id": 136, "properties": { "PC": 0, "NOMBRE": "MUSHUCKLLACTA DE CHIPAOTA", "ESTADO": "Proyectado", "CATEGORIA": "Letrero", "CATEG_EST": "Letrero Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 379936.0, 9273074.0 ] } }
+,
+{ "type": "Feature", "id": 137, "properties": { "PC": 0, "NOMBRE": "SAN JOSE DE YANAYACU", "ESTADO": "Proyectado", "CATEGORIA": "Letrero", "CATEG_EST": "Letrero Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 429515.0, 9275052.0 ] } }
+,
+{ "type": "Feature", "id": 138, "properties": { "PC": 0, "NOMBRE": "SANTA ROSILLO", "ESTADO": "Proyectado", "CATEGORIA": "Letrero", "CATEG_EST": "Letrero Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 434368.0, 9263414.0 ] } }
+,
+{ "type": "Feature", "id": 139, "properties": { "PC": 0, "NOMBRE": "ESPERANZA DEL OJECILLO", "ESTADO": "Proyectado", "CATEGORIA": "Letrero", "CATEG_EST": "Letrero Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 382133.0, 9217749.0 ] } }
+,
+{ "type": "Feature", "id": 140, "properties": { "PC": 0, "NOMBRE": "VISTA ALEGRE", "ESTADO": "Proyectado", "CATEGORIA": "Letrero", "CATEG_EST": "Letrero Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 378383.05420000012964, 9220323.8875 ] } }
+,
+{ "type": "Feature", "id": 141, "properties": { "PC": 0, "NOMBRE": "CATALINA", "ESTADO": "Proyectado", "CATEGORIA": "Letrero", "CATEG_EST": "Letrero Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 452315.0, 9256603.0 ] } }
+,
+{ "type": "Feature", "id": 142, "properties": { "PC": 0, "NOMBRE": "SELVA ANDINA", "ESTADO": "Proyectado", "CATEGORIA": "Letrero", "CATEG_EST": "Letrero Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 364257.0, 9182194.0 ] } }
+,
+{ "type": "Feature", "id": 143, "properties": { "PC": 0, "NOMBRE": "CHALLUAL", "ESTADO": "Proyectado", "CATEGORIA": "Letrero", "CATEG_EST": "Letrero Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 363782.077100000344217, 9175114.0547 ] } }
+,
+{ "type": "Feature", "id": 144, "properties": { "PC": 0, "NOMBRE": "LAS PALMAS", "ESTADO": "Proyectado", "CATEGORIA": "Letrero", "CATEG_EST": "Letrero Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 366160.622999999672174, 9165629.1853 ] } }
+,
+{ "type": "Feature", "id": 145, "properties": { "PC": 0, "NOMBRE": "NUEVO ARICA", "ESTADO": "Proyectado", "CATEGORIA": "Letrero", "CATEG_EST": "Letrero Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 342771.738099999725819, 9167564.8977 ] } }
+,
+{ "type": "Feature", "id": 146, "properties": { "PC": 0, "NOMBRE": "SAN MIGUEL", "ESTADO": "Proyectado", "CATEGORIA": "Letrero", "CATEG_EST": "Letrero Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 344914.2626, 9160824.8729 ] } }
+,
+{ "type": "Feature", "id": 147, "properties": { "PC": 0, "NOMBRE": "PUERTO FRANCO", "ESTADO": "Proyectado", "CATEGORIA": "Letrero", "CATEG_EST": "Letrero Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 334335.5483, 9147344.8235 ] } }
+,
+{ "type": "Feature", "id": 148, "properties": { "PC": 0, "NOMBRE": "MACANAYCO", "ESTADO": "Proyectado", "CATEGORIA": "Letrero", "CATEG_EST": "Letrero Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 384052.0, 9200456.0 ] } }
+,
+{ "type": "Feature", "id": 149, "properties": { "PC": 0, "NOMBRE": "JABONCILLO", "ESTADO": "Proyectado", "CATEGORIA": "Letrero", "CATEG_EST": "Letrero Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 385568.0, 9203368.0 ] } }
+,
+{ "type": "Feature", "id": 150, "properties": { "PC": 0, "NOMBRE": "CHIMBOTE", "ESTADO": "Instalado", "CATEGORIA": "Letrero Informativo Limítrofe", "CATEG_EST": "Letrero Informativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Informativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 386185.0, 9207920.0 ] } }
+,
+{ "type": "Feature", "id": 151, "properties": { "PC": 0, "NOMBRE": "S\/N", "ESTADO": "Proyectado", "CATEGORIA": "Letrero", "CATEG_EST": "Letrero Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 379584.0, 9203330.0 ] } }
+,
+{ "type": "Feature", "id": 152, "properties": { "PC": 0, "NOMBRE": "TOPASAPA", "ESTADO": "Proyectado", "CATEGORIA": "Letrero", "CATEG_EST": "Letrero Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 382112.0, 9202442.0 ] } }
+,
+{ "type": "Feature", "id": 153, "properties": { "PC": 0, "NOMBRE": "CUMBRE TOPASAPA", "ESTADO": "Proyectado", "CATEGORIA": "Letrero", "CATEG_EST": "Letrero Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 379261.0, 9206125.0 ] } }
+,
+{ "type": "Feature", "id": 154, "properties": { "PC": 0, "NOMBRE": "RAMON CASTILLA", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 374647.0, 9271982.0 ] } }
+,
+{ "type": "Feature", "id": 155, "properties": { "PC": 0, "NOMBRE": "SIMON BOLIVAR", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 376900.0, 9221464.0 ] } }
+,
+{ "type": "Feature", "id": 156, "properties": { "PC": 0, "NOMBRE": "NUEVO AMAZONAS", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 381641.0, 9223618.0 ] } }
+,
+{ "type": "Feature", "id": 157, "properties": { "PC": 0, "NOMBRE": "VISTA ALEGRE", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 378383.05420000012964, 9220323.8875 ] } }
+,
+{ "type": "Feature", "id": 158, "properties": { "PC": 0, "NOMBRE": "PARAISO", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 381016.0, 9212066.0 ] } }
+,
+{ "type": "Feature", "id": 159, "properties": { "PC": 0, "NOMBRE": "ALTO PONASA", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 378235.077499999664724, 9212469.2052 ] } }
+,
+{ "type": "Feature", "id": 160, "properties": { "PC": 0, "NOMBRE": "FLOR DE CAFE", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 384438.0, 9211855.0 ] } }
+,
+{ "type": "Feature", "id": 161, "properties": { "PC": 0, "NOMBRE": "PROGRESO", "ESTADO": "Proyectado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 380962.0, 9232921.0 ] } }
+,
+{ "type": "Feature", "id": 162, "properties": { "PC": 0, "NOMBRE": "PORVENIR", "ESTADO": "Proyectado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 382473.0, 9232661.0 ] } }
+,
+{ "type": "Feature", "id": 163, "properties": { "PC": 0, "NOMBRE": "SANTA ROSA", "ESTADO": "Proyectado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 378067.0, 9229832.0 ] } }
+,
+{ "type": "Feature", "id": 164, "properties": { "PC": 0, "NOMBRE": "CHULLAYACU", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 402272.0, 9280916.0 ] } }
+,
+{ "type": "Feature", "id": 165, "properties": { "PC": 0, "NOMBRE": "LA CUMBRE", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 432247.592299999669194, 9096922.87 ] } }
+,
+{ "type": "Feature", "id": 166, "properties": { "PC": 0, "NOMBRE": "SAN LUIS DE CHARASHMANA", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 459294.0, 9133186.0 ] } }
+,
+{ "type": "Feature", "id": 167, "properties": { "PC": 0, "NOMBRE": "NUEVO ALAN", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 455876.9996, 9196213.9999 ] } }
+,
+{ "type": "Feature", "id": 168, "properties": { "PC": 0, "NOMBRE": "ISOLAYA", "ESTADO": "Proyectado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 461408.0011, 9197035.8593 ] } }
+,
+{ "type": "Feature", "id": 169, "properties": { "PC": 0, "NOMBRE": "LIBERTAD", "ESTADO": "Proyectado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 466863.0, 9200336.9491 ] } }
+,
+{ "type": "Feature", "id": 170, "properties": { "PC": 0, "NOMBRE": "NUEVO TRUJILLO", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 337248.0, 9153162.0 ] } }
+,
+{ "type": "Feature", "id": 171, "properties": { "PC": 0, "NOMBRE": "NUEVO LORETO", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 382396.0, 9202028.0 ] } }
+,
+{ "type": "Feature", "id": 172, "properties": { "PC": 0, "NOMBRE": "PUEBLO LIBRE", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 361226.0, 9188950.0 ] } }
+,
+{ "type": "Feature", "id": 173, "properties": { "PC": 0, "NOMBRE": "PONGO ISLA", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 402026.7188, 9288215.6561 ] } }
+,
+{ "type": "Feature", "id": 174, "properties": { "PC": 0, "NOMBRE": "LOS ANGELES", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 335552.0, 9149582.0 ] } }
+,
+{ "type": "Feature", "id": 175, "properties": { "PC": 0, "NOMBRE": "PUERTO FRANCO", "ESTADO": "Proyectado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 334362.0, 9147336.0 ] } }
+,
+{ "type": "Feature", "id": 176, "properties": { "PC": 0, "NOMBRE": "CHALLUAL", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 363757.0, 9175078.0 ] } }
+,
+{ "type": "Feature", "id": 177, "properties": { "PC": 0, "NOMBRE": "P'LAYA HERMOSA", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 372088.0, 9191554.0 ] } }
+,
+{ "type": "Feature", "id": 178, "properties": { "PC": 0, "NOMBRE": "TAHITI", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 378392.0, 9193965.0 ] } }
+,
+{ "type": "Feature", "id": 179, "properties": { "PC": 0, "NOMBRE": "LA CONQUISTA", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 381983.0, 9199030.0 ] } }
+,
+{ "type": "Feature", "id": 180, "properties": { "PC": 0, "NOMBRE": "SANGAMAYOC", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 372523.0, 9194120.0 ] } }
+,
+{ "type": "Feature", "id": 181, "properties": { "PC": 84, "NOMBRE": "SANTA ANA", "ESTADO": "Instalado", "CATEGORIA": "Puesto de Control", "CATEG_EST": "Puesto de Control Instalado", "CATEG_EXIS": "Puesto de Control" }, "geometry": { "type": "Point", "coordinates": [ 438403.0, 9060560.0 ] } }
+,
+{ "type": "Feature", "id": 182, "properties": { "PC": 0, "NOMBRE": "NUEVO LORETO", "ESTADO": "Instalado", "CATEGORIA": "Centro de Guardaparques", "CATEG_EST": "Centro de Guardaparques Instalado", "CATEG_EXIS": "Centro de Guardaparques" }, "geometry": { "type": "Point", "coordinates": [ 382396.0, 9202028.0 ] } }
+,
+{ "type": "Feature", "id": 183, "properties": { "PC": 0, "NOMBRE": "SARAYAQUILLO", "ESTADO": "Instalado", "CATEGORIA": "Centro de Guardaparques", "CATEG_EST": "Centro de Guardaparques Instalado", "CATEG_EXIS": "Centro de Guardaparques" }, "geometry": { "type": "Point", "coordinates": [ 471355.001199999824166, 9235337.001 ] } }
+,
+{ "type": "Feature", "id": 184, "properties": { "PC": 0, "NOMBRE": "LAS PALMAS", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 366156.0, 9165584.0 ] } }
+,
+{ "type": "Feature", "id": 185, "properties": { "PC": 0, "NOMBRE": "LOS CEDROS", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 363495.0, 9187247.0 ] } }
+,
+{ "type": "Feature", "id": 186, "properties": { "PC": 0, "NOMBRE": "SELVA ANDINA", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 364257.0, 9182194.0 ] } }
+,
+{ "type": "Feature", "id": 187, "properties": { "PC": 0, "NOMBRE": "FLOR DE SELVA", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 367440.0, 9187960.0 ] } }
+,
+{ "type": "Feature", "id": 188, "properties": { "PC": 0, "NOMBRE": "VISTA ALEGRE", "ESTADO": "Proyectado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 344205.0, 9164522.0 ] } }
+,
+{ "type": "Feature", "id": 189, "properties": { "PC": 0, "NOMBRE": "NUEVO ARICA", "ESTADO": "Proyectado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 342762.0, 9167506.0 ] } }
+,
+{ "type": "Feature", "id": 190, "properties": { "PC": 0, "NOMBRE": "SAN MIGUEL", "ESTADO": "Proyectado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 344916.0, 9160782.0 ] } }
+,
+{ "type": "Feature", "id": 191, "properties": { "PC": 0, "NOMBRE": "CHOVAICO", "ESTADO": "Proyectado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 379341.7122, 9224186.5631 ] } }
+,
+{ "type": "Feature", "id": 192, "properties": { "PC": 0, "NOMBRE": "SIAMBAL", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 379466.0, 9264810.0 ] } }
+,
+{ "type": "Feature", "id": 193, "properties": { "PC": 0, "NOMBRE": "NUEVO SAN MARTIN", "ESTADO": "Proyectado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Proyectado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 315754.0, 9139752.0 ] } }
+,
+{ "type": "Feature", "id": 194, "properties": { "PC": 0, "NOMBRE": "LOBOYACU", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 345353.0, 9086009.0 ] } }
+,
+{ "type": "Feature", "id": 195, "properties": { "PC": 0, "NOMBRE": "CONSUELO", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 377820.0, 9046015.0 ] } }
+,
+{ "type": "Feature", "id": 196, "properties": { "PC": 0, "NOMBRE": "JORGE BASADRE", "ESTADO": "En Construcción", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación en Construcción", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 378147.0, 9042952.0 ] } }
+,
+{ "type": "Feature", "id": 197, "properties": { "PC": 0, "NOMBRE": "BUENOS AIRES", "ESTADO": "Instalado", "CATEGORIA": "Esquina de Conservación", "CATEG_EST": "Esquina de Conservación Instalado", "CATEG_EXIS": "Esquina de Conservación" }, "geometry": { "type": "Point", "coordinates": [ 315169.0, 9118261.0 ] } }
+,
+{ "type": "Feature", "id": 198, "properties": { "PC": 0, "NOMBRE": "VARADERO APUA", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 425098.0, 9067318.0 ] } }
+,
+{ "type": "Feature", "id": 199, "properties": { "PC": 0, "NOMBRE": "HITO 79", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 429861.0, 9041218.0 ] } }
+,
+{ "type": "Feature", "id": 200, "properties": { "PC": 0, "NOMBRE": "BLANCO DEL SANTA ANA", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 433112.0, 9050484.0 ] } }
+,
+{ "type": "Feature", "id": 201, "properties": { "PC": 0, "NOMBRE": "SAMIRIA", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 432776.0, 9057154.0 ] } }
+,
+{ "type": "Feature", "id": 202, "properties": { "PC": 0, "NOMBRE": null, "ESTADO": "Desestimado", "CATEGORIA": "Puesto de Control", "CATEG_EST": "Puesto de Control desestimado", "CATEG_EXIS": null }, "geometry": { "type": "Point", "coordinates": [ 442373.664900000207126, 9029437.6236 ] } }
+,
+{ "type": "Feature", "id": 203, "properties": { "PC": 0, "NOMBRE": "NUCANE", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 421922.0, 9069468.0 ] } }
+,
+{ "type": "Feature", "id": 204, "properties": { "PC": 0, "NOMBRE": "VARADERO PISQUI APUA", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 422432.0, 9069690.0 ] } }
+,
+{ "type": "Feature", "id": 205, "properties": { "PC": 0, "NOMBRE": "PIQUIYACU", "ESTADO": "Instalado Activo", "CATEGORIA": "Refugio", "CATEG_EST": "Refugio Instalado Activo", "CATEG_EXIS": "Refugio" }, "geometry": { "type": "Point", "coordinates": [ 331938.606300000101328, 9143670.9497 ] } }
+,
+{ "type": "Feature", "id": 206, "properties": { "PC": 0, "NOMBRE": "CHIMBADILLO", "ESTADO": "Instalado Activo", "CATEGORIA": "Refugio", "CATEG_EST": "Refugio Instalado Activo", "CATEG_EXIS": "Refugio" }, "geometry": { "type": "Point", "coordinates": [ 383207.421299999579787, 9243083.607 ] } }
+,
+{ "type": "Feature", "id": 207, "properties": { "PC": 0, "NOMBRE": "LA UNION", "ESTADO": "Instalado", "CATEGORIA": "Letrero Informativo Limítrofe", "CATEG_EST": "Letrero Informativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Informativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 325157.252500000409782, 9114984.3421 ] } }
+,
+{ "type": "Feature", "id": 208, "properties": { "PC": 0, "NOMBRE": "ALTO PIZANA II", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Informativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 322944.3251, 9116827.9526 ] } }
+,
+{ "type": "Feature", "id": 209, "properties": { "PC": 0, "NOMBRE": "PUCACUNGA II", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 320556.857900000177324, 9145238.1391 ] } }
+,
+{ "type": "Feature", "id": 210, "properties": { "PC": 0, "NOMBRE": "COTOYACU", "ESTADO": "Instalado", "CATEGORIA": "Letrero Indicativo Limítrofe", "CATEG_EST": "Letrero Indicativo Limítrofe Instalado", "CATEG_EXIS": "Letrero Indicativo Limítrofe" }, "geometry": { "type": "Point", "coordinates": [ 341854.0, 9111979.0 ] } }
+
+]
+}

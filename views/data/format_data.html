@@ -1,0 +1,93 @@
+{{extend 'layout_auxiliar.html'}}
+
+<h2>Reportes de Estudios / Investigaciones.</h2>
+
+
+{{=form.custom.begin}}
+<table border=0>
+<tr>
+<td>Proyecto:</td><td>{{=form.custom.widget.project_id}}</td>
+<td>Lugar:</td><td>{{=form.custom.widget.place_id}}</td>
+<td>Topico:</td><td>{{=form.custom.widget.topic_id}}</td>
+<td>{{=form.custom.submit}}</td>
+</tr>
+</table>
+{{=form.custom.end}}
+
+{{if project_name:}}
+<h2>{{=project_name}}</h2></br>
+{{pass}}
+{{if place_name:}}
+<h2>{{=place_name}}</h2></br>
+{{pass}}
+
+<ul>
+{{for elem in tree_base:}}
+{{key_data = elem.keys()[0]}}
+{{value_data = elem.values()[0]}}
+{{if topic_mode:}}
+{{if key_data == topic_id:}}
+<li><strong>{{=value_data}}</strong></li>
+{{key_data = topic_id}}
+{{else:}}
+{{key_data = ''}}
+{{pass}}
+{{else:}}
+<li><strong>{{=value_data}}</strong></li>
+{{pass}}
+{{if key_data in tree_data:}}
+<ol type='1'>
+{{for part in tree_data[key_data]:}}
+<li>{{=part[1]}}</li>
+{{if part[0] in data_val:}}
+{{components = data_val[part[0]]}}
+{{for reply in components:}}
+<table border=2>
+<tr>
+<td>{{=reply[0]}}</td>
+{{if reply[1] is not None:}}
+<td>{{=reply[1]}}</td>
+{{pass}}
+{{space=reply[2].split('|')}}
+{{heads=[]}}
+{{if part[2] is not None:}}
+{{heads=part[2].split('|')}}
+{{pass}}
+<td>
+<table border=1>
+<tr>
+{{for head in heads:}}
+<td><strong>{{=head}}</strong></td>
+{{pass}}
+</tr>
+<tr>
+{{for field in space:}}
+<td>{{=field}}</td>
+{{pass}}
+</tr>
+</table>
+</td>
+</tr>
+</table>
+{{pass}}
+{{pass}}
+{{pass}}
+</ol>
+{{pass}}
+
+{{pass}}
+</ul>
+
+<script type="text/javascript">
+jQuery(function() {
+// iterates over all form widgets
+jQuery(".w2p_fw").each(function (){
+// set title for the widget taken from the comment column
+jQuery(this).attr('title',jQuery(this).next().html());
+// clear the comment (optional)
+jQuery(this).next().html('');
+// create the tooltip with title attribute set
+jQuery(this).tooltip();
+});
+});
+</script>

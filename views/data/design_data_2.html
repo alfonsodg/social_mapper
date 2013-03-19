@@ -1,0 +1,25 @@
+{{extend 'layout_auxiliar.html'}}
+
+<h1>Ingreso masivo de estudio</h1>
+<br/>
+
+{{=form.custom.begin}}
+<table border=0>
+<tr>
+<td>Nombre del estudio:</td><td>{{=form.custom.widget.name}}</td>
+<td>Anotaciones:</td><td>{{=form.custom.widget.description}}</td>
+</tr>
+<tr>
+<td>Periodo de trabajo:</td><td>{{=form.custom.widget.period}}</td>
+</tr>
+<tr>
+<td>Lugar de estudio:</td><td>{{=form.custom.widget.place}}</td>
+<td>Proyecto desarrollado:</td><td>{{=form.custom.widget.project}}</td>
+</tr>
+<tr>
+<td>Archivo (Grupos/Actividades):</td><td>{{=form.custom.widget.process_file}}</td>
+</tr>
+</table>
+Procesar estudio: {{=form.custom.submit}}
+{{=form.custom.end}}
+
