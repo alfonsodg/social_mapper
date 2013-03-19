@@ -16,7 +16,7 @@ if not request.env.web2py_runtime_gae:
     ## if NOT running on Google App Engine use SQLite or other DB
     #db = DAL('sqlite://storage.sqlite',pool_size=1,check_reserved=['all'])
     if hostname == 'endeavour':
-        db = DAL('postgres://alfonsodg:y2kalce@localhost/cima',pool_size=1,check_reserved=['all'])
+        db = DAL('postgres://alfonsodg:alfonsodg@localhost/cima',pool_size=1,check_reserved=['all'], migrate_enabled=False)
     else:
         db = DAL('postgres://cima:cima@localhost/cima',pool_size=1,check_reserved=['all'])
 else:
