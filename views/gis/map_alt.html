@@ -85,10 +85,10 @@
                 displayProjection : wgs84Projection,
                 visibility: false,
                 style: {
-                    'fillColor': '#0000AA',
-                    'fillOpacity': .8,
-                    'strokeColor': '#aaee77',
-                    'strokeWidth': 3,
+                    'fillColor': '{{=layer.color_fill}}',
+                    'fillOpacity': .6,
+                    'strokeColor': '{{=layer.color_line}}',
+                    'strokeWidth': 1,
                     'pointRadius': 8
                 },
                 strategies: [new OpenLayers.Strategy.Fixed()],

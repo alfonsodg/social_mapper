@@ -16,7 +16,7 @@ if not request.env.web2py_runtime_gae:
     ## if NOT running on Google App Engine use SQLite or other DB
     #db = DAL('sqlite://storage.sqlite',pool_size=1,check_reserved=['all'])
     if hostname == 'endeavour':
-        db = DAL('postgres://alfonsodg:alfonsodg@localhost/cima',pool_size=1,check_reserved=['all'], migrate_enabled=False)
+        db = DAL('postgres://alfonsodg:alfonsodg@localhost/cima',pool_size=1,check_reserved=['all'])#, migrate_enabled=False)
     else:
         db = DAL('postgres://cima:cima@localhost/cima',pool_size=1,check_reserved=['all'])
 else:
@@ -116,6 +116,8 @@ db.define_table('data_types',
 db.define_table('gis_layers',
     Field('name', label=T('Name'), comment=T('Nombre de la capa')),
     Field('file_data', label=T('File Data'), comment=T('Archivo de datos')),
+    Field('color_fill', label=T('Color Fill'), comment=T('Color (#00FF00)'), default="#0000AA"),
+    Field('color_line', label=T('Color Line'), comment=T('Color (#00FF00)'), default="#000000"),
     Field('status', label=T('Status'), comment=T('Estado'), default=1),
     format='%(name)s')
 
@@ -315,10 +317,4 @@ db.project_tree.activity.widget = SQLFORM.widgets.autocomplete(request, db.activ
 db.detail_data.reference.widget = SQLFORM.widgets.autocomplete(request, db.main_data.name, limitby=(0,10), id_field= db.main_data.id, min_length=2)
 db.detail_data.study_group.widget = SQLFORM.widgets.autocomplete(request, db.groups.name, limitby=(0,10), id_field= db.groups.id, min_length=2)
 db.detail_data.individual.widget = SQLFORM.widgets.autocomplete(request, db.individuals.name, limitby=(0,10), id_field= db.individuals.id, min_length=2)
-
-#db.detail_data.element_tree.widget = SQLFORM.widgets.autocomplete(request, db.project_tree.id, limitby=(0,10), id_field= db.project_tree.id, min_length=2)
 db.detail_data.content_data.widget = SQLFORM.widgets.autocomplete(request, db.contents.name, limitby=(0,10), id_field= db.contents.id, min_length=2)
-db.detail_data.study_group.widget = SQLFORM.widgets.autocomplete(request, db.groups.name, limitby=(0,10), id_field= db.groups.id, min_length=2)
-db.detail_data.individual.widget = SQLFORM.widgets.autocomplete(request, db.individuals.name, limitby=(0,10), id_field= db.individuals.id, min_length=2)
-
-#db.activities.topic.widget = SQLFORM.widgets.autocomplete(request, db.topics.name, limitby=(0,10), id_field= db.topics.id, min_length=2)
