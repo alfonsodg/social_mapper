@@ -9,12 +9,9 @@ def index():
 
 def error():
     return dict()
-
-def map():
-    return dict()
     
-def map_alt():
+def map():
     layer_data = db(db.gis_layers.status==1).select(db.gis_layers.name,
-        db.gis_layers.file_data, db.gis_layers.color_fill,
-        db.gis_layers.color_line)
+        db.gis_layers.file_data, db.gis_layers.style_data,
+        db.gis_layers.rule_data, db.gis_layers.popup, orderby=db.gis_layers.priority|db.gis_layers.id)
     return dict(layer_data=layer_data)

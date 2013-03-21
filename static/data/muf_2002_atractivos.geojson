@@ -1,0 +1,86 @@
+{
+"type": "FeatureCollection",
+                                                                                
+"features": [
+{ "type": "Feature", "id": 0, "properties": { "ATRACTIVO": "Cueva", "NOM_POB": null, "ESTADO": null, "NOM_ATRACT": null, "OBS": null }, "geometry": { "type": "Point", "coordinates": [ 406201.715754809731152, 9278086.279651913791895 ] } }
+,
+{ "type": "Feature", "id": 1, "properties": { "ATRACTIVO": "Collpa", "NOM_POB": null, "ESTADO": null, "NOM_ATRACT": null, "OBS": null }, "geometry": { "type": "Point", "coordinates": [ 406691.770955716026947, 9280671.434167167171836 ] } }
+,
+{ "type": "Feature", "id": 2, "properties": { "ATRACTIVO": "Catarata", "NOM_POB": null, "ESTADO": null, "NOM_ATRACT": null, "OBS": null }, "geometry": { "type": "Point", "coordinates": [ 410741.097834476851858, 9275626.079190853983164 ] } }
+,
+{ "type": "Feature", "id": 3, "properties": { "ATRACTIVO": "Catarata", "NOM_POB": null, "ESTADO": null, "NOM_ATRACT": null, "OBS": null }, "geometry": { "type": "Point", "coordinates": [ 431018.832567974517588, 9256999.167608635500073 ] } }
+,
+{ "type": "Feature", "id": 4, "properties": { "ATRACTIVO": "Catarata", "NOM_POB": null, "ESTADO": null, "NOM_ATRACT": null, "OBS": null }, "geometry": { "type": "Point", "coordinates": [ 426481.219290370470844, 9258599.899989364668727 ] } }
+,
+{ "type": "Feature", "id": 5, "properties": { "ATRACTIVO": "Cueva", "NOM_POB": null, "ESTADO": null, "NOM_ATRACT": null, "OBS": null }, "geometry": { "type": "Point", "coordinates": [ 420342.873632037255447, 9258150.107419572770596 ] } }
+,
+{ "type": "Feature", "id": 6, "properties": { "ATRACTIVO": "Cueva", "NOM_POB": null, "ESTADO": null, "NOM_ATRACT": null, "OBS": null }, "geometry": { "type": "Point", "coordinates": [ 436805.638246365997475, 9254110.46899033151567 ] } }
+,
+{ "type": "Feature", "id": 7, "properties": { "ATRACTIVO": "Cueva", "NOM_POB": null, "ESTADO": null, "NOM_ATRACT": null, "OBS": null }, "geometry": { "type": "Point", "coordinates": [ 406201.715754809731152, 9278086.279651913791895 ] } }
+,
+{ "type": "Feature", "id": 8, "properties": { "ATRACTIVO": "Collpa", "NOM_POB": null, "ESTADO": null, "NOM_ATRACT": null, "OBS": null }, "geometry": { "type": "Point", "coordinates": [ 406691.770955716026947, 9280671.434167167171836 ] } }
+,
+{ "type": "Feature", "id": 9, "properties": { "ATRACTIVO": "Catarata", "NOM_POB": null, "ESTADO": null, "NOM_ATRACT": null, "OBS": null }, "geometry": { "type": "Point", "coordinates": [ 410741.097834476851858, 9275626.079190853983164 ] } }
+,
+{ "type": "Feature", "id": 10, "properties": { "ATRACTIVO": "Catarata", "NOM_POB": null, "ESTADO": null, "NOM_ATRACT": null, "OBS": null }, "geometry": { "type": "Point", "coordinates": [ 431018.832567974517588, 9256999.167608635500073 ] } }
+,
+{ "type": "Feature", "id": 11, "properties": { "ATRACTIVO": "Catarata", "NOM_POB": null, "ESTADO": null, "NOM_ATRACT": null, "OBS": null }, "geometry": { "type": "Point", "coordinates": [ 426481.219290370470844, 9258599.899989364668727 ] } }
+,
+{ "type": "Feature", "id": 12, "properties": { "ATRACTIVO": "Cueva", "NOM_POB": null, "ESTADO": null, "NOM_ATRACT": null, "OBS": null }, "geometry": { "type": "Point", "coordinates": [ 420342.873632037255447, 9258150.107419572770596 ] } }
+,
+{ "type": "Feature", "id": 13, "properties": { "ATRACTIVO": "Cueva", "NOM_POB": null, "ESTADO": null, "NOM_ATRACT": null, "OBS": null }, "geometry": { "type": "Point", "coordinates": [ 436805.638246365997475, 9254110.46899033151567 ] } }
+,
+{ "type": "Feature", "id": 14, "properties": { "ATRACTIVO": "Cueva", "NOM_POB": null, "ESTADO": null, "NOM_ATRACT": null, "OBS": null }, "geometry": { "type": "Point", "coordinates": [ 406201.715754809731152, 9278086.279651913791895 ] } }
+,
+{ "type": "Feature", "id": 15, "properties": { "ATRACTIVO": "Collpa", "NOM_POB": null, "ESTADO": null, "NOM_ATRACT": null, "OBS": null }, "geometry": { "type": "Point", "coordinates": [ 406691.770955716026947, 9280671.434167167171836 ] } }
+,
+{ "type": "Feature", "id": 16, "properties": { "ATRACTIVO": "Catarata", "NOM_POB": null, "ESTADO": null, "NOM_ATRACT": null, "OBS": null }, "geometry": { "type": "Point", "coordinates": [ 410741.097834476851858, 9275626.079190853983164 ] } }
+,
+{ "type": "Feature", "id": 17, "properties": { "ATRACTIVO": "Catarata", "NOM_POB": null, "ESTADO": null, "NOM_ATRACT": null, "OBS": null }, "geometry": { "type": "Point", "coordinates": [ 431018.832567974517588, 9256999.167608635500073 ] } }
+,
+{ "type": "Feature", "id": 18, "properties": { "ATRACTIVO": "Catarata", "NOM_POB": null, "ESTADO": null, "NOM_ATRACT": null, "OBS": null }, "geometry": { "type": "Point", "coordinates": [ 426481.219290370470844, 9258599.899989364668727 ] } }
+,
+{ "type": "Feature", "id": 19, "properties": { "ATRACTIVO": "Cueva", "NOM_POB": null, "ESTADO": null, "NOM_ATRACT": null, "OBS": null }, "geometry": { "type": "Point", "coordinates": [ 420342.873632037255447, 9258150.107419572770596 ] } }
+,
+{ "type": "Feature", "id": 20, "properties": { "ATRACTIVO": "Cueva", "NOM_POB": null, "ESTADO": null, "NOM_ATRACT": null, "OBS": null }, "geometry": { "type": "Point", "coordinates": [ 436805.638246365997475, 9254110.46899033151567 ] } }
+,
+{ "type": "Feature", "id": 21, "properties": { "ATRACTIVO": "Catarata", "NOM_POB": null, "ESTADO": null, "NOM_ATRACT": null, "OBS": null }, "geometry": { "type": "Point", "coordinates": [ 363328.57516820798628, 9187566.249662222340703 ] } }
+,
+{ "type": "Feature", "id": 22, "properties": { "ATRACTIVO": "Catarata", "NOM_POB": null, "ESTADO": null, "NOM_ATRACT": null, "OBS": null }, "geometry": { "type": "Point", "coordinates": [ 364095.868375499674585, 9187526.562082534655929 ] } }
+,
+{ "type": "Feature", "id": 23, "properties": { "ATRACTIVO": "Catarata", "NOM_POB": null, "ESTADO": null, "NOM_ATRACT": null, "OBS": null }, "geometry": { "type": "Point", "coordinates": [ 365643.683983312221244, 9186626.976942950859666 ] } }
+,
+{ "type": "Feature", "id": 24, "properties": { "ATRACTIVO": "Catarata", "NOM_POB": null, "ESTADO": null, "NOM_ATRACT": null, "OBS": null }, "geometry": { "type": "Point", "coordinates": [ 365498.162857791408896, 9186296.247112222015858 ] } }
+,
+{ "type": "Feature", "id": 25, "properties": { "ATRACTIVO": "Cueva", "NOM_POB": null, "ESTADO": null, "NOM_ATRACT": null, "OBS": null }, "geometry": { "type": "Point", "coordinates": [ 432474.18278168287361, 9016602.298722576349974 ] } }
+,
+{ "type": "Feature", "id": 26, "properties": { "ATRACTIVO": "Collpa", "NOM_POB": null, "ESTADO": null, "NOM_ATRACT": null, "OBS": null }, "geometry": { "type": "Point", "coordinates": [ 432530.179173185839318, 9089845.574519250541925 ] } }
+,
+{ "type": "Feature", "id": 27, "properties": { "ATRACTIVO": "Paredón", "NOM_POB": null, "ESTADO": null, "NOM_ATRACT": null, "OBS": null }, "geometry": { "type": "Point", "coordinates": [ 377960.857992433069739, 9049055.884928314015269 ] } }
+,
+{ "type": "Feature", "id": 28, "properties": { "ATRACTIVO": "Catarata", "NOM_POB": null, "ESTADO": null, "NOM_ATRACT": null, "OBS": null }, "geometry": { "type": "Point", "coordinates": [ 380086.999236310832202, 9040695.718129873275757 ] } }
+,
+{ "type": "Feature", "id": 29, "properties": { "ATRACTIVO": "Cueva", "NOM_POB": null, "ESTADO": null, "NOM_ATRACT": null, "OBS": null }, "geometry": { "type": "Point", "coordinates": [ 348815.277993849245831, 9084278.325119191780686 ] } }
+,
+{ "type": "Feature", "id": 30, "properties": { "ATRACTIVO": "Catarata", "NOM_POB": null, "ESTADO": null, "NOM_ATRACT": null, "OBS": null }, "geometry": { "type": "Point", "coordinates": [ 349489.873150957864709, 9085143.566733743995428 ] } }
+,
+{ "type": "Feature", "id": 31, "properties": { "ATRACTIVO": "Cueva", "NOM_POB": null, "ESTADO": null, "NOM_ATRACT": null, "OBS": null }, "geometry": { "type": "Point", "coordinates": [ 346258.896896277903579, 9086082.126720070838928 ] } }
+,
+{ "type": "Feature", "id": 32, "properties": { "ATRACTIVO": "Catarata", "NOM_POB": null, "ESTADO": null, "NOM_ATRACT": null, "OBS": null }, "geometry": { "type": "Point", "coordinates": [ 318230.505102579307277, 9135502.18872232362628 ] } }
+,
+{ "type": "Feature", "id": 33, "properties": { "ATRACTIVO": "Aguas termales", "NOM_POB": null, "ESTADO": null, "NOM_ATRACT": null, "OBS": null }, "geometry": { "type": "Point", "coordinates": [ 400722.291452826932073, 9283728.334754474461079 ] } }
+,
+{ "type": "Feature", "id": 34, "properties": { "ATRACTIVO": "Laguna", "NOM_POB": null, "ESTADO": null, "NOM_ATRACT": null, "OBS": null }, "geometry": { "type": "Point", "coordinates": [ 370209.067611715232488, 9243238.774616440758109 ] } }
+,
+{ "type": "Feature", "id": 35, "properties": { "ATRACTIVO": "Cueva", "NOM_POB": null, "ESTADO": null, "NOM_ATRACT": null, "OBS": null }, "geometry": { "type": "Point", "coordinates": [ 374417.284932895738166, 9251846.899562751874328 ] } }
+,
+{ "type": "Feature", "id": 36, "properties": { "ATRACTIVO": "Catarata", "NOM_POB": null, "ESTADO": null, "NOM_ATRACT": null, "OBS": null }, "geometry": { "type": "Point", "coordinates": [ 377047.248546854068991, 9253180.402240250259638 ] } }
+,
+{ "type": "Feature", "id": 37, "properties": { "ATRACTIVO": "Cueva", "NOM_POB": null, "ESTADO": null, "NOM_ATRACT": null, "OBS": null }, "geometry": { "type": "Point", "coordinates": [ 378491.876447479065973, 9249105.81072566844523 ] } }
+,
+{ "type": "Feature", "id": 38, "properties": { "ATRACTIVO": "Catarata", "NOM_POB": null, "ESTADO": null, "NOM_ATRACT": null, "OBS": null }, "geometry": { "type": "Point", "coordinates": [ 380859.470629668561742, 9222086.228426080197096 ] } }
+,
+{ "type": "Feature", "id": 39, "properties": { "ATRACTIVO": "Collpa", "NOM_POB": null, "ESTADO": null, "NOM_ATRACT": null, "OBS": null }, "geometry": { "type": "Point", "coordinates": [ 388321.776593727350701, 9209591.204486260190606 ] } }
+
+]
+}

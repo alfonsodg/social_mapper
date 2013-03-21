@@ -1,0 +1,702 @@
+{
+"type": "FeatureCollection",
+                                                                                
+"features": [
+{ "type": "Feature", "id": 0, "properties": { "ID": 0, "NOM_POB": "Alto Jorge Chavez", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 383351.2750435959897, 9220077.610112056136131 ] } }
+,
+{ "type": "Feature", "id": 1, "properties": { "ID": 0, "NOM_POB": "Alto Jorge Chavez", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 379422.472801888536196, 9220720.385770967230201 ] } }
+,
+{ "type": "Feature", "id": 2, "properties": { "ID": 0, "NOM_POB": "Alto Jorge Chavez", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 379435.590672478545457, 9221900.994124067947268 ] } }
+,
+{ "type": "Feature", "id": 3, "properties": { "ID": 0, "NOM_POB": "Alto Jorge Chavez", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Metalillo" }, "geometry": { "type": "Point", "coordinates": [ 382649.468967030581553, 9220313.731782676652074 ] } }
+,
+{ "type": "Feature", "id": 4, "properties": { "ID": 0, "NOM_POB": "Alto Ponasa", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Nuevo Amanecer" }, "geometry": { "type": "Point", "coordinates": [ 378053.039333506429102, 9211924.499946473166347 ] } }
+,
+{ "type": "Feature", "id": 5, "properties": { "ID": 0, "NOM_POB": "Alto Ponasa", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Cumbre" }, "geometry": { "type": "Point", "coordinates": [ 378280.459804618905764, 9211957.665431844070554 ] } }
+,
+{ "type": "Feature", "id": 6, "properties": { "ID": 0, "NOM_POB": "Buenos Aires", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Agua Salada" }, "geometry": { "type": "Point", "coordinates": [ 318607.189330348162912, 9120816.128557035699487 ] } }
+,
+{ "type": "Feature", "id": 7, "properties": { "ID": 0, "NOM_POB": "Buenos Aires", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Agua Dulce" }, "geometry": { "type": "Point", "coordinates": [ 319673.70237473101588, 9118962.736986007541418 ] } }
+,
+{ "type": "Feature", "id": 8, "properties": { "ID": 0, "NOM_POB": "Buenos Aires", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Bocanegra" }, "geometry": { "type": "Point", "coordinates": [ 318197.492246225534473, 9120061.765671987086535 ] } }
+,
+{ "type": "Feature", "id": 9, "properties": { "ID": 0, "NOM_POB": "Buenos Aires", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": "Verifiar nombre", "NOM_ATRACT": "Tribilin" }, "geometry": { "type": "Point", "coordinates": [ 318535.654918834683485, 9120172.318853417411447 ] } }
+,
+{ "type": "Feature", "id": 10, "properties": { "ID": 0, "NOM_POB": "Buenos Aires", "ATRACTIVO": "Catarata", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Buenos Aires" }, "geometry": { "type": "Point", "coordinates": [ 318886.823848082742188, 9118813.165034662932158 ] } }
+,
+{ "type": "Feature", "id": 11, "properties": { "ID": 0, "NOM_POB": "Buenos Aires", "ATRACTIVO": "Alojamiento", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 315267.789761280349921, 9118369.982485925778747 ] } }
+,
+{ "type": "Feature", "id": 12, "properties": { "ID": 0, "NOM_POB": "Buenos Aires", "ATRACTIVO": "Alojamiento", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 315383.823107024363708, 9118464.918859716504812 ] } }
+,
+{ "type": "Feature", "id": 13, "properties": { "ID": 0, "NOM_POB": "Buenos Aires", "ATRACTIVO": "Alojamiento", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 315011.988976344640832, 9118272.408990642055869 ] } }
+,
+{ "type": "Feature", "id": 14, "properties": { "ID": 0, "NOM_POB": "Buenos Aires", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 318740.878769118688069, 9120659.003942877054214 ] } }
+,
+{ "type": "Feature", "id": 15, "properties": { "ID": 0, "NOM_POB": "Cachiyacu", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 314544.626612818159629, 9119930.543773673474789 ] } }
+,
+{ "type": "Feature", "id": 16, "properties": { "ID": 0, "NOM_POB": "Cachiyacu", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Ojo de Aguila" }, "geometry": { "type": "Point", "coordinates": [ 314632.830530799750704, 9119242.553213419392705 ] } }
+,
+{ "type": "Feature", "id": 17, "properties": { "ID": 0, "NOM_POB": "Cachiyacu", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": "La Olla" }, "geometry": { "type": "Point", "coordinates": [ 317164.282976871589199, 9120927.248046867549419 ] } }
+,
+{ "type": "Feature", "id": 18, "properties": { "ID": 0, "NOM_POB": "Cachiyacu", "ATRACTIVO": "Alojamiento", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Leoncio" }, "geometry": { "type": "Point", "coordinates": [ 314226.407239513937384, 9118786.358291208744049 ] } }
+,
+{ "type": "Feature", "id": 19, "properties": { "ID": 0, "NOM_POB": "Cachiyacu", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": "La Tinaja" }, "geometry": { "type": "Point", "coordinates": [ 317658.22491756855743, 9122444.355436149984598 ] } }
+,
+{ "type": "Feature", "id": 20, "properties": { "ID": 0, "NOM_POB": "Cachiyacu", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 318062.314261172548868, 9122286.495212772861123 ] } }
+,
+{ "type": "Feature", "id": 21, "properties": { "ID": 0, "NOM_POB": "Cahuide", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Santa Rosa" }, "geometry": { "type": "Point", "coordinates": [ 357876.312719637062401, 9080338.725138194859028 ] } }
+,
+{ "type": "Feature", "id": 22, "properties": { "ID": 0, "NOM_POB": "Cahuide", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Cahuide" }, "geometry": { "type": "Point", "coordinates": [ 357535.449812053702772, 9080342.555058505386114 ] } }
+,
+{ "type": "Feature", "id": 23, "properties": { "ID": 0, "NOM_POB": "Cahuide", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 359162.546966751746368, 9082459.495152238756418 ] } }
+,
+{ "type": "Feature", "id": 24, "properties": { "ID": 0, "NOM_POB": "Cahuide", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 360145.044032116653398, 9081042.630963239818811 ] } }
+,
+{ "type": "Feature", "id": 25, "properties": { "ID": 0, "NOM_POB": "Cahuide", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Carachamero" }, "geometry": { "type": "Point", "coordinates": [ 360890.072690989822149, 9079979.62071136943996 ] } }
+,
+{ "type": "Feature", "id": 26, "properties": { "ID": 0, "NOM_POB": "Callanayacu", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 391426.947575804078951, 9268882.076068069785833 ] } }
+,
+{ "type": "Feature", "id": 27, "properties": { "ID": 0, "NOM_POB": "Callanayacu", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 391362.980234048853163, 9270686.868924733251333 ] } }
+,
+{ "type": "Feature", "id": 28, "properties": { "ID": 0, "NOM_POB": "Callanayacu", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 392505.254193963250145, 9270216.252053247764707 ] } }
+,
+{ "type": "Feature", "id": 29, "properties": { "ID": 0, "NOM_POB": "Callanayacu", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 393839.430179143266287, 9270229.959340767934918 ] } }
+,
+{ "type": "Feature", "id": 30, "properties": { "ID": 0, "NOM_POB": "Callanayacu", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 393368.813307658594567, 9271504.737080030143261 ] } }
+,
+{ "type": "Feature", "id": 31, "properties": { "ID": 0, "NOM_POB": "Callanayacu", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 394602.469184366171248, 9271591.549900982528925 ] } }
+,
+{ "type": "Feature", "id": 32, "properties": { "ID": 0, "NOM_POB": "Callanayacu", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 394483.67269253503764, 9272432.263535479083657 ] } }
+,
+{ "type": "Feature", "id": 33, "properties": { "ID": 0, "NOM_POB": "Callanayacu", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 394890.322222264599986, 9272921.15679032355547 ] } }
+,
+{ "type": "Feature", "id": 34, "properties": { "ID": 0, "NOM_POB": "Callanayacu", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 395735.604952601192053, 9273122.197007266804576 ] } }
+,
+{ "type": "Feature", "id": 35, "properties": { "ID": 0, "NOM_POB": "Callanayacu", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 395201.02073936117813, 9271088.949358621612191 ] } }
+,
+{ "type": "Feature", "id": 36, "properties": { "ID": 0, "NOM_POB": "Callanayacu", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 395178.175260162970517, 9269471.489431386813521 ] } }
+,
+{ "type": "Feature", "id": 37, "properties": { "ID": 0, "NOM_POB": "Callanayacu", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 395804.17904757935321, 9269720.254105428233743 ] } }
+,
+{ "type": "Feature", "id": 38, "properties": { "ID": 0, "NOM_POB": "Callanayacu", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 395680.909, 9270178.6514 ] } }
+,
+{ "type": "Feature", "id": 39, "properties": { "ID": 0, "NOM_POB": "Callanayacu", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 397413.769976426614448, 9270214.53283098898828 ] } }
+,
+{ "type": "Feature", "id": 40, "properties": { "ID": 0, "NOM_POB": "Callanayacu", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 398708.663267052732408, 9272197.33818226121366 ] } }
+,
+{ "type": "Feature", "id": 41, "properties": { "ID": 0, "NOM_POB": "Callanayacu", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 396843.207620244531427, 9273496.278014419600368 ] } }
+,
+{ "type": "Feature", "id": 42, "properties": { "ID": 0, "NOM_POB": "Callanayacu", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 397130.512069102202076, 9273293.950937759131193 ] } }
+,
+{ "type": "Feature", "id": 43, "properties": { "ID": 0, "NOM_POB": "Callanayacu", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 397414.792425414489117, 9273372.001702409237623 ] } }
+,
+{ "type": "Feature", "id": 44, "properties": { "ID": 0, "NOM_POB": "Callanayacu", "ATRACTIVO": "Centro de artesanía", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 397300.466813496837858, 9273338.462894624099135 ] } }
+,
+{ "type": "Feature", "id": 45, "properties": { "ID": 0, "NOM_POB": "Callanayacu", "ATRACTIVO": "Sitio ceremonial", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 397632.283219219825696, 9273196.833940962329507 ] } }
+,
+{ "type": "Feature", "id": 46, "properties": { "ID": 0, "NOM_POB": "Callanayacu", "ATRACTIVO": "Sitio arqueológico", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 397300.466813496837858, 9273492.231472885236144 ] } }
+,
+{ "type": "Feature", "id": 47, "properties": { "ID": 0, "NOM_POB": "Callanayacu", "ATRACTIVO": "Sitio arqueológico", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 397786.051797481661197, 9273937.351041538640857 ] } }
+,
+{ "type": "Feature", "id": 48, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Peña de los Loros" }, "geometry": { "type": "Point", "coordinates": [ 364125.530680619354825, 9172891.379712788388133 ] } }
+,
+{ "type": "Feature", "id": 49, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 366011.712480619375128, 9173041.548112789168954 ] } }
+,
+{ "type": "Feature", "id": 50, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": "El transito es constante porque se tiene que caminar rumbo a", "NOM_ATRACT": "Filo Alto" }, "geometry": { "type": "Point", "coordinates": [ 362635.999980619351845, 9173203.000012788921595 ] } }
+,
+{ "type": "Feature", "id": 51, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 366166.924780619330704, 9173525.445312788709998 ] } }
+,
+{ "type": "Feature", "id": 52, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": "3m", "NOM_ATRACT": "La Raquina" }, "geometry": { "type": "Point", "coordinates": [ 360601.970280619338155, 9173559.641112789511681 ] } }
+,
+{ "type": "Feature", "id": 53, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 364900.106480619346257, 9173787.45751278847456 ] } }
+,
+{ "type": "Feature", "id": 54, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": "5m", "NOM_ATRACT": "El Chorro" }, "geometry": { "type": "Point", "coordinates": [ 361437.297080619377084, 9174121.588312787935138 ] } }
+,
+{ "type": "Feature", "id": 55, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": "La Carachupa" }, "geometry": { "type": "Point", "coordinates": [ 359994.45988061936805, 9174334.216912789270282 ] } }
+,
+{ "type": "Feature", "id": 56, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Buho" }, "geometry": { "type": "Point", "coordinates": [ 359022.44318061938975, 9174729.098712788894773 ] } }
+,
+{ "type": "Feature", "id": 57, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Los Venados" }, "geometry": { "type": "Point", "coordinates": [ 360055.21088061935734, 9175184.731512788683176 ] } }
+,
+{ "type": "Feature", "id": 58, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 365655.637180619349238, 9175415.383112788200378 ] } }
+,
+{ "type": "Feature", "id": 59, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 364216.657280619372614, 9175640.36431278847158 ] } }
+,
+{ "type": "Feature", "id": 60, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": "Solamente hcen uso para chapanear picuros, sajinos antes a la", "NOM_ATRACT": "Los Picuros" }, "geometry": { "type": "Point", "coordinates": [ 360713.999980619351845, 9175764.000012788921595 ] } }
+,
+{ "type": "Feature", "id": 61, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": "Cascadas de 3 metros\nSe encuentran peces como la Yulillas y A", "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 360080.999980619351845, 9175937.000012788921595 ] } }
+,
+{ "type": "Feature", "id": 62, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": "5m", "NOM_ATRACT": "Los Cedros" }, "geometry": { "type": "Point", "coordinates": [ 367330.148080619343091, 9175944.119512788951397 ] } }
+,
+{ "type": "Feature", "id": 63, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": "10m", "NOM_ATRACT": "Churuyacu" }, "geometry": { "type": "Point", "coordinates": [ 359250.259580619342159, 9175959.307312788441777 ] } }
+,
+{ "type": "Feature", "id": 64, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 368321.636580619378947, 9175981.451512789353728 ] } }
+,
+{ "type": "Feature", "id": 65, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": "Llegan sajinos", "NOM_ATRACT": "El Filo" }, "geometry": { "type": "Point", "coordinates": [ 364915.294180619355757, 9175989.682812789455056 ] } }
+,
+{ "type": "Feature", "id": 66, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Sachavaca" }, "geometry": { "type": "Point", "coordinates": [ 364019.216380619327538, 9176232.687012787908316 ] } }
+,
+{ "type": "Feature", "id": 67, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 363502.832480619370472, 9176247.874712789431214 ] } }
+,
+{ "type": "Feature", "id": 68, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": "4m", "NOM_ATRACT": "Mojarrayco" }, "geometry": { "type": "Point", "coordinates": [ 364307.783780619385652, 9176414.940112788230181 ] } }
+,
+{ "type": "Feature", "id": 69, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 367728.177780619356781, 9176693.602012788876891 ] } }
+,
+{ "type": "Feature", "id": 70, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Cueva", "ESTADO": null, "OBS": null, "NOM_ATRACT": "De Huacanqui" }, "geometry": { "type": "Point", "coordinates": [ 361072.790880619373638, 9177083.201512789353728 ] } }
+,
+{ "type": "Feature", "id": 71, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": null, "ESTADO": null, "OBS": "Pto. 228", "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 362348.999980619351845, 9177127.000012788921595 ] } }
+,
+{ "type": "Feature", "id": 72, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Sitio arqueológico", "ESTADO": null, "OBS": "Pto. 221 \/ Es una Rova sobre la qda. Catache donde hay anchoveta\ninicio su recorrido", "NOM_ATRACT": "La Peña" }, "geometry": { "type": "Point", "coordinates": [ 362892.999980619351845, 9177127.000012788921595 ] } }
+,
+{ "type": "Feature", "id": 73, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": "Pto. 225", "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 362539.999980619351845, 9177134.000012788921595 ] } }
+,
+{ "type": "Feature", "id": 74, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": "Pto. 227", "NOM_ATRACT": "Lagunilla de rio" }, "geometry": { "type": "Point", "coordinates": [ 362479.999980619351845, 9177146.000012788921595 ] } }
+,
+{ "type": "Feature", "id": 75, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": "Otros le dicen Pavo de Oro 3m", "NOM_ATRACT": "La Pusanga" }, "geometry": { "type": "Point", "coordinates": [ 362135.934080619364977, 9177159.140312789008021 ] } }
+,
+{ "type": "Feature", "id": 76, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": null, "ESTADO": null, "OBS": "Pto. 226", "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 362479.999980619351845, 9177171.000012788921595 ] } }
+,
+{ "type": "Feature", "id": 77, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Pucacunga" }, "geometry": { "type": "Point", "coordinates": [ 364444.473680619383231, 9177174.328112788498402 ] } }
+,
+{ "type": "Feature", "id": 78, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Cerro Azul" }, "geometry": { "type": "Point", "coordinates": [ 366601.135580619331449, 9177204.703612789511681 ] } }
+,
+{ "type": "Feature", "id": 79, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": "La Zeta" }, "geometry": { "type": "Point", "coordinates": [ 364110.342880619340576, 9177219.891412789002061 ] } }
+,
+{ "type": "Feature", "id": 80, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": "4m", "NOM_ATRACT": "El Paujil" }, "geometry": { "type": "Point", "coordinates": [ 361923.305480619368609, 9177295.830212788656354 ] } }
+,
+{ "type": "Feature", "id": 81, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Sajinos 2" }, "geometry": { "type": "Point", "coordinates": [ 365097.547380619333126, 9177356.581212788820267 ] } }
+,
+{ "type": "Feature", "id": 82, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 357857.258180619333871, 9177423.77001278847456 ] } }
+,
+{ "type": "Feature", "id": 83, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": "El Cangrejo" }, "geometry": { "type": "Point", "coordinates": [ 364338.159380619355943, 9177614.773112788796425 ] } }
+,
+{ "type": "Feature", "id": 84, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 361379.035380619345233, 9177898.362012788653374 ] } }
+,
+{ "type": "Feature", "id": 85, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 360980.876580619369633, 9178060.57491278834641 ] } }
+,
+{ "type": "Feature", "id": 86, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 360707.104280619358178, 9178081.382412789389491 ] } }
+,
+{ "type": "Feature", "id": 87, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 363993.952680619375315, 9178273.115312788635492 ] } }
+,
+{ "type": "Feature", "id": 88, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": "4m", "NOM_ATRACT": "El Tigre" }, "geometry": { "type": "Point", "coordinates": [ 364900.106480619346257, 9178298.222412789240479 ] } }
+,
+{ "type": "Feature", "id": 89, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 361674.89848061936209, 9178391.807012788951397 ] } }
+,
+{ "type": "Feature", "id": 90, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 364468.719680619367864, 9178455.718012789264321 ] } }
+,
+{ "type": "Feature", "id": 91, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 365546.075580619391985, 9178510.498812789097428 ] } }
+,
+{ "type": "Feature", "id": 92, "properties": { "ID": null, "NOM_POB": "Challual", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Alto Mirador" }, "geometry": { "type": "Point", "coordinates": [ 364416.839480619353708, 9179594.223612789064646 ] } }
+,
+{ "type": "Feature", "id": 93, "properties": { "ID": 0, "NOM_POB": "Paraiso de Tres Unidos", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 378386.81649695627857, 9243503.565046826377511 ] } }
+,
+{ "type": "Feature", "id": 94, "properties": { "ID": 0, "NOM_POB": "Paraiso de Tres Unidos", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 377475.788013967627194, 9243024.88906423933804 ] } }
+,
+{ "type": "Feature", "id": 95, "properties": { "ID": 0, "NOM_POB": "Paraiso de Tres Unidos", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 377599.31729979661759, 9241750.993304127827287 ] } }
+,
+{ "type": "Feature", "id": 96, "properties": { "ID": 0, "NOM_POB": "Paraiso de Tres Unidos", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Machari" }, "geometry": { "type": "Point", "coordinates": [ 376711.450557900883723, 9242337.757411815226078 ] } }
+,
+{ "type": "Feature", "id": 97, "properties": { "ID": 0, "NOM_POB": "Paraiso de Tres Unidos", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Machari Cria" }, "geometry": { "type": "Point", "coordinates": [ 375321.746092325018253, 9241866.802009591832757 ] } }
+,
+{ "type": "Feature", "id": 98, "properties": { "ID": 0, "NOM_POB": "Paraiso de Tres Unidos", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 377985.346318012103438, 9245580.401164826005697 ] } }
+,
+{ "type": "Feature", "id": 99, "properties": { "ID": 0, "NOM_POB": "Paraiso de Tres Unidos", "ATRACTIVO": "Alojamiento", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 375507.040021068474744, 9244375.990627992898226 ] } }
+,
+{ "type": "Feature", "id": 100, "properties": { "ID": 0, "NOM_POB": "Paraiso de Tres Unidos", "ATRACTIVO": "Restaurante", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 375175.055065403168555, 9244430.034690544009209 ] } }
+,
+{ "type": "Feature", "id": 101, "properties": { "ID": 0, "NOM_POB": "Paraiso de Tres Unidos", "ATRACTIVO": "Restaurante", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 374912.555333016614895, 9244167.534958155825734 ] } }
+,
+{ "type": "Feature", "id": 102, "properties": { "ID": 0, "NOM_POB": "Paraiso de Tres Unidos", "ATRACTIVO": "Sitio ceremonial", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 375362.900058731029276, 9244469.754284786060452 ] } }
+,
+{ "type": "Feature", "id": 103, "properties": { "ID": 0, "NOM_POB": "Paraiso de Tres Unidos", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Alto Peru" }, "geometry": { "type": "Point", "coordinates": [ 377029.813650623778813, 9242660.290202433243394 ] } }
+,
+{ "type": "Feature", "id": 104, "properties": { "ID": 0, "NOM_POB": "Fernando Belaunde", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Shapajal" }, "geometry": { "type": "Point", "coordinates": [ 447982.304515197349247, 9195936.271201875060797 ] } }
+,
+{ "type": "Feature", "id": 105, "properties": { "ID": 0, "NOM_POB": "Fernando Belaunde", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": "No tiene nombre", "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 445954.049271133495495, 9194551.596948714926839 ] } }
+,
+{ "type": "Feature", "id": 106, "properties": { "ID": 0, "NOM_POB": "Fernando Belaunde", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": "No tiene nombre", "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 446831.659713276487309, 9201221.436309 ] } }
+,
+{ "type": "Feature", "id": 107, "properties": { "ID": 0, "NOM_POB": "Fernando Belaunde", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": "No tiene nombre", "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 446363.600810800213367, 9201572.480485858395696 ] } }
+,
+{ "type": "Feature", "id": 108, "properties": { "ID": 0, "NOM_POB": "Fernando Belaunde", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": "No tiene nombre", "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 444471.86274662532378, 9196482.339921429753304 ] } }
+,
+{ "type": "Feature", "id": 109, "properties": { "ID": 0, "NOM_POB": "Inca Roca de Loboyacu", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 343437.664969185017981, 9084387.991829555481672 ] } }
+,
+{ "type": "Feature", "id": 110, "properties": { "ID": 0, "NOM_POB": "Inca Roca de Loboyacu", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Mashonaje" }, "geometry": { "type": "Point", "coordinates": [ 343569.077828357578255, 9084149.059358334168792 ] } }
+,
+{ "type": "Feature", "id": 111, "properties": { "ID": 0, "NOM_POB": "Inca Roca de Loboyacu", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 345683.63019867928233, 9085355.668338008224964 ] } }
+,
+{ "type": "Feature", "id": 112, "properties": { "ID": 0, "NOM_POB": "Inca Roca de Loboyacu", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 350342.8133875237545, 9089763.972432069480419 ] } }
+,
+{ "type": "Feature", "id": 113, "properties": { "ID": 0, "NOM_POB": "Inca Roca de Loboyacu", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 349124.257784287503455, 9089333.89398386888206 ] } }
+,
+{ "type": "Feature", "id": 114, "properties": { "ID": 0, "NOM_POB": "Inca Roca de Loboyacu", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Villa Hermoza" }, "geometry": { "type": "Point", "coordinates": [ 346579.62696576473536, 9087709.153179552406073 ] } }
+,
+{ "type": "Feature", "id": 115, "properties": { "ID": 0, "NOM_POB": "Inca Roca de Loboyacu", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": "La Cocha" }, "geometry": { "type": "Point", "coordinates": [ 344405.341477637353819, 9084865.856772005558014 ] } }
+,
+{ "type": "Feature", "id": 116, "properties": { "ID": 0, "NOM_POB": "Isolaya", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 458820.408916424785275, 9198119.641737218946218 ] } }
+,
+{ "type": "Feature", "id": 117, "properties": { "ID": 0, "NOM_POB": "Isolaya", "ATRACTIVO": "Sitio ceremonial", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 460603.130379695154261, 9197694.949089458212256 ] } }
+,
+{ "type": "Feature", "id": 118, "properties": { "ID": 0, "NOM_POB": "Isolaya", "ATRACTIVO": "Sitio ceremonial", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 460292.01832377811661, 9197818.406254503875971 ] } }
+,
+{ "type": "Feature", "id": 119, "properties": { "ID": 0, "NOM_POB": "La Conquista", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 380100.673683396074921, 9198768.870364584028721 ] } }
+,
+{ "type": "Feature", "id": 120, "properties": { "ID": 0, "NOM_POB": "La Conquista", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 378253.730300278984942, 9197084.158494848757982 ] } }
+,
+{ "type": "Feature", "id": 121, "properties": { "ID": 0, "NOM_POB": "La Conquista", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 382084.889885528653394, 9198831.267100499942899 ] } }
+,
+{ "type": "Feature", "id": 122, "properties": { "ID": 0, "NOM_POB": "La Conquista", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 382777.493654197547585, 9197945.23345049098134 ] } }
+,
+{ "type": "Feature", "id": 123, "properties": { "ID": 0, "NOM_POB": "La Conquista", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 381304.930686577165034, 9197040.480779707431793 ] } }
+,
+{ "type": "Feature", "id": 124, "properties": { "ID": 0, "NOM_POB": "La Conquista", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 380381.458995018620044, 9198644.076892752200365 ] } }
+,
+{ "type": "Feature", "id": 125, "properties": { "ID": 0, "NOM_POB": "La Conquista", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 380300.343238327710424, 9197433.580215979367495 ] } }
+,
+{ "type": "Feature", "id": 126, "properties": { "ID": 0, "NOM_POB": "La Cumbre", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 437775.840928481658921, 9091424.593308866024017 ] } }
+,
+{ "type": "Feature", "id": 127, "properties": { "ID": 0, "NOM_POB": "La Cumbre", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 440576.225902635022067, 9096987.001819171011448 ] } }
+,
+{ "type": "Feature", "id": 128, "properties": { "ID": 0, "NOM_POB": "La Cumbre", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 432239.00671017850982, 9096744.046045158058405 ] } }
+,
+{ "type": "Feature", "id": 129, "properties": { "ID": 0, "NOM_POB": "La Cumbre", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 432788.853988208633382, 9096437.154541140422225 ] } }
+,
+{ "type": "Feature", "id": 130, "properties": { "ID": 0, "NOM_POB": "La Cumbre", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 435614.813254363369197, 9101743.820131430402398 ] } }
+,
+{ "type": "Feature", "id": 131, "properties": { "ID": 0, "NOM_POB": "Lejia", "ATRACTIVO": "Cueva", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Los Huacharos" }, "geometry": { "type": "Point", "coordinates": [ 383997.659669780754484, 9228112.873183995485306 ] } }
+,
+{ "type": "Feature", "id": 132, "properties": { "ID": 0, "NOM_POB": "Lejia", "ATRACTIVO": "Catarata", "ESTADO": null, "OBS": "No tiene nombre", "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 383425.608718169678468, 9227564.379620146006346 ] } }
+,
+{ "type": "Feature", "id": 133, "properties": { "ID": 0, "NOM_POB": "Lejia", "ATRACTIVO": "Central hidroeléctrica", "ESTADO": null, "OBS": "No tiene nombre", "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 382186.215600986790378, 9227601.408655915409327 ] } }
+,
+{ "type": "Feature", "id": 134, "properties": { "ID": 0, "NOM_POB": "Los Angeles", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 334039.501570668362547, 9150427.035480763763189 ] } }
+,
+{ "type": "Feature", "id": 135, "properties": { "ID": 0, "NOM_POB": "Los Angeles", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Sardina" }, "geometry": { "type": "Point", "coordinates": [ 334434.438111322408076, 9149442.45707756280899 ] } }
+,
+{ "type": "Feature", "id": 136, "properties": { "ID": 0, "NOM_POB": "Los Angeles", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 336577.56611365970457, 9147451.09913832321763 ] } }
+,
+{ "type": "Feature", "id": 137, "properties": { "ID": 0, "NOM_POB": "Los Angeles", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 337006.898468649829738, 9148762.212107054889202 ] } }
+,
+{ "type": "Feature", "id": 138, "properties": { "ID": 0, "NOM_POB": "Los Angeles", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 337911.112150980683509, 9148696.07016209512949 ] } }
+,
+{ "type": "Feature", "id": 139, "properties": { "ID": null, "NOM_POB": "Los Cedros", "ATRACTIVO": "Puquio", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 365381.236880619369913, 9184414.893812788650393 ] } }
+,
+{ "type": "Feature", "id": 140, "properties": { "ID": null, "NOM_POB": "Los Cedros", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Lag. Verde" }, "geometry": { "type": "Point", "coordinates": [ 364285.722280619374942, 9184604.593312788754702 ] } }
+,
+{ "type": "Feature", "id": 141, "properties": { "ID": null, "NOM_POB": "Los Cedros", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 363636.168280619371217, 9184733.423812787979841 ] } }
+,
+{ "type": "Feature", "id": 142, "properties": { "ID": null, "NOM_POB": "Los Cedros", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": "Es un bebedero de animales de picuro, sajino y carachupa", "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 364046.999980619351845, 9184841.000012788921595 ] } }
+,
+{ "type": "Feature", "id": 143, "properties": { "ID": null, "NOM_POB": "Los Cedros", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": "Pto 259", "NOM_ATRACT": "La Cueva" }, "geometry": { "type": "Point", "coordinates": [ 365665.999980619351845, 9185264.000012788921595 ] } }
+,
+{ "type": "Feature", "id": 144, "properties": { "ID": null, "NOM_POB": "Los Cedros", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": "Pto 255", "NOM_ATRACT": "El Tornillal" }, "geometry": { "type": "Point", "coordinates": [ 365406.999980619351845, 9185491.000012788921595 ] } }
+,
+{ "type": "Feature", "id": 145, "properties": { "ID": null, "NOM_POB": "Los Cedros", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": "El Oso Perdido" }, "geometry": { "type": "Point", "coordinates": [ 364017.644280619337223, 9185585.091312788426876 ] } }
+,
+{ "type": "Feature", "id": 146, "properties": { "ID": null, "NOM_POB": "Los Cedros", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": "Pto 262", "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 366087.999980619351845, 9185611.000012788921595 ] } }
+,
+{ "type": "Feature", "id": 147, "properties": { "ID": null, "NOM_POB": "Los Cedros", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Picuro" }, "geometry": { "type": "Point", "coordinates": [ 363440.99448061932344, 9185700.421212788671255 ] } }
+,
+{ "type": "Feature", "id": 148, "properties": { "ID": null, "NOM_POB": "Los Cedros", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": "Pto. Lag \/ Lo consideran laguna, pero es un espejo de agua estancada en el que llegan animales a bañ", "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 365775.999980619351845, 9185753.000012788921595 ] } }
+,
+{ "type": "Feature", "id": 149, "properties": { "ID": null, "NOM_POB": "Los Cedros", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": "Pto 267", "NOM_ATRACT": "El Angaro" }, "geometry": { "type": "Point", "coordinates": [ 365911.999980619351845, 9185956.000012788921595 ] } }
+,
+{ "type": "Feature", "id": 150, "properties": { "ID": null, "NOM_POB": "Los Cedros", "ATRACTIVO": "Puquio", "ESTADO": null, "OBS": "Pto 252 \/ Fin del primer camino, regreso hasta un desvio", "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 365288.999980619351845, 9186188.000012788921595 ] } }
+,
+{ "type": "Feature", "id": 151, "properties": { "ID": null, "NOM_POB": "Los Cedros", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": "Pto. Cva Tgre\/ Es una cueva", "NOM_ATRACT": "Del Tigre" }, "geometry": { "type": "Point", "coordinates": [ 365288.999980619351845, 9186188.000012788921595 ] } }
+,
+{ "type": "Feature", "id": 152, "properties": { "ID": null, "NOM_POB": "Los Cedros", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Sachavaca" }, "geometry": { "type": "Point", "coordinates": [ 366412.959180619334802, 9186188.355812788009644 ] } }
+,
+{ "type": "Feature", "id": 153, "properties": { "ID": null, "NOM_POB": "Los Cedros", "ATRACTIVO": "Sitio arqueológico", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 366661.362180619384162, 9186578.703412787988782 ] } }
+,
+{ "type": "Feature", "id": 154, "properties": { "ID": null, "NOM_POB": "Los Cedros", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": "La Sachavaca" }, "geometry": { "type": "Point", "coordinates": [ 366572.646880619344302, 9186738.391012787818909 ] } }
+,
+{ "type": "Feature", "id": 155, "properties": { "ID": null, "NOM_POB": "Los Cedros", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Lag. El Paujil" }, "geometry": { "type": "Point", "coordinates": [ 366973.121780619374476, 9186868.42431278899312 ] } }
+,
+{ "type": "Feature", "id": 156, "properties": { "ID": null, "NOM_POB": "Los Cedros", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": "El Salto del Oso" }, "geometry": { "type": "Point", "coordinates": [ 363920.057380619342439, 9186915.821812788024545 ] } }
+,
+{ "type": "Feature", "id": 157, "properties": { "ID": null, "NOM_POB": "Los Cedros", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": "El Luchito" }, "geometry": { "type": "Point", "coordinates": [ 367096.067480619356502, 9187412.627812787890434 ] } }
+,
+{ "type": "Feature", "id": 158, "properties": { "ID": null, "NOM_POB": "Los Cedros", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": "15 m. aproximadamente", "NOM_ATRACT": "Los Cedros" }, "geometry": { "type": "Point", "coordinates": [ 363281.626780619379133, 9187651.677412789314985 ] } }
+,
+{ "type": "Feature", "id": 159, "properties": { "ID": 0, "NOM_POB": "Manco Capac", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 432626.048483968770597, 9125320.816874479874969 ] } }
+,
+{ "type": "Feature", "id": 160, "properties": { "ID": 0, "NOM_POB": "Manco Capac", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 434850.77821519644931, 9120763.709199221804738 ] } }
+,
+{ "type": "Feature", "id": 161, "properties": { "ID": 0, "NOM_POB": "Manco Capac", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 429629.839894331467804, 9123078.145774452015758 ] } }
+,
+{ "type": "Feature", "id": 162, "properties": { "ID": 0, "NOM_POB": "Manco Capac", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 430580.732440743304323, 9117875.148822385817766 ] } }
+,
+{ "type": "Feature", "id": 163, "properties": { "ID": 0, "NOM_POB": "Manco Capac", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 427046.282787099306006, 9115542.770878355950117 ] } }
+,
+{ "type": "Feature", "id": 164, "properties": { "ID": 0, "NOM_POB": "Manco Capac", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 438062.283230436500162, 9119202.810113601386547 ] } }
+,
+{ "type": "Feature", "id": 165, "properties": { "ID": 0, "NOM_POB": "Manco Capac", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 420910.334657422965392, 9124280.217484068125486 ] } }
+,
+{ "type": "Feature", "id": 166, "properties": { "ID": 0, "NOM_POB": "Manco Capac", "ATRACTIVO": "Sitio arqueológico", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 428248.354496714309789, 9114466.288750346750021 ] } }
+,
+{ "type": "Feature", "id": 167, "properties": { "ID": 0, "NOM_POB": "Manco Capac", "ATRACTIVO": "Sitio arqueológico", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 420874.451919822546188, 9115345.415821557864547 ] } }
+,
+{ "type": "Feature", "id": 168, "properties": { "ID": 0, "NOM_POB": "Manco Capac", "ATRACTIVO": "Sitio arqueológico", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 418434.425762992119417, 9107522.979024657979608 ] } }
+,
+{ "type": "Feature", "id": 169, "properties": { "ID": 0, "NOM_POB": "Manco Capac", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 417160.588578176277224, 9113246.275671930983663 ] } }
+,
+{ "type": "Feature", "id": 170, "properties": { "ID": 0, "NOM_POB": "Mariscal Caceres", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 444825.293955143250059, 9030725.653813341632485 ] } }
+,
+{ "type": "Feature", "id": 171, "properties": { "ID": 0, "NOM_POB": "Mariscal Caceres", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 435668.322482002957258, 9026322.701076256111264 ] } }
+,
+{ "type": "Feature", "id": 172, "properties": { "ID": 0, "NOM_POB": "Mariscal Caceres", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 438432.967223893618211, 9020281.440343977883458 ] } }
+,
+{ "type": "Feature", "id": 173, "properties": { "ID": 0, "NOM_POB": "Mariscal Caceres", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 433501.958541147119831, 9032215.411471322178841 ] } }
+,
+{ "type": "Feature", "id": 174, "properties": { "ID": 0, "NOM_POB": "Mariscal Caceres", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 434048.954800498730037, 9027954.598503740504384 ] } }
+,
+{ "type": "Feature", "id": 175, "properties": { "ID": 0, "NOM_POB": "Maronilla", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 375668.170609292865265, 9043005.333005232736468 ] } }
+,
+{ "type": "Feature", "id": 176, "properties": { "ID": 0, "NOM_POB": "Maronilla", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 374732.762144847132731, 9041717.5446397960186 ] } }
+,
+{ "type": "Feature", "id": 177, "properties": { "ID": 0, "NOM_POB": "Maronilla", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 374982.631529185338877, 9041294.688758607953787 ] } }
+,
+{ "type": "Feature", "id": 178, "properties": { "ID": 0, "NOM_POB": "Maronilla", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 376289.587500000372529, 9043251.4612 ] } }
+,
+{ "type": "Feature", "id": 179, "properties": { "ID": 0, "NOM_POB": "Maronilla", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 375357.597723792190664, 9042219.676271621137857 ] } }
+,
+{ "type": "Feature", "id": 180, "properties": { "ID": 0, "NOM_POB": "Maronilla", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 375172.037347148405388, 9042163.064631288871169 ] } }
+,
+{ "type": "Feature", "id": 181, "properties": { "ID": 0, "NOM_POB": "Maronilla", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 374914.139874524786137, 9042147.339175641536713 ] } }
+,
+{ "type": "Feature", "id": 182, "properties": { "ID": 0, "NOM_POB": "Maronilla", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": "La Loma" }, "geometry": { "type": "Point", "coordinates": [ 376403.289049314684235, 9038907.028218874707818 ] } }
+,
+{ "type": "Feature", "id": 183, "properties": { "ID": 0, "NOM_POB": "Maronilla", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": "La Catarata" }, "geometry": { "type": "Point", "coordinates": [ 380157.006787494407035, 9040351.492140663787723 ] } }
+,
+{ "type": "Feature", "id": 184, "properties": { "ID": 0, "NOM_POB": "Nuevo Amazonas", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 382936.344800001010299, 9224930.3018 ] } }
+,
+{ "type": "Feature", "id": 185, "properties": { "ID": 0, "NOM_POB": "Nuevo Amazonas", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Cashuico" }, "geometry": { "type": "Point", "coordinates": [ 382655.332697735924739, 9223520.732995089143515 ] } }
+,
+{ "type": "Feature", "id": 186, "properties": { "ID": 0, "NOM_POB": "Nuevo Jaen", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 315794.4644, 9155125.1862 ] } }
+,
+{ "type": "Feature", "id": 187, "properties": { "ID": 0, "NOM_POB": "Nuevo Jaen", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 316174.684507165162358, 9154726.823130339384079 ] } }
+,
+{ "type": "Feature", "id": 188, "properties": { "ID": 0, "NOM_POB": "Nuevo Jaen", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 316921.744699999690056, 9153772.4498 ] } }
+,
+{ "type": "Feature", "id": 189, "properties": { "ID": 0, "NOM_POB": "Nuevo Jaen", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 320881.087129832885694, 9154427.129945604130626 ] } }
+,
+{ "type": "Feature", "id": 190, "properties": { "ID": 0, "NOM_POB": "Nuevo Jaen", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 319503.69619349722052, 9151171.478641537949443 ] } }
+,
+{ "type": "Feature", "id": 191, "properties": { "ID": 0, "NOM_POB": "Nuevo Jaen", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 314094.30633443366969, 9152160.695768542587757 ] } }
+,
+{ "type": "Feature", "id": 192, "properties": { "ID": 0, "NOM_POB": "Nuevo Jaen", "ATRACTIVO": "Alojamiento", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 316604.914359299931675, 9154377.043002465739846 ] } }
+,
+{ "type": "Feature", "id": 193, "properties": { "ID": 0, "NOM_POB": "Nuevo Jaen", "ATRACTIVO": "Alojamiento", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 316611.175227192346938, 9154514.782096099108458 ] } }
+,
+{ "type": "Feature", "id": 194, "properties": { "ID": 0, "NOM_POB": "Nuevo Jaen", "ATRACTIVO": "Alojamiento", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 316548.566548268019687, 9154627.477718163281679 ] } }
+,
+{ "type": "Feature", "id": 195, "properties": { "ID": 0, "NOM_POB": "Nuevo Jaen", "ATRACTIVO": "Alojamiento", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 316492.2187372361077, 9154733.912472335621715 ] } }
+,
+{ "type": "Feature", "id": 196, "properties": { "ID": 0, "NOM_POB": "Nuevo Jaen", "ATRACTIVO": "Alojamiento", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 316435.870926204195712, 9154627.477718163281679 ] } }
+,
+{ "type": "Feature", "id": 197, "properties": { "ID": 0, "NOM_POB": "Nuevo Jaen", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 321709.2359, 9151743.3473 ] } }
+,
+{ "type": "Feature", "id": 198, "properties": { "ID": 0, "NOM_POB": "Nuevo Jaen", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 321396.455900000408292, 9153349.2573 ] } }
+,
+{ "type": "Feature", "id": 199, "properties": { "ID": 0, "NOM_POB": "Nuevo Jaen", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 316323.175304140371736, 9155015.651527494192123 ] } }
+,
+{ "type": "Feature", "id": 200, "properties": { "ID": 0, "NOM_POB": "Nuevo Picota", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 377204.266863578814082, 9200557.439860766753554 ] } }
+,
+{ "type": "Feature", "id": 201, "properties": { "ID": 0, "NOM_POB": "Nuevo Picota", "ATRACTIVO": "Catarata", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Velo de la Novia" }, "geometry": { "type": "Point", "coordinates": [ 375554.918725028401241, 9197887.066684065386653 ] } }
+,
+{ "type": "Feature", "id": 202, "properties": { "ID": 0, "NOM_POB": "Nuevo Picota", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 376981.735765520425048, 9199706.585662309080362 ] } }
+,
+{ "type": "Feature", "id": 203, "properties": { "ID": 0, "NOM_POB": "Nuevo Picota", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 377479.158220003882889, 9200256.368375157937407 ] } }
+,
+{ "type": "Feature", "id": 204, "properties": { "ID": 0, "NOM_POB": "Nuevo Picota", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 376539.39930604561232, 9201194.46246793307364 ] } }
+,
+{ "type": "Feature", "id": 205, "properties": { "ID": 0, "NOM_POB": "Nuevo Picota", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 376794.835105122474488, 9200964.570248764008284 ] } }
+,
+{ "type": "Feature", "id": 206, "properties": { "ID": 0, "NOM_POB": "Nuevo Picota", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 377101.374385790899396, 9200814.377263262867928 ] } }
+,
+{ "type": "Feature", "id": 207, "properties": { "ID": 0, "NOM_POB": "Nuevo Picota", "ATRACTIVO": "Puquio", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 376798.181069263606332, 9200022.705825664103031 ] } }
+,
+{ "type": "Feature", "id": 208, "properties": { "ID": 0, "NOM_POB": "Nuevo Picota", "ATRACTIVO": "Puquio", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 376865.557361825252883, 9200039.549898805096745 ] } }
+,
+{ "type": "Feature", "id": 209, "properties": { "ID": 0, "NOM_POB": "Nuevo San Martin", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": "No tiene nombre", "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 449479.7654445124208, 9187612.273486593738198 ] } }
+,
+{ "type": "Feature", "id": 210, "properties": { "ID": 0, "NOM_POB": "Nuevo San Martin", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": "No tiene nombre", "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 453696.046353994635865, 9189326.585504734888673 ] } }
+,
+{ "type": "Feature", "id": 211, "properties": { "ID": 0, "NOM_POB": "Nuevo San Martín de Nuevo Progreso", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 375888.998282946762629, 9048248.70564453676343 ] } }
+,
+{ "type": "Feature", "id": 212, "properties": { "ID": 0, "NOM_POB": "Nuevo San Martín de Nuevo Progreso", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 375062.855139857740141, 9048554.265437185764313 ] } }
+,
+{ "type": "Feature", "id": 213, "properties": { "ID": 0, "NOM_POB": "Nuevo San Martín de Nuevo Progreso", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 375130.75731600204017, 9047988.413969317451119 ] } }
+,
+{ "type": "Feature", "id": 214, "properties": { "ID": 0, "NOM_POB": "Nuevo San Martín de Nuevo Progreso", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 375255.244638933276292, 9047524.415765663608909 ] } }
+,
+{ "type": "Feature", "id": 215, "properties": { "ID": 0, "NOM_POB": "Nuevo San Martín de Nuevo Progreso", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 375391.048991221876349, 9046653.004505146294832 ] } }
+,
+{ "type": "Feature", "id": 216, "properties": { "ID": 0, "NOM_POB": "Nuevo San Martín de Nuevo Progreso", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 375481.585226080962457, 9045204.42474739998579 ] } }
+,
+{ "type": "Feature", "id": 217, "properties": { "ID": 0, "NOM_POB": "Nuevo San Martín de Nuevo Progreso", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 374281.980114198289812, 9047467.830618876963854 ] } }
+,
+{ "type": "Feature", "id": 218, "properties": { "ID": 0, "NOM_POB": "Nuevo San Martín de Nuevo Progreso", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 373082.375002315558959, 9048724.020877547562122 ] } }
+,
+{ "type": "Feature", "id": 219, "properties": { "ID": 0, "NOM_POB": "Nuevo San Martín de Nuevo Progreso", "ATRACTIVO": "Alojamiento", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 376274.285277427174151, 9047695.384752810001373 ] } }
+,
+{ "type": "Feature", "id": 220, "properties": { "ID": 0, "NOM_POB": "San Miguel", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Lagarto cocha" }, "geometry": { "type": "Point", "coordinates": [ 344845.461478565994184, 9160367.658058699220419 ] } }
+,
+{ "type": "Feature", "id": 221, "properties": { "ID": 0, "NOM_POB": "San Miguel", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": "Corregido", "NOM_ATRACT": "Pinsho cocha" }, "geometry": { "type": "Point", "coordinates": [ 346251.73444625956472, 9161447.733688525855541 ] } }
+,
+{ "type": "Feature", "id": 222, "properties": { "ID": 0, "NOM_POB": "San Miguel", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Erizal" }, "geometry": { "type": "Point", "coordinates": [ 348748.511107490572613, 9160951.532865373417735 ] } }
+,
+{ "type": "Feature", "id": 223, "properties": { "ID": 0, "NOM_POB": "San Miguel", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": "El Cancho" }, "geometry": { "type": "Point", "coordinates": [ 346949.156763032544404, 9159386.955126222223043 ] } }
+,
+{ "type": "Feature", "id": 224, "properties": { "ID": 0, "NOM_POB": "San Miguel", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Cancha Saquino" }, "geometry": { "type": "Point", "coordinates": [ 346623.301473979663569, 9160158.038701891899109 ] } }
+,
+{ "type": "Feature", "id": 225, "properties": { "ID": 0, "NOM_POB": "San Miguel", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Canababral" }, "geometry": { "type": "Point", "coordinates": [ 346224.587615437398199, 9161648.469077872112393 ] } }
+,
+{ "type": "Feature", "id": 226, "properties": { "ID": 0, "NOM_POB": "San Miguel", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Pucacunga" }, "geometry": { "type": "Point", "coordinates": [ 343129.80861818039557, 9160281.450134297832847 ] } }
+,
+{ "type": "Feature", "id": 227, "properties": { "ID": 0, "NOM_POB": "San Miguel", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 345237.296156189753674, 9160034.627269485965371 ] } }
+,
+{ "type": "Feature", "id": 228, "properties": { "ID": 0, "NOM_POB": "Nuevo Trujillo", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": "El Añuje" }, "geometry": { "type": "Point", "coordinates": [ 334991.273976249620318, 9154762.882146062329412 ] } }
+,
+{ "type": "Feature", "id": 229, "properties": { "ID": 0, "NOM_POB": "Nuevo Trujillo", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": "Corregido", "NOM_ATRACT": "Colegas" }, "geometry": { "type": "Point", "coordinates": [ 333828.780007069872227, 9154463.23307947255671 ] } }
+,
+{ "type": "Feature", "id": 230, "properties": { "ID": 0, "NOM_POB": "Nuevo Trujillo", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 335821.625, 9152206.0 ] } }
+,
+{ "type": "Feature", "id": 231, "properties": { "ID": 0, "NOM_POB": "Nuevo Trujillo", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": "El Motelo" }, "geometry": { "type": "Point", "coordinates": [ 338718.75, 9151096.0 ] } }
+,
+{ "type": "Feature", "id": 232, "properties": { "ID": 0, "NOM_POB": "Nuevo Trujillo", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Picheo" }, "geometry": { "type": "Point", "coordinates": [ 339292.15625, 9151067.0 ] } }
+,
+{ "type": "Feature", "id": 233, "properties": { "ID": 0, "NOM_POB": "Nuevo Trujillo", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Paujil" }, "geometry": { "type": "Point", "coordinates": [ 337843.355453429801855, 9150390.893957624211907 ] } }
+,
+{ "type": "Feature", "id": 234, "properties": { "ID": 0, "NOM_POB": "Nuevo Trujillo", "ATRACTIVO": "Puquio", "ESTADO": null, "OBS": "Corregido", "NOM_ATRACT": "Pizango" }, "geometry": { "type": "Point", "coordinates": [ 338434.435007780673914, 9151743.314189232885838 ] } }
+,
+{ "type": "Feature", "id": 235, "properties": { "ID": 0, "NOM_POB": "Paraiso", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 381064.571324125281535, 9214741.750312972813845 ] } }
+,
+{ "type": "Feature", "id": 236, "properties": { "ID": 0, "NOM_POB": "Paraiso", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Octavio Lopez" }, "geometry": { "type": "Point", "coordinates": [ 382345.301613458781503, 9213504.681283503770828 ] } }
+,
+{ "type": "Feature", "id": 237, "properties": { "ID": 0, "NOM_POB": "Paraiso", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 382612.120423736574594, 9213106.878693634644151 ] } }
+,
+{ "type": "Feature", "id": 238, "properties": { "ID": 0, "NOM_POB": "Paraiso", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 380472.71869041811442, 9212471.364800063893199 ] } }
+,
+{ "type": "Feature", "id": 239, "properties": { "ID": 0, "NOM_POB": "Paraiso", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 382374.409120034542866, 9212398.596033623442054 ] } }
+,
+{ "type": "Feature", "id": 240, "properties": { "ID": 0, "NOM_POB": "Paraiso", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 381748.597728655673563, 9212126.925972251221538 ] } }
+,
+{ "type": "Feature", "id": 241, "properties": { "ID": 0, "NOM_POB": "Paraiso", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Principal Cementerio" }, "geometry": { "type": "Point", "coordinates": [ 380472.71869041811442, 9211957.132183892652392 ] } }
+,
+{ "type": "Feature", "id": 242, "properties": { "ID": 0, "NOM_POB": "Paraiso", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Alto Paraiso" }, "geometry": { "type": "Point", "coordinates": [ 381525.440178241464309, 9211738.825884573161602 ] } }
+,
+{ "type": "Feature", "id": 243, "properties": { "ID": 0, "NOM_POB": "Paraiso", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Paz" }, "geometry": { "type": "Point", "coordinates": [ 381719.977904609113466, 9212910.912163885310292 ] } }
+,
+{ "type": "Feature", "id": 244, "properties": { "ID": 0, "NOM_POB": "Paraiso", "ATRACTIVO": "Alojamiento", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 380970.628219841280952, 9212141.105786500498652 ] } }
+,
+{ "type": "Feature", "id": 245, "properties": { "ID": 0, "NOM_POB": "Paraiso", "ATRACTIVO": "Alojamiento", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 381043.804777154931799, 9212131.724176587536931 ] } }
+,
+{ "type": "Feature", "id": 246, "properties": { "ID": 0, "NOM_POB": "Paraiso", "ATRACTIVO": "Alojamiento", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 380961.246609929250553, 9212036.031755486503243 ] } }
+,
+{ "type": "Feature", "id": 247, "properties": { "ID": 0, "NOM_POB": "Pongo Isla", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 402222.146000000648201, 9283114.842500001192093 ] } }
+,
+{ "type": "Feature", "id": 248, "properties": { "ID": 0, "NOM_POB": "Pongo Isla", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 402932.787759323895443, 9286948.223846759647131 ] } }
+,
+{ "type": "Feature", "id": 249, "properties": { "ID": 0, "NOM_POB": "Pongo Isla", "ATRACTIVO": "Alojamiento", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Baños Termales" }, "geometry": { "type": "Point", "coordinates": [ 401156.767794918152504, 9285601.539234317839146 ] } }
+,
+{ "type": "Feature", "id": 250, "properties": { "ID": 0, "NOM_POB": "Porvenir", "ATRACTIVO": "Catarata", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Mishquiyacu" }, "geometry": { "type": "Point", "coordinates": [ 382637.198568784748204, 9235817.51489176787436 ] } }
+,
+{ "type": "Feature", "id": 251, "properties": { "ID": 0, "NOM_POB": "Porvenir", "ATRACTIVO": "Catarata", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Golondrina" }, "geometry": { "type": "Point", "coordinates": [ 384560.810093902109656, 9232147.902295339852571 ] } }
+,
+{ "type": "Feature", "id": 252, "properties": { "ID": 0, "NOM_POB": "Pucallpa", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 407495.037134860351216, 9282417.974430058151484 ] } }
+,
+{ "type": "Feature", "id": 253, "properties": { "ID": 0, "NOM_POB": "Puente La Juanita", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": "El Bosque" }, "geometry": { "type": "Point", "coordinates": [ 359318.458995019085705, 9170606.671732330694795 ] } }
+,
+{ "type": "Feature", "id": 254, "properties": { "ID": 0, "NOM_POB": "Puente La Juanita", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": "La Cumbre" }, "geometry": { "type": "Point", "coordinates": [ 360082.060676034830976, 9172578.359654953703284 ] } }
+,
+{ "type": "Feature", "id": 255, "properties": { "ID": 0, "NOM_POB": "Puente La Juanita", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Fila Alta" }, "geometry": { "type": "Point", "coordinates": [ 362628.266619477886707, 9173080.502582093700767 ] } }
+,
+{ "type": "Feature", "id": 256, "properties": { "ID": 0, "NOM_POB": "Puente La Juanita", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": "La Luz" }, "geometry": { "type": "Point", "coordinates": [ 361586.469958036090247, 9172350.418854650110006 ] } }
+,
+{ "type": "Feature", "id": 257, "properties": { "ID": 0, "NOM_POB": "Puente La Juanita", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Rinza" }, "geometry": { "type": "Point", "coordinates": [ 361708.379556422005408, 9171175.754170352593064 ] } }
+,
+{ "type": "Feature", "id": 258, "properties": { "ID": 0, "NOM_POB": "Puente La Juanita", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Gil" }, "geometry": { "type": "Point", "coordinates": [ 361962.572278536390513, 9169774.68781122379005 ] } }
+,
+{ "type": "Feature", "id": 259, "properties": { "ID": 0, "NOM_POB": "Puente La Juanita", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Oso" }, "geometry": { "type": "Point", "coordinates": [ 361552.278837990597822, 9169090.865410314872861 ] } }
+,
+{ "type": "Feature", "id": 260, "properties": { "ID": 0, "NOM_POB": "Puente La Juanita", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": "El Cielito" }, "geometry": { "type": "Point", "coordinates": [ 362578.01243935507955, 9170264.7605318762362 ] } }
+,
+{ "type": "Feature", "id": 261, "properties": { "ID": 0, "NOM_POB": "Puente La Juanita", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Michel" }, "geometry": { "type": "Point", "coordinates": [ 363250.437800249550492, 9169877.261171361431479 ] } }
+,
+{ "type": "Feature", "id": 262, "properties": { "ID": 0, "NOM_POB": "Puente La Juanita", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": "La T" }, "geometry": { "type": "Point", "coordinates": [ 363452.609556658542715, 9168872.769502745941281 ] } }
+,
+{ "type": "Feature", "id": 263, "properties": { "ID": 0, "NOM_POB": "Puente La Juanita", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Yajahuanca" }, "geometry": { "type": "Point", "coordinates": [ 366441.609004494617693, 9170515.495412210002542 ] } }
+,
+{ "type": "Feature", "id": 264, "properties": { "ID": 0, "NOM_POB": "Puente La Juanita", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Ruego a Dios" }, "geometry": { "type": "Point", "coordinates": [ 367011.461005252669565, 9171427.258613422513008 ] } }
+,
+{ "type": "Feature", "id": 265, "properties": { "ID": 0, "NOM_POB": "Puente La Juanita", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": "La Esperanza" }, "geometry": { "type": "Point", "coordinates": [ 367421.754445798462257, 9173364.755416 ] } }
+,
+{ "type": "Feature", "id": 266, "properties": { "ID": 0, "NOM_POB": "Puente La Juanita", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": "El Mono" }, "geometry": { "type": "Point", "coordinates": [ 368527.267327269015368, 9171586.817173635587096 ] } }
+,
+{ "type": "Feature", "id": 267, "properties": { "ID": 0, "NOM_POB": "Puente La Juanita", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": "El Venado" }, "geometry": { "type": "Point", "coordinates": [ 370567.337489982834086, 9170880.200692694634199 ] } }
+,
+{ "type": "Feature", "id": 268, "properties": { "ID": 0, "NOM_POB": "Puente La Juanita", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": "El Angelito" }, "geometry": { "type": "Point", "coordinates": [ 363751.907560916617513, 9172282.036614559590816 ] } }
+,
+{ "type": "Feature", "id": 269, "properties": { "ID": 0, "NOM_POB": "Puente La Juanita", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Lagarto" }, "geometry": { "type": "Point", "coordinates": [ 363859.329481957887765, 9171962.036932185292244 ] } }
+,
+{ "type": "Feature", "id": 270, "properties": { "ID": 0, "NOM_POB": "Ramon Castilla", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 380492.038815097592305, 9265887.766797292977571 ] } }
+,
+{ "type": "Feature", "id": 271, "properties": { "ID": 0, "NOM_POB": "Ramon Castilla", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 380445.939085325459018, 9266961.231933414936066 ] } }
+,
+{ "type": "Feature", "id": 272, "properties": { "ID": 0, "NOM_POB": "Ramon Castilla", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 379761.683452934375964, 9266012.345153655856848 ] } }
+,
+{ "type": "Feature", "id": 273, "properties": { "ID": 0, "NOM_POB": "Ramon Castilla", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 380953.036112818925176, 9266243.393284106627107 ] } }
+,
+{ "type": "Feature", "id": 274, "properties": { "ID": 0, "NOM_POB": "Ramon Castilla", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 380854.250977592833806, 9267998.475853286683559 ] } }
+,
+{ "type": "Feature", "id": 275, "properties": { "ID": 0, "NOM_POB": "San Jose de Yanayacu", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": "San Jose" }, "geometry": { "type": "Point", "coordinates": [ 430168.041040299693123, 9274989.883041974157095 ] } }
+,
+{ "type": "Feature", "id": 276, "properties": { "ID": 0, "NOM_POB": "San Juan", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Las Cuevas" }, "geometry": { "type": "Point", "coordinates": [ 373752.637138106278144, 9250293.694064345210791 ] } }
+,
+{ "type": "Feature", "id": 277, "properties": { "ID": 0, "NOM_POB": "San Juan", "ATRACTIVO": "Catarata", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Huayali" }, "geometry": { "type": "Point", "coordinates": [ 372592.581375901936553, 9251098.112293614074588 ] } }
+,
+{ "type": "Feature", "id": 278, "properties": { "ID": 0, "NOM_POB": "San Lorenzo", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Lagarto" }, "geometry": { "type": "Point", "coordinates": [ 482219.887907251249999, 9260562.359220720827579 ] } }
+,
+{ "type": "Feature", "id": 279, "properties": { "ID": 0, "NOM_POB": "San Lorenzo", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Bujeo" }, "geometry": { "type": "Point", "coordinates": [ 483093.026612829708029, 9260541.570203920826316 ] } }
+,
+{ "type": "Feature", "id": 280, "properties": { "ID": 0, "NOM_POB": "San Lorenzo", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Yurac" }, "geometry": { "type": "Point", "coordinates": [ 474041.473270491696894, 9265682.66705971211195 ] } }
+,
+{ "type": "Feature", "id": 281, "properties": { "ID": 0, "NOM_POB": "San Lorenzo", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": "Verificar si le pertenece ese nombre", "NOM_ATRACT": "Shunguito" }, "geometry": { "type": "Point", "coordinates": [ 477602.574695975985378, 9263378.4155886285007 ] } }
+,
+{ "type": "Feature", "id": 282, "properties": { "ID": 0, "NOM_POB": "San Lorenzo", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Picuruyo" }, "geometry": { "type": "Point", "coordinates": [ 468707.02698758430779, 9263701.500757444649935 ] } }
+,
+{ "type": "Feature", "id": 283, "properties": { "ID": 0, "NOM_POB": "San Lorenzo", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Lopunillo" }, "geometry": { "type": "Point", "coordinates": [ 473779.547086659353226, 9257506.373751197010279 ] } }
+,
+{ "type": "Feature", "id": 284, "properties": { "ID": 0, "NOM_POB": "San Lorenzo", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Chingana" }, "geometry": { "type": "Point", "coordinates": [ 476066.338934603030793, 9256113.509625630453229 ] } }
+,
+{ "type": "Feature", "id": 285, "properties": { "ID": 0, "NOM_POB": "San Lorenzo", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Matador" }, "geometry": { "type": "Point", "coordinates": [ 478145.240614551876206, 9258608.191641569137573 ] } }
+,
+{ "type": "Feature", "id": 286, "properties": { "ID": 0, "NOM_POB": "San Lorenzo", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Huacamayo" }, "geometry": { "type": "Point", "coordinates": [ 473176.665599474217743, 9259751.587565541267395 ] } }
+,
+{ "type": "Feature", "id": 287, "properties": { "ID": 0, "NOM_POB": "San Lorenzo", "ATRACTIVO": "Alojamiento", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 480556.766563292476349, 9262059.168430285528302 ] } }
+,
+{ "type": "Feature", "id": 288, "properties": { "ID": 0, "NOM_POB": "Sangamayoc", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 374658.629099999554455, 9194816.2044 ] } }
+,
+{ "type": "Feature", "id": 289, "properties": { "ID": 0, "NOM_POB": "Sangamayoc", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 371430.17224444495514, 9194660.84081538207829 ] } }
+,
+{ "type": "Feature", "id": 290, "properties": { "ID": 0, "NOM_POB": "Sangamayoc", "ATRACTIVO": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 372528.451746232574806, 9193826.152415001764894 ] } }
+,
+{ "type": "Feature", "id": 291, "properties": { "ID": 0, "NOM_POB": "Santa Rosa de Aguaytía", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 447356.609931526647415, 9035484.328801769763231 ] } }
+,
+{ "type": "Feature", "id": 292, "properties": { "ID": 0, "NOM_POB": "Santa Rosa de Aguaytía", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 451309.692475120245945, 9044020.85029455833137 ] } }
+,
+{ "type": "Feature", "id": 293, "properties": { "ID": 0, "NOM_POB": "Santa Rosa de Chipaota", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 379653.405603495368268, 9269680.102460160851479 ] } }
+,
+{ "type": "Feature", "id": 294, "properties": { "ID": 0, "NOM_POB": "Santa Rosa de Chipaota", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 379165.144238227396272, 9270138.117546163499355 ] } }
+,
+{ "type": "Feature", "id": 295, "properties": { "ID": 0, "NOM_POB": "Santa Rosa de Chipaota", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 380802.76421554206172, 9268988.758934119716287 ] } }
+,
+{ "type": "Feature", "id": 296, "properties": { "ID": 0, "NOM_POB": "Santa Rosa de Chipaota", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 382398.629099998623133, 9266839.1547 ] } }
+,
+{ "type": "Feature", "id": 297, "properties": { "ID": 0, "NOM_POB": "Santa Rosa de Chipaota", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Huito" }, "geometry": { "type": "Point", "coordinates": [ 388741.997100000269711, 9263265.5581 ] } }
+,
+{ "type": "Feature", "id": 298, "properties": { "ID": 0, "NOM_POB": "Santa Rosa de Chipaota", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Bonbonaje" }, "geometry": { "type": "Point", "coordinates": [ 385458.331785060465336, 9268080.802017103880644 ] } }
+,
+{ "type": "Feature", "id": 299, "properties": { "ID": 0, "NOM_POB": "Santa Rosa de Chipaota", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 390811.572884296241682, 9265557.691220885142684 ] } }
+,
+{ "type": "Feature", "id": 300, "properties": { "ID": 0, "NOM_POB": "Santa Rosa de Chipaota", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Huito" }, "geometry": { "type": "Point", "coordinates": [ 389646.707598913344555, 9262323.431137597188354 ] } }
+,
+{ "type": "Feature", "id": 301, "properties": { "ID": 0, "NOM_POB": "Santa Rosa de Huayali", "ATRACTIVO": "Catarata", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 374973.969184020883404, 9255844.820660205557942 ] } }
+,
+{ "type": "Feature", "id": 302, "properties": { "ID": 0, "NOM_POB": "Santa Rosa de Huayali", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 375392.263471495127305, 9255720.881612066179514 ] } }
+,
+{ "type": "Feature", "id": 303, "properties": { "ID": 0, "NOM_POB": "Santa Rosa de Shapaja", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": "No se ubica claramente en el mapa", "NOM_ATRACT": "Yaranga" }, "geometry": { "type": "Point", "coordinates": [ 351264.796873425657395, 9088693.971928533166647 ] } }
+,
+{ "type": "Feature", "id": 304, "properties": { "ID": 0, "NOM_POB": "Santa Rosa de Shapaja", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": "No se ubica claramente en el mapa", "NOM_ATRACT": "Pichilin" }, "geometry": { "type": "Point", "coordinates": [ 353886.61357028700877, 9084571.717965396121144 ] } }
+,
+{ "type": "Feature", "id": 305, "properties": { "ID": 0, "NOM_POB": "Santa Rosa de Shapaja", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": "No se ubica claramente en el mapa", "NOM_ATRACT": "Ronsoco" }, "geometry": { "type": "Point", "coordinates": [ 352812.616369163035415, 9085724.685548955574632 ] } }
+,
+{ "type": "Feature", "id": 306, "properties": { "ID": 0, "NOM_POB": "Santa Rosa de Shapaja", "ATRACTIVO": "Cueva", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Del amor" }, "geometry": { "type": "Point", "coordinates": [ 352259.823692113917787, 9083687.249682119116187 ] } }
+,
+{ "type": "Feature", "id": 307, "properties": { "ID": 0, "NOM_POB": "Santa Rosa de Shapaja", "ATRACTIVO": "Cueva", "ESTADO": null, "OBS": "Nombre no muy calro", "NOM_ATRACT": "Vampiro Blanco" }, "geometry": { "type": "Point", "coordinates": [ 349669.595148226595484, 9082992.310316685587168 ] } }
+,
+{ "type": "Feature", "id": 308, "properties": { "ID": 0, "NOM_POB": "Santa Rosa de Shapaja", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Achupaya" }, "geometry": { "type": "Point", "coordinates": [ 353033.7334399826359, 9088314.914092842489481 ] } }
+,
+{ "type": "Feature", "id": 309, "properties": { "ID": 0, "NOM_POB": "Santa Rosa de Shapaja", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Barra Bas" }, "geometry": { "type": "Point", "coordinates": [ 351754.413244526134804, 9087904.268104178830981 ] } }
+,
+{ "type": "Feature", "id": 310, "properties": { "ID": 0, "NOM_POB": "Santa Rosa de Shapaja", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": "La Cumbre" }, "geometry": { "type": "Point", "coordinates": [ 352986.351210521301255, 9086119.537461133673787 ] } }
+,
+{ "type": "Feature", "id": 311, "properties": { "ID": 0, "NOM_POB": "Santa Rosa de Shapaja", "ATRACTIVO": "Catarata", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Vista Alegre" }, "geometry": { "type": "Point", "coordinates": [ 351470.119867758010514, 9085393.009942727163434 ] } }
+,
+{ "type": "Feature", "id": 312, "properties": { "ID": 0, "NOM_POB": "Santa Rosa de Shapaja", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": "La Torre" }, "geometry": { "type": "Point", "coordinates": [ 350317.152284198382404, 9083039.692546145990491 ] } }
+,
+{ "type": "Feature", "id": 313, "properties": { "ID": 0, "NOM_POB": "Santa Rosa de Shapaja", "ATRACTIVO": "Mina", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Santa Ana" }, "geometry": { "type": "Point", "coordinates": [ 352623.087451317580417, 9085219.275101367384195 ] } }
+,
+{ "type": "Feature", "id": 314, "properties": { "ID": 0, "NOM_POB": "Santa Rosa de Shapaja", "ATRACTIVO": "Mina", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Chacaco" }, "geometry": { "type": "Point", "coordinates": [ 353286.438663776556496, 9085329.833636777475476 ] } }
+,
+{ "type": "Feature", "id": 315, "properties": { "ID": 0, "NOM_POB": "Santa Rosa de Shapaja", "ATRACTIVO": "Mina", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Huacamayo" }, "geometry": { "type": "Point", "coordinates": [ 353633.908346493146382, 9085377.215866239741445 ] } }
+,
+{ "type": "Feature", "id": 316, "properties": { "ID": 0, "NOM_POB": "Santa Rosa de Shapaja", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Pimentel" }, "geometry": { "type": "Point", "coordinates": [ 354360.43586490052985, 9085740.479625442996621 ] } }
+,
+{ "type": "Feature", "id": 317, "properties": { "ID": null, "NOM_POB": "Selva Andina", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": "Este Mirador esta ubicado en la trocha carrozable", "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 363697.999980619351845, 9179202.000012788921595 ] } }
+,
+{ "type": "Feature", "id": 318, "properties": { "ID": null, "NOM_POB": "Selva Andina", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 364232.200880619348027, 9179797.744512788951397 ] } }
+,
+{ "type": "Feature", "id": 319, "properties": { "ID": null, "NOM_POB": "Selva Andina", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 363786.224580619367771, 9180197.126412788406014 ] } }
+,
+{ "type": "Feature", "id": 320, "properties": { "ID": null, "NOM_POB": "Selva Andina", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 364045.822680619370658, 9180270.346412789076567 ] } }
+,
+{ "type": "Feature", "id": 321, "properties": { "ID": null, "NOM_POB": "Selva Andina", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 363506.657280619372614, 9181155.642712788656354 ] } }
+,
+{ "type": "Feature", "id": 322, "properties": { "ID": null, "NOM_POB": "Selva Andina", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 363187.151780619344208, 9181242.17541278898716 ] } }
+,
+{ "type": "Feature", "id": 323, "properties": { "ID": null, "NOM_POB": "Selva Andina", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": "Altitud 1009_Se espera que las autoridades y poblacion abrab camino para la visita", "NOM_ATRACT": "El Bombonaje" }, "geometry": { "type": "Point", "coordinates": [ 362882.999980619351845, 9181653.000012788921595 ] } }
+,
+{ "type": "Feature", "id": 324, "properties": { "ID": null, "NOM_POB": "Selva Andina", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 363373.529980619379785, 9181754.71541278809309 ] } }
+,
+{ "type": "Feature", "id": 325, "properties": { "ID": null, "NOM_POB": "Selva Andina", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 364664.864580619381741, 9181834.591812789440155 ] } }
+,
+{ "type": "Feature", "id": 326, "properties": { "ID": null, "NOM_POB": "Selva Andina", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 365503.566380619362462, 9181981.031812788918614 ] } }
+,
+{ "type": "Feature", "id": 327, "properties": { "ID": null, "NOM_POB": "Selva Andina", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 363812.84998061938677, 9182014.313612788915634 ] } }
+,
+{ "type": "Feature", "id": 328, "properties": { "ID": null, "NOM_POB": "Selva Andina", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 365032.776280619378667, 9182503.017312789335847 ] } }
+,
+{ "type": "Feature", "id": 329, "properties": { "ID": null, "NOM_POB": "Selva Andina", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 364072.448180619394407, 9182593.417312787845731 ] } }
+,
+{ "type": "Feature", "id": 330, "properties": { "ID": null, "NOM_POB": "Selva Andina", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 363710.971980619360693, 9182799.659912789240479 ] } }
+,
+{ "type": "Feature", "id": 331, "properties": { "ID": null, "NOM_POB": "Selva Andina", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": "Pto 43_Letrero del PNCAZ. Se observa todo el panorama paisajistico del Parque En este lugar.", "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 365840.999980619351845, 9182863.000012788921595 ] } }
+,
+{ "type": "Feature", "id": 332, "properties": { "ID": null, "NOM_POB": "Selva Andina", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 365496.909980619326234, 9183085.98821278847754 ] } }
+,
+{ "type": "Feature", "id": 333, "properties": { "ID": null, "NOM_POB": "Selva Andina", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": "Se registró en el taller de Los Ccedros", "NOM_ATRACT": "La Neblina" }, "geometry": { "type": "Point", "coordinates": [ 365357.246380619355477, 9183642.224812788888812 ] } }
+,
+{ "type": "Feature", "id": 334, "properties": { "ID": null, "NOM_POB": "Selva Andina", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 366162.546380619343836, 9183705.030012788251042 ] } }
+,
+{ "type": "Feature", "id": 335, "properties": { "ID": 0, "NOM_POB": "Simon Bolivar", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Monoyacu" }, "geometry": { "type": "Point", "coordinates": [ 378770.250475429871585, 9222674.307300193235278 ] } }
+,
+{ "type": "Feature", "id": 336, "properties": { "ID": 0, "NOM_POB": "Simon Bolivar", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": "La Union" }, "geometry": { "type": "Point", "coordinates": [ 374937.359014320594724, 9220000.375973373651505 ] } }
+,
+{ "type": "Feature", "id": 337, "properties": { "ID": 0, "NOM_POB": "Tahiti", "ATRACTIVO": "Catarata", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Huacanqui" }, "geometry": { "type": "Point", "coordinates": [ 377741.573400000110269, 9191853.7112 ] } }
+,
+{ "type": "Feature", "id": 338, "properties": { "ID": 0, "NOM_POB": "Tahiti", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 378027.070519010128919, 9193876.485738480463624 ] } }
+,
+{ "type": "Feature", "id": 339, "properties": { "ID": 0, "NOM_POB": "Vista Alegre", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 378959.312014754512347, 9219312.96981193870306 ] } }
+,
+{ "type": "Feature", "id": 340, "properties": { "ID": 0, "NOM_POB": "Vista Alegre", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": "Siambal" }, "geometry": { "type": "Point", "coordinates": [ 378243.44112944410881, 9217074.84474522061646 ] } }
+,
+{ "type": "Feature", "id": 341, "properties": { "ID": 0, "NOM_POB": "Yamino", "ATRACTIVO": "Collpa", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 426677.47437480953522, 9015715.188648391515017 ] } }
+,
+{ "type": "Feature", "id": 342, "properties": { "ID": 0, "NOM_POB": "Yamino", "ATRACTIVO": "Cascada", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 424331.707206228398718, 9022674.944132033735514 ] } }
+,
+{ "type": "Feature", "id": 343, "properties": { "ID": 0, "NOM_POB": "Yamino", "ATRACTIVO": "Mirador", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 429904.723227295500692, 9013137.000967808067799 ] } }
+,
+{ "type": "Feature", "id": 344, "properties": { "ID": 0, "NOM_POB": "Yamino", "ATRACTIVO": "Centro de artesanía", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 429589.777116957178805, 9013137.000967808067799 ] } }
+,
+{ "type": "Feature", "id": 345, "properties": { "ID": 0, "NOM_POB": "Yamino", "ATRACTIVO": "Sitio ceremonial", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 429435.966225861746352, 9012719.514263404533267 ] } }
+,
+{ "type": "Feature", "id": 346, "properties": { "ID": 0, "NOM_POB": "Yamino", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 429357.026244717591908, 9020350.107835933566093 ] } }
+,
+{ "type": "Feature", "id": 347, "properties": { "ID": 0, "NOM_POB": "Yamino", "ATRACTIVO": "Laguna", "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 426995.879867125477176, 9020749.419355673715472 ] } }
+
+]
+}

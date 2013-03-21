@@ -98,6 +98,19 @@ mail.settings.sender = settings.email_sender
 mail.settings.login = settings.email_login
 
 
+STYLE = """
+fillColor: '#AA00FF',
+fillOpacity: .6,
+strokeColor: '#000000',
+strokeWidth: 1,
+pointRadius: 8
+"""
+
+
+POPUP = '''"<div><strong>Nombre:</strong> <br/>" + feature.attributes.NOMBRE +
+"<br/><strong>Categoria:</strong> <br/>" + feature.attributes.CATEGORIA +
+"<br/><strong>Coordenadas:</strong> <br/>" + utmcoord +"</div>"'''
+
 db.define_table('tag',
     Field('name', label=T('Name'), comment=T('Denominación del TAG')),
     format='%(name)s')
@@ -116,8 +129,12 @@ db.define_table('data_types',
 db.define_table('gis_layers',
     Field('name', label=T('Name'), comment=T('Nombre de la capa')),
     Field('file_data', label=T('File Data'), comment=T('Archivo de datos')),
-    Field('color_fill', label=T('Color Fill'), comment=T('Color (#00FF00)'), default="#0000AA"),
-    Field('color_line', label=T('Color Line'), comment=T('Color (#00FF00)'), default="#000000"),
+    #Field('color_fill', label=T('Color Fill'), comment=T('Color (#00FF00)'), default="#0000AA"),
+    #Field('color_line', label=T('Color Line'), comment=T('Color (#00FF00)'), default="#000000"),
+    Field('style_data', 'text',label=T('Style Data'), comment=T('Presentación de Datos'), default=STYLE),
+    Field('rule_data', 'text',label=T('Rule Data'), comment=T('Reglas de Datos=titulo,condición,propiedad,valor,estilo|'), default=None),
+    Field('popup', 'text',label=T('Popup Design'), comment=T('Diseño de Popup'), default=POPUP),
+    Field('priority', 'integer', label=T('Order'), comment=T('Posicion'), default=1),
     Field('status', label=T('Status'), comment=T('Estado'), default=1),
     format='%(name)s')
 

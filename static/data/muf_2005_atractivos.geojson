@@ -1,0 +1,122 @@
+{
+"type": "FeatureCollection",
+                                                                                
+"features": [
+{ "type": "Feature", "id": 0, "properties": { "ATRACTIVO": "Catarata", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 378407.841044387081638, 9220007.178536513820291 ] } }
+,
+{ "type": "Feature", "id": 1, "properties": { "ATRACTIVO": "Cascada", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 384968.979130660009105, 9263732.433009484782815 ] } }
+,
+{ "type": "Feature", "id": 2, "properties": { "ATRACTIVO": "Cascada", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 383956.94584862847114, 9268871.974579015746713 ] } }
+,
+{ "type": "Feature", "id": 3, "properties": { "ATRACTIVO": "Cascada", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 382217.306938992580399, 9271028.333075370639563 ] } }
+,
+{ "type": "Feature", "id": 4, "properties": { "ATRACTIVO": "Cascada", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 377869.326358843769412, 9233414.952784905210137 ] } }
+,
+{ "type": "Feature", "id": 5, "properties": { "ATRACTIVO": "Cascada", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 379015.516258310992271, 9233753.966698832809925 ] } }
+,
+{ "type": "Feature", "id": 6, "properties": { "ATRACTIVO": "Cascada", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 372733.996694253117312, 9250432.503021409735084 ] } }
+,
+{ "type": "Feature", "id": 7, "properties": { "ATRACTIVO": "Cueva", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 374774.068243657995481, 9249629.496134942397475 ] } }
+,
+{ "type": "Feature", "id": 8, "properties": { "ATRACTIVO": "Collpa", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 378871.809982208244037, 9258432.361510496586561 ] } }
+,
+{ "type": "Feature", "id": 9, "properties": { "ATRACTIVO": "Cascada", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 377302.586434355238453, 9260784.228664582595229 ] } }
+,
+{ "type": "Feature", "id": 10, "properties": { "ATRACTIVO": "Cascada", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 402619.775404407642782, 9286766.590984508395195 ] } }
+,
+{ "type": "Feature", "id": 11, "properties": { "ATRACTIVO": "Cascada", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 401918.798160091566388, 9286663.506095638498664 ] } }
+,
+{ "type": "Feature", "id": 12, "properties": { "ATRACTIVO": "Catarata", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 371406.173203894344624, 9192788.565839963033795 ] } }
+,
+{ "type": "Feature", "id": 13, "properties": { "ATRACTIVO": "Laguna", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 380199.053422933735419, 9207794.99826611764729 ] } }
+,
+{ "type": "Feature", "id": 14, "properties": { "ATRACTIVO": "Catarata", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 381430.572535940620583, 9210454.207678275182843 ] } }
+,
+{ "type": "Feature", "id": 15, "properties": { "ATRACTIVO": "Laguna", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 384111.578746557410341, 9212775.566714296117425 ] } }
+,
+{ "type": "Feature", "id": 16, "properties": { "ATRACTIVO": "Cascada", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 375016.001173635013402, 9201166.674772216007113 ] } }
+,
+{ "type": "Feature", "id": 17, "properties": { "ATRACTIVO": "Cascada", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 374990.953807287209202, 9201930.619445823132992 ] } }
+,
+{ "type": "Feature", "id": 18, "properties": { "ATRACTIVO": "Cascada", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 377257.740461758978199, 9203997.027169512584805 ] } }
+,
+{ "type": "Feature", "id": 19, "properties": { "ATRACTIVO": "Catarata", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 381562.550344106392004, 9222852.411474093794823 ] } }
+,
+{ "type": "Feature", "id": 20, "properties": { "ATRACTIVO": "Catarata", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 381420.042967319430318, 9223902.94932165928185 ] } }
+,
+{ "type": "Feature", "id": 21, "properties": { "ATRACTIVO": "Catarata", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 381231.725227021670435, 9225599.645062349736691 ] } }
+,
+{ "type": "Feature", "id": 22, "properties": { "ATRACTIVO": "Cascada", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 383539.737657264457084, 9226582.208067309111357 ] } }
+,
+{ "type": "Feature", "id": 23, "properties": { "ATRACTIVO": "Cueva", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 383878.75157119135838, 9226582.208067309111357 ] } }
+,
+{ "type": "Feature", "id": 24, "properties": { "ATRACTIVO": "Cascada", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 384193.550205552077387, 9226638.710386296734214 ] } }
+,
+{ "type": "Feature", "id": 25, "properties": { "ATRACTIVO": "Cueva", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 384597.138198322209064, 9226687.140945428982377 ] } }
+,
+{ "type": "Feature", "id": 26, "properties": { "ATRACTIVO": "Cueva", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 384928.080352393735666, 9226767.858543982729316 ] } }
+,
+{ "type": "Feature", "id": 27, "properties": { "ATRACTIVO": "Cueva", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 385178.304907911224291, 9226897.006701668724418 ] } }
+,
+{ "type": "Feature", "id": 28, "properties": { "ATRACTIVO": "Cueva", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 375642.183796596247703, 9242771.383266730234027 ] } }
+,
+{ "type": "Feature", "id": 29, "properties": { "ATRACTIVO": "Cascada", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 376692.349548744270578, 9243929.041069556027651 ] } }
+,
+{ "type": "Feature", "id": 30, "properties": { "ATRACTIVO": "Cueva", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 378966.552104723639786, 9245163.813004514202476 ] } }
+,
+{ "type": "Feature", "id": 31, "properties": { "ATRACTIVO": "Cascada", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 376650.214105633902363, 9246320.433099368587136 ] } }
+,
+{ "type": "Feature", "id": 32, "properties": { "ATRACTIVO": "Catarata", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 379494.800235834089108, 9221901.3647745475173 ] } }
+,
+{ "type": "Feature", "id": 33, "properties": { "ATRACTIVO": "Catarata", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 364096.171505613659974, 9190068.580835619941354 ] } }
+,
+{ "type": "Feature", "id": 34, "properties": { "ATRACTIVO": "Catarata", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 362596.939295259246137, 9187650.008118916302919 ] } }
+,
+{ "type": "Feature", "id": 35, "properties": { "ATRACTIVO": "Cascada", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 387982.367443280934822, 9270058.001179242506623 ] } }
+,
+{ "type": "Feature", "id": 36, "properties": { "ATRACTIVO": "Cascada", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 397999.248445984441787, 9270754.663955746218562 ] } }
+,
+{ "type": "Feature", "id": 37, "properties": { "ATRACTIVO": "Cascada", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 397641.502695887873415, 9270246.28841613419354 ] } }
+,
+{ "type": "Feature", "id": 38, "properties": { "ATRACTIVO": "Cascada", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 398771.226117245387286, 9270547.54799516312778 ] } }
+,
+{ "type": "Feature", "id": 39, "properties": { "ATRACTIVO": "Catarata", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 376969.309890987118706, 9213044.184200311079621 ] } }
+,
+{ "type": "Feature", "id": 40, "properties": { "ATRACTIVO": "Catarata", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 376406.410490841721185, 9212688.379520457237959 ] } }
+,
+{ "type": "Feature", "id": 41, "properties": { "ATRACTIVO": "Catarata", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 377490.873785173753276, 9212564.195825979113579 ] } }
+,
+{ "type": "Feature", "id": 42, "properties": { "ATRACTIVO": "Cascada", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 402557.545118694601115, 9282250.466743486002088 ] } }
+,
+{ "type": "Feature", "id": 43, "properties": { "ATRACTIVO": "Cascada", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 401155.969982453447301, 9284746.127162657678127 ] } }
+,
+{ "type": "Feature", "id": 44, "properties": { "ATRACTIVO": "Agua sulfurosa", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 318210.119374805828556, 9124453.108310734853148 ] } }
+,
+{ "type": "Feature", "id": 45, "properties": { "ATRACTIVO": "Cueva", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 318428.234866879123729, 9124184.436247650533915 ] } }
+,
+{ "type": "Feature", "id": 46, "properties": { "ATRACTIVO": "Catarata", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 380681.762950404314324, 9039673.083518128842115 ] } }
+,
+{ "type": "Feature", "id": 47, "properties": { "ATRACTIVO": "Sitio arqueológico", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": "Lugares Sagrados y Ruinas", "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 377696.431248631968629, 9042349.653049165382981 ] } }
+,
+{ "type": "Feature", "id": 48, "properties": { "ATRACTIVO": "Sitio arqueológico", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": "Lugares Sagrados y Ruinas", "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 375530.108786907105241, 9042182.553795920684934 ] } }
+,
+{ "type": "Feature", "id": 49, "properties": { "ATRACTIVO": "Catarata", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 380464.740082904114388, 9039446.093751348555088 ] } }
+,
+{ "type": "Feature", "id": 50, "properties": { "ATRACTIVO": "Catarata", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 377475.69231676904019, 9049957.307990536093712 ] } }
+,
+{ "type": "Feature", "id": 51, "properties": { "ATRACTIVO": "Catarata", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 361908.938613444915973, 9085835.816241882741451 ] } }
+,
+{ "type": "Feature", "id": 52, "properties": { "ATRACTIVO": "Catarata", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 363382.730762334773317, 9086423.722399637103081 ] } }
+,
+{ "type": "Feature", "id": 53, "properties": { "ATRACTIVO": "Catarata", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 361266.69962729740655, 9081991.040792431682348 ] } }
+,
+{ "type": "Feature", "id": 54, "properties": { "ATRACTIVO": "Sitio arqueológico", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": "Roca del Amor" }, "geometry": { "type": "Point", "coordinates": [ 359094.293929187697358, 9082081.557696519419551 ] } }
+,
+{ "type": "Feature", "id": 55, "properties": { "ATRACTIVO": "Collpa", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 421896.578086648893077, 9090041.852343881502748 ] } }
+,
+{ "type": "Feature", "id": 56, "properties": { "ATRACTIVO": "Catarata", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 418138.321829107415397, 9094518.904516566544771 ] } }
+,
+{ "type": "Feature", "id": 57, "properties": { "ATRACTIVO": "Mirador", "ID": 0, "NOM_POB": null, "ESTADO": null, "OBS": null, "NOM_ATRACT": null }, "geometry": { "type": "Point", "coordinates": [ 450751.894377743534278, 9137694.516297485679388 ] } }
+
+]
+}

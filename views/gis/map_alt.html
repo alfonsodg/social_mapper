@@ -24,43 +24,40 @@
         var wgs84Projection = new OpenLayers.Projection("EPSG:4326");
         var sphericalMProjection = new OpenLayers.Projection("EPSG:900913");
         var utmProjection = new OpenLayers.Projection("EPSG:32718"); 
+        var projsrc = new Proj4js.Proj("EPSG:900913"); 
+        var projdst = new Proj4js.Proj("EPSG:32718"); 
         var lon = -75.88400,
             lat = -8.0078125,
             zoom = 8;
+        //var defaultMapCenter = new OpenLayers.LonLat(lon, lat).transform(wgs84Projection, utmProjection);
+        //var defaultMapZoom = 8;
         var layer_data = new Array();
+        var selector = new Array();
 
        function init(){
             var map = new OpenLayers.Map('map', {
                 units: 'm',
                 numZoomLevels: 19,
                 controls: [
-                    //new OpenLayers.Control.Graticule({
-                        //numPoints: 2, 
-                        //labelled: true,
-                        //visible: false,
-                        //layerName: 'Rejilla',
-                        //displayInLayerSwitcher: true
-                    //}),
-                    //new OpenLayers.Control.PanZoomBar(),
+                    new OpenLayers.Control.Graticule({
+                        numPoints: 2, 
+                        labelled: true,
+                        visible: false,
+                        layerName: 'Rejilla',
+                        displayInLayerSwitcher: true
+                    }),
+                    new OpenLayers.Control.KeyboardDefaults(),
                     new OpenLayers.Control.PanZoom(),
                     new OpenLayers.Control.Navigation(),
                     new OpenLayers.Control.ScaleLine(),
-                    //new OpenLayers.Control.MousePosition(),
-                    //new OpenLayers.Control.LayerSwitcher()
+                    new OpenLayers.Control.LayerSwitcher({
+                        title: 'Ver Capas'
+                        })
                 ],
-                //allOverlays: true,
-                //minScale: 100, 
-                projection: sphericalMProjection,
+                //projection: sphericalMProjection,
                 displayProjection: wgs84Projection //Is used for displaying coordinates in appropriate CRS by MousePosition control
             });
 
-            //map.addControl(new OpenLayers.Control.PanZoom());
-            map.addControl(new OpenLayers.Control.KeyboardDefaults());
-            //var ctrlNav = new OpenLayers.Control.Navigation();
-            //ctrlNav.zoomWheelEnabled = false;
-            //map.addControl(ctrlNav);
-            map.addControl(new OpenLayers.Control.LayerSwitcher( {title: 'View Layers'} ));
-            //map.addControl(new OpenLayers.Control.ScaleLine());
             var ctrl = new OpenLayers.Control.MousePosition();
             ctrl.displayProjection = utmProjection;
             map.addControl(ctrl);
@@ -68,7 +65,7 @@
             layer_data[0] = new OpenLayers.Layer.Google('Google Satelite', {
                 type: google.maps.MapTypeId.SATELLITE,
                 visibility: false,
-                sphericalMercator: true
+                //sphericalMercator: true
             });
 
             layer_data[1] = new OpenLayers.Layer.Bing({
@@ -76,73 +73,95 @@
                 type: "Aerial",
                 key: "AuWxq-E5tYJ_crQikiGqG8uXU7z7ANMLkCjr6UcJnaKRZAPmxdNwhD4UX2GEJTKq",
             });
-
-            //var void_layer = new OpenLayers.Layer.OSM();
+            
             {{counter = 2}}
             {{for layer in layer_data:}}
+            var rules = new Array();
+            {{if layer.rule_data is not None and layer.rule_data != '':}}
+            {{aux_counter = 0}}
+            {{for part in layer.rule_data.split('|'):}}
+            {{comp = part.split('=')}}
+                rules[{{=aux_counter}}] =  new OpenLayers.Rule({
+                    title: "{{=comp[0]}}",
+                    {{if comp[1] is not None:}}
+                    filter: new OpenLayers.Filter.Comparison({
+                        type: OpenLayers.Filter.Comparison.{{=comp[1]}},
+                        property: "{{=comp[2]}}",
+                        value: "{{=comp[3]}}"
+                    }),
+                    {{pass}}
+                    symbolizer: {{=XML(comp[4], sanitize=False)}}
+                }),
+            {{aux_counter += 1}}
+            {{pass}}
+                rules[{{=aux_counter}}] = new OpenLayers.Rule({elseFilter: true});
+            {{pass}}
+
+            var layer_style = new OpenLayers.Style({
+                    //graphicWidth: 21,
+                    //graphicHeight: 25,
+                    //graphicYOffset: -28,
+                    {{=XML(layer.style_data, sanitize=False)}}
+                }, {
+                    rules: rules
+            });
+
+            //console.log(rules[{{=counter}}]),
             layer_data[{{=counter}}] = new OpenLayers.Layer.Vector("{{=layer.name}}", {
                 projection: utmProjection,
                 displayProjection : wgs84Projection,
                 visibility: false,
-                style: {
-                    'fillColor': '{{=layer.color_fill}}',
-                    'fillOpacity': .6,
-                    'strokeColor': '{{=layer.color_line}}',
-                    'strokeWidth': 1,
-                    'pointRadius': 8
-                },
                 strategies: [new OpenLayers.Strategy.Fixed()],
                 protocol: new OpenLayers.Protocol.HTTP({
-                    //url: "{{=URL('static','data/zonificacion_pncaz.geojson')}}",
                     url: "../static/data/{{=layer.file_data}}",
                     format: new OpenLayers.Format.GeoJSON()
                 }),
+                styleMap: new OpenLayers.StyleMap(layer_style),
+                eventListeners:{
+                    'featureselected':function(evt){
+                        var feature = evt.feature;
+                        var utmcoord = new Proj4js.Point(feature.geometry.x, feature.geometry.y); 
+                        Proj4js.transform(projsrc, projdst, utmcoord);
+                        {{if layer.popup !='':}}
+                        var content = {{=XML(layer.popup, sanitize=False)}};
+                        {{else:}}
+                        var content = "";
+                        {{pass}}
+                        //"<div><strong>Nombre:</strong> <br/>" + feature.attributes.NOMBRE +
+                        //    "<br/><strong>Categoria:</strong> <br/>" + feature.attributes.CATEGORIA +
+                        //    "<br/><strong>Coordenadas:</strong> <br/>" + utmcoord +"</div>"
+                        //;
+                        var popup = new OpenLayers.Popup.FramedCloud("popup",
+                            feature.geometry.getBounds().getCenterLonLat(),
+                            null,
+                            content,
+                            null,
+                            true
+                        );
+                        feature.popup = popup;
+                        map.addPopup(popup);
+                    },
+                    'featureunselected':function(evt){
+                        var feature = evt.feature;
+                        map.removePopup(feature.popup);
+                        feature.popup.destroy();
+                        feature.popup = null;
+                    }
+                }
             });
+
+            selector[{{=counter}}] = new OpenLayers.Control.SelectFeature(layer_data[{{=counter}}],{
+                 hover:true,
+                 autoActivate:true
+            });
+            map.addControl(selector[{{=counter}}]);
             {{counter += 1}}
             {{pass}}
-
-
-//AGREGAR AQUI EL NOMBRE DE LA CAPA, separada por comas
             map.addLayers(layer_data);
             map.setCenter(new OpenLayers.LonLat(lon, lat).transform(wgs84Projection, sphericalMProjection), zoom);
+            //map.setCenter(defaultMapCenter, defaultMapZoom);
 
 
-        var selectControl = new OpenLayers.Control.SelectFeature(layer_data[4], {
-            hover: true,
-            onSelect: function(feature) {
-                var layer = feature.layer;
-                feature.style.fillOpacity = 1;
-                feature.style.pointRadius = 20;
-                layer.drawFeature(feature);
-                
-                var content = "<div><strong>Poblacion:</strong> <br/>" + feature.data.NOMBRE +
-                    "<br/><br/><strong>Longitud:</strong> <br/>" + feature.geometry.x +  +"</div>" +
-                    "<br/><br/><strong>Latitud:</strong> <br/>" + feature.geometry.POINT +  +"</div>"
-                    ;
-                console.log(feature);
-                //var content = feature;
-                var popup = new OpenLayers.Popup.FramedCloud(
-                    feature.id+"_popup", 
-                    feature.geometry.getBounds().getCenterLonLat(),
-                    new OpenLayers.Size(250, 100),
-                    content,
-                    null, 
-                    false, 
-                    null);
-                feature.popup = popup;
-                map.addPopup(popup);
-            },
-            onUnselect: function(feature) {
-                var layer = feature.layer;
-                feature.style.fillOpacity = 0.7;
-                feature.style.pointRadius = 16;
-                feature.renderIntent = null;
-                layer.drawFeature(feature);                
-                  map.removePopup(feature.popup);
-            }
-        });
-        map.addControl(selectControl);
-        selectControl.activate();
         }
     </script>
   </head>

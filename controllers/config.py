@@ -41,11 +41,12 @@ def answer_types():
 
 @auth.requires(restrictions)
 def gis_layers():
-    form = SQLFORM(db.gis_layers)
-    if form.process().accepted:
-        response.flash = T('Layer Accepted')
+    #form = SQLFORM(db.gis_layers)
+    #if form.process().accepted:
+    #    response.flash = T('Layer Accepted')
+    form = ''
     form2 = SQLFORM.grid(db.gis_layers,
-            create=False,
+            create=True,
         )
     return dict(form=form, form2=form2)
 
