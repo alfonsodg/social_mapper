@@ -97,12 +97,13 @@ def areas():
 
 @auth.requires(restrictions)
 def places():
-    form = SQLFORM(db.places)
-    if form.process().accepted:
-        response.flash = T('Places Accepted')
+    #form = SQLFORM(db.places)
+    #if form.process().accepted:
+    #    response.flash = T('Places Accepted')
     form2 = SQLFORM.grid(db.places,
-            create=False,
+            create=True,
         )
+    form = ''
     return dict(form=form, form2=form2)
 
 

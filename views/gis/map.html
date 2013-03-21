@@ -25,10 +25,19 @@
         var sphericalMProjection = new OpenLayers.Projection("EPSG:900913");
         var utmProjection = new OpenLayers.Projection("EPSG:32718"); 
         var projsrc = new Proj4js.Proj("EPSG:900913"); 
-        var projdst = new Proj4js.Proj("EPSG:32718"); 
-        var lon = -75.88400,
-            lat = -8.0078125,
-            zoom = 8;
+        var projdst = new Proj4js.Proj("EPSG:32718");
+        var projwgs = new Proj4js.Proj("EPSG:4326");
+        {{if map_origin == 'sphericalm':}}
+            var lon = {{=map_lon}},
+                lat = {{=map_lat}},
+                zoom = {{=map_zoom}};
+        {{else:}}
+            var newcoord = new Proj4js.Point({{=map_lon}}, {{=map_lat}}); 
+            Proj4js.transform(projdst, projwgs, newcoord);
+            var lon = newcoord.x,
+                lat = newcoord.y,
+                zoom = {{=map_zoom}}
+        {{pass}}
         //var defaultMapCenter = new OpenLayers.LonLat(lon, lat).transform(wgs84Projection, utmProjection);
         //var defaultMapZoom = 8;
         var layer_data = new Array();

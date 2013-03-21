@@ -90,6 +90,7 @@ def format_data():
     data_val = {}
     project_name = False
     place_name = False
+    place_coords = False
     topic_mode = False
     topic_id = False
     if form.process().accepted:
@@ -101,6 +102,7 @@ def format_data():
             project_name = db.projects[project_id].name
         if place_id is not '':
             place_name = db.places[place_id].name
+            place_coords = db.places[place_id].coordinates
         if topic_id is not '':
             topic_mode = True
             topic_id = int(topic_id)
@@ -133,17 +135,18 @@ def format_data():
                     [row.groups.name, row.individuals.name, row.detail_data.choice])
     return dict(form=form, tree_base=tree_base, tree_data=tree_data,
         project_name=project_name, data_val=data_val,
-        place_name=place_name, topic_id=topic_id, topic_mode=topic_mode)
+        place_name=place_name, topic_id=topic_id, topic_mode=topic_mode, place_coords=place_coords)
 
 
 @auth.requires(restrictions)
 def design_data():
-#    db.detail_data.register_user.default = auth.user.id
-#    db.detail_data.register_user.writable = False
-#    db.detail_data.register_time.writable = False
+    db.detail_data.register_user.default = auth.user.id
+    #db.detail_data.register_user.writable = False
+    #db.detail_data.register_time.writable = False
     form = SQLFORM.factory(db.main_data,
         Field('process_file', 'upload', uploadfolder=UPLOAD_PATH),
         )
+    print form
     form.vars.register_user = auth.user.id
     if form.process().accepted:
         data={}
@@ -208,38 +211,42 @@ def excel_process(filedata, data):
         return T('Archivo sin registros procesables o con problemas.')
     main_id = db.main_data.update_or_insert(**data)
     count = 0
-    for line in data_excel:
-        if len(line) < 4:
-            continue
-        if line[0].find(':') >= 1:
-                study_group, individual = line[0].split(':')
-        else:
-                study_group = None
-                individual = None
-        topic_id = db.topics(db.topics.name==line[1]).id
-        activity_id = db.activities(db.activities.name==line[3]).id
-        element_id = db.topics((db.project_tree.topic==topic_id) & (db.project_tree.activity==activity_id)).id
-        group_id = None
-        individual_id = None
-        try:
-            answer = line[4]
-        except:
-            answer = ''
-        if study_group is not None:
-            group_id = db.groups.update_or_insert(**{'name':study_group})
-            if group_id is None:
-                group_id = db.groups(db.groups.name==study_group).id
-        if individual is not None:
-            individual_id = db.individuals.update_or_insert(**{'name':individual})
-            if individual_id is None:
-                individual_id = db.individuals(db.individuals.name==individual).id
-        if main_id is not None:
-            value_detail = {'reference':main_id,
-                    'element_tree':element_id, 'choice':answer,
-                    'study_group':group_id, 'individual':individual_id
-                }
-            status = db.detail_data.update_or_insert(**value_detail)
-            if status is not None:
-                count += 1
-    return T('Archivo analizado. Número de registros procesados: %s' %count)
+    try:
+        for line in data_excel:
+            if len(line) < 4:
+                continue
+            if line[0].find(':') >= 1:
+                    study_group, individual = line[0].split(':')
+            else:
+                    study_group = None
+                    individual = None
+            topic_id = db.topics(db.topics.name==line[1]).id
+            activity_id = db.activities(db.activities.name==line[3]).id
+            element_id = db.topics((db.project_tree.topic==topic_id) & (db.project_tree.activity==activity_id)).id
+            group_id = None
+            individual_id = None
+            try:
+                answer = line[4]
+            except:
+                answer = ''
+            if study_group is not None:
+                group_id = db.groups.update_or_insert(**{'name':study_group})
+                if group_id is None:
+                    group_id = db.groups(db.groups.name==study_group).id
+            if individual is not None:
+                individual_id = db.individuals.update_or_insert(**{'name':individual})
+                if individual_id is None:
+                    individual_id = db.individuals(db.individuals.name==individual).id
+            if main_id is not None:
+                value_detail = {'reference':main_id,
+                        'element_tree':element_id, 'choice':answer,
+                        'study_group':group_id, 'individual':individual_id
+                    }
+                status = db.detail_data.update_or_insert(**value_detail)
+                if status is not None:
+                    count += 1
+        return_message = T('Archivo analizado. Número de registros procesados: %s' %count)
+    except:
+        return_message = T('Error en el procesamiento del archivo. Revise los datos!')
+    return return_message
 
