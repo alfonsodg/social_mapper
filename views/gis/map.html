@@ -45,6 +45,10 @@
         var layer_data = new Array();
         var selector = new Array();
 
+        OpenLayers.Renderer.symbol.lightning = [0, 0, 4, 2, 6, 0, 10, 5, 6, 3, 4, 5, 0, 0];
+        OpenLayers.Renderer.symbol.rectangle = [0, 0, 4, 0, 4, 10, 0, 10, 0, 0];
+        OpenLayers.Renderer.symbol.church = [4, 0, 6, 0, 6, 4, 10, 4, 10, 6, 6, 6, 6, 14, 4, 14, 4, 6, 0, 6, 0, 4, 4, 4, 4, 0];
+
        function init(){
             var map = new OpenLayers.Map('map', {
                 units: 'm',
@@ -94,21 +98,25 @@
             {{if layer.rule_data is not None and layer.rule_data != '':}}
             {{aux_counter = 0}}
             {{for part in layer.rule_data.split('|'):}}
-            {{comp = part.split('=')}}
+            {{comp = part.strip().split('=')}}
                 rules[{{=aux_counter}}] =  new OpenLayers.Rule({
-                    title: "{{=comp[0]}}",
+                    title: "{{=comp[0].strip()}}",
                     {{if comp[1] is not None:}}
                     filter: new OpenLayers.Filter.Comparison({
-                        type: OpenLayers.Filter.Comparison.{{=comp[1]}},
-                        property: "{{=comp[2]}}",
-                        value: "{{=comp[3]}}"
+                        type: OpenLayers.Filter.Comparison.{{=comp[1].strip()}},
+                        property: "{{=comp[2].strip()}}",
+                        value: "{{=comp[3].strip()}}"
                     }),
                     {{pass}}
-                    symbolizer: {{=XML(comp[4], sanitize=False)}}
+                    symbolizer: {{=XML(comp[4].strip(), sanitize=False)}}
                 }),
             {{aux_counter += 1}}
             {{pass}}
-                rules[{{=aux_counter}}] = new OpenLayers.Rule({elseFilter: true});
+                rules[{{=aux_counter}}] = new OpenLayers.Rule({elseFilter: true,
+                symbolizer : {
+                    Polygon: {fillcolor: "#00BB00"}
+                    }
+                });
             {{pass}}
 
             var layer_style = new OpenLayers.Style({

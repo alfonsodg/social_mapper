@@ -1,0 +1,41 @@
+Cuevas=EQUAL_TO=ATRACTIVO=Cueva={graphicName: "star",
+pointRadius: 9,
+fillColor: "#0033CC",
+strokeColor: "#AAAA00",
+strokeWidth:1}|
+Collpa=EQUAL_TO=ATRACTIVO=Collpa={externalGraphic:"../static/images/twitter.png"}|
+Catarata=EQUAL_TO=ATRACTIVO=Catarata={graphicName: "cross",
+pointRadius: 9,
+fillColor: "#0033CC",
+strokeColor: "#AAAA00",
+strokeWidth:1}|
+Aguas Termales=EQUAL_TO=ATRACTIVO=Aguas termales={graphicName: "square",
+pointRadius: 9,
+fillColor: "#0033CC",
+strokeColor: "#AAAA00",
+strokeWidth:1}|
+Mirador=EQUAL_TO=ATRACTIVO=Mirador={graphicName: "triangle",
+pointRadius: 9,
+fillColor: "#0033CC",
+strokeColor: "#AAAA00",
+strokeWidth:1}|
+Laguna=EQUAL_TO=ATRACTIVO=Laguna={graphicName: "cross",
+pointRadius: 9,
+fillColor: "#0033CC",
+strokeColor: "#AAAA00",
+strokeWidth:1}|
+Alojamiento=EQUAL_TO=ATRACTIVO=Alojamiento={graphicName: "x",
+pointRadius: 9,
+fillColor: "#0033CC",
+strokeColor: "#AAAA00",
+strokeWidth:1}|
+Cascada=EQUAL_TO=ATRACTIVO=Cascada={graphicName: "lightning",
+pointRadius: 9,
+fillColor: "#0033CC",
+strokeColor: "#AAAA00",
+strokeWidth:1}|
+Sitio Arqueológico=EQUAL_TO=ATRACTIVO=Sitio arqueológico={graphicName: "church",
+pointRadius: 9,
+fillColor: "#0033CC",
+strokeColor: "#AAAA00",
+strokeWidth:1}

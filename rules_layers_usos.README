@@ -1,0 +1,25 @@
+Maderable=EQUAL_TO=USO=Maderable={
+pointRadius: 9,
+fillColor: "#00DD00",
+strokeColor: "#000000",
+strokeWidth:1}|
+Caza=EQUAL_TO=USO=Caza={
+pointRadius: 9,
+fillColor: "#AA0000",
+strokeColor: "#00DD00",
+strokeWidth:1}|
+Pesca=EQUAL_TO=USO=Pesca={
+pointRadius: 9,
+fillColor: "#0000BB",
+strokeColor: "#00DD00",
+strokeWidth:1}|
+No Maderable=EQUAL_TO=USO=No maderable={
+pointRadius: 9,
+fillColor: "#00AA99",
+strokeColor: "#00DD00",
+strokeWidth:1}|
+Plantación Forestal=EQUAL_TO=USO=Plantación forestal={
+pointRadius: 9,
+fillColor: "#AA0099",
+strokeColor: "#00FF00",
+strokeWidth:1}

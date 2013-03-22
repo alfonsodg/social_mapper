@@ -41,12 +41,13 @@ def answer_types():
 
 @auth.requires(restrictions)
 def gis_layers():
-    #form = SQLFORM(db.gis_layers)
-    #if form.process().accepted:
-    #    response.flash = T('Layer Accepted')
+    max_val = db.gis_layers.priority.max()
+    result = db().select(max_val).first()[max_val]
+    db.gis_layers.priority.default = result + 5
     form = ''
     form2 = SQLFORM.grid(db.gis_layers,
             create=True,
+            paginate=25
         )
     return dict(form=form, form2=form2)
 

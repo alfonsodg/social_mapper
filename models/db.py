@@ -133,8 +133,8 @@ db.define_table('gis_layers',
     #Field('color_line', label=T('Color Line'), comment=T('Color (#00FF00)'), default="#000000"),
     Field('style_data', 'text',label=T('Style Data'), comment=T('Presentación de Datos'), default=STYLE),
     Field('rule_data', 'text',label=T('Rule Data'), comment=T('Reglas de Datos=titulo,condición,propiedad,valor,estilo|'), default=None),
-    Field('popup', 'text',label=T('Popup Design'), comment=T('Diseño de Popup'), default=POPUP),
-    Field('priority', 'integer', label=T('Order'), comment=T('Posicion'), default=1),
+    Field('popup', 'text',label=T('Popup Design'), comment=T('Diseño de Popup')),
+    Field('priority', 'integer', label=T('Order'), comment=T('Posicion')),
     Field('status', label=T('Status'), comment=T('Estado'), default=1),
     format='%(name)s')
 
