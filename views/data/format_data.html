@@ -19,7 +19,7 @@
 {{pass}}
 {{if place_name:}}
 {{ncoord = place_coords.split(',')}}
-{{f_url = 'map?zoom=14&lon=%s&lat=%s&origin=utm' % (ncoord[0], ncoord[1])}}
+{{f_url = 'map?zoom=14&lon=%s&lat=%s&origin=utm' % (ncoord[0].strip(), ncoord[1].strip()}}
 <h2>
 {{=A(place_name, _href=URL('gis', f_url), _target="_blank")}}
 </h2></br>

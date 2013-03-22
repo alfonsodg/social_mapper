@@ -118,21 +118,19 @@
                     }
                 });
             {{pass}}
-
             var layer_style = new OpenLayers.Style({
-                    //graphicWidth: 21,
-                    //graphicHeight: 25,
-                    //graphicYOffset: -28,
                     {{=XML(layer.style_data, sanitize=False)}}
                 }, {
                     rules: rules
             });
-
-            //console.log(rules[{{=counter}}]),
             layer_data[{{=counter}}] = new OpenLayers.Layer.Vector("{{=layer.name}}", {
                 projection: utmProjection,
                 displayProjection : wgs84Projection,
+                {{if layer.name == 'Centros Poblados' and map_origin == 'utm':}}
+                visibility: true,
+                {{else:}}
                 visibility: false,
+                {{pass}}
                 strategies: [new OpenLayers.Strategy.Fixed()],
                 protocol: new OpenLayers.Protocol.HTTP({
                     url: "../static/data/{{=layer.file_data}}",
@@ -149,10 +147,6 @@
                         {{else:}}
                         var content = "";
                         {{pass}}
-                        //"<div><strong>Nombre:</strong> <br/>" + feature.attributes.NOMBRE +
-                        //    "<br/><strong>Categoria:</strong> <br/>" + feature.attributes.CATEGORIA +
-                        //    "<br/><strong>Coordenadas:</strong> <br/>" + utmcoord +"</div>"
-                        //;
                         var popup = new OpenLayers.Popup.FramedCloud("popup",
                             feature.geometry.getBounds().getCenterLonLat(),
                             null,
