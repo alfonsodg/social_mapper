@@ -44,6 +44,7 @@ inputdata = [
     (T('Projects'), False, False,[
         (T('Place Definition'), False, URL('data', 'main_data')),
         (T('Detailed Information'), False, URL('data', 'detail_data')),
+        ('----------', False, False),
         #(T('Content Data'), False, URL('data', 'content_data')),
         #(T('Designed structure'), False, URL('data', 'format_data')),
         (T('Masive input'), False, URL('data', 'design_data')),
