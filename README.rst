@@ -32,12 +32,20 @@ Features
 - A lot more....
 
 
+Considerations
+**************
+
+- Social Mapper manages the information, however doesn't offer support for advanced reporting... We use *Pentaho* for basic and advanced reporting and also analytics.  Very soon we share some examples about how to do it.
+
+- The social investigation is complex because lacks of metrics (applied maths) to compare the results: you have to score the answers! Is the only way, but you must analyze how to do it!
+
+
 Requirements
 ************
 
 - Web2py (latest version)
 
-- Postgresql (v9 or upper)
+- Postgresql (v9 or better)
 
 - Openlayers (included)
 
