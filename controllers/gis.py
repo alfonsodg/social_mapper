@@ -1,29 +1,40 @@
 # -*- coding: utf-8 -*-
+
+if False:
+    #import Field, T, settings, IS_IN_DB, DAL, SQLFORM
+    import Session, Request, Response, auth, db, service
+    session = Session()
+    request = Request()
+    response = Response()
+
+
 ### required - do no delete
-
-
 def user():
+    """
+    User management
+    """
     return dict(form=auth())
 
 
 def download():
+    """
+    Download Procedures
+    """
     return response.download(request, db)
 
 
 def call():
+    """
+    Expose service
+    """
     return service()
 ### end requires
 
 
-def index():
-    return dict()
-
-
-def error():
-    return dict()
-
-
 def map():
+    """
+    Exposes the information for the map
+    """
     map_lon = request.vars.lon
     map_lat = request.vars.lat
     map_zoom = request.vars.zoom

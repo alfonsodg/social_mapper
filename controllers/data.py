@@ -1,5 +1,12 @@
 # -*- coding: utf-8 -*-
 
+if False:
+    import Field, T, IS_IN_DB, SQLFORM
+    import Session, Request, Response, auth, db, service
+    session = Session()
+    request = Request()
+    response = Response()
+
 import xlrd
 
 UPLOAD_PATH = 'applications/social_mapper/uploads'
@@ -14,20 +21,32 @@ restrictions = auth.has_membership('root') or \
 
 ### required - do no delete
 def user():
+    """
+    User management
+    """
     return dict(form=auth())
 
 
 def download():
+    """
+    Download Procedures
+    """
     return response.download(request, db)
 
 
 def call():
+    """
+    Expose service
+    """
     return service()
 ### end requires
 
 
 @auth.requires(restrictions)
 def main_data():
+    """
+    Manage Project Main data
+    """
     db.main_data.register_user.default = auth.user.id
     db.main_data.register_user.writable = False
     db.main_data.register_time.writable = False
@@ -42,6 +61,9 @@ def main_data():
 
 @auth.requires(restrictions)
 def detail_data():
+    """
+    Additional information to the Main data
+    """
     db.detail_data.register_user.default = auth.user.id
     db.detail_data.register_user.writable = False
     db.detail_data.register_time.writable = False
@@ -56,6 +78,9 @@ def detail_data():
 
 @auth.requires(restrictions)
 def content_data():
+    """
+    Attachment input
+    """
     form = SQLFORM(db.contents)
     if form.process().accepted:
         response.flash = T('Contents Accepted')
@@ -66,6 +91,9 @@ def content_data():
 
 
 def format_data():
+    """
+    General Report view / form
+    """
     # data_places = db(db.places.id==request.vars.project_id).select(
     # db.places.id, db.places.name)
     # places = [(str(elem.id), elem.name) for elem in data_places]
@@ -169,6 +197,9 @@ def format_data():
 
 @auth.requires(restrictions)
 def design_data():
+    """
+    Massive input of project through one form and excel file
+    """
     db.detail_data.register_user.default = auth.user.id
     # db.detail_data.register_user.writable = False
     # db.detail_data.register_time.writable = False
@@ -233,6 +264,9 @@ def book_tree(book):
 
 
 def excel_process(filedata, data):
+    """
+    Read excel file, gets the books
+    """
     filename = '%s/%s' % (UPLOAD_PATH, filedata)
     book = xlrd.open_workbook(filename)
     data_excel = book_tree(book)
@@ -246,10 +280,10 @@ def excel_process(filedata, data):
             if len(line) < 4:
                 continue
             if line[0].find(':') >= 1:
-                    study_group, individual = line[0].split(':')
+                study_group, individual = line[0].split(':')
             else:
-                    study_group = None
-                    individual = None
+                study_group = None
+                individual = None
             topic_id = db.topics(db.topics.name == line[1]).id
             activity_id = db.activities(db.activities.name == line[3]).id
             element_id = db.topics((db.project_tree.topic == topic_id) & (

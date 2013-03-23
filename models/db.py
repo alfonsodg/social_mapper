@@ -1,5 +1,13 @@
 # -*- coding: utf-8 -*-
 
+if False:
+    import Field, T, settings, Session, Request, Response, IS_IN_DB, DAL
+    import SQLFORM
+    session = Session()
+    request = Request()
+    response = Response()
+
+
 import socket
 hostname = socket.gethostname()
 
@@ -49,7 +57,7 @@ response.generic_patterns = ['*'] if request.is_local else []
 #########################################################################
 
 import datetime
-from gluon.tools import Auth, Crud, Service, PluginManager, prettydate
+from gluon.tools import Auth, Crud, Service, PluginManager#, prettydate
 auth = Auth(db)
 crud, service, plugins = Crud(db), Service(), PluginManager()
 now = datetime.datetime.now()
@@ -332,6 +340,10 @@ db.define_table('detail_data',
 
 
 def project_tree_value(id_val, mode=0):
+    """
+    Project Tree Representation.
+    Joins the topic and the activity.
+    """
     if mode == 0:
         val_topic = db.project_tree(id_val).topic
         val_activity = db.project_tree(id_val).activity

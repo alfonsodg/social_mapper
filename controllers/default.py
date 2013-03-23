@@ -1,16 +1,24 @@
 # -*- coding: utf-8 -*-
+
 ### required - do no delete
-
-
 def user():
+    """
+    User management
+    """
     return dict(form=auth())
 
 
 def download():
+    """
+    Download Procedures
+    """
     return response.download(request, db)
 
 
 def call():
+    """
+    Expose service
+    """
     return service()
 ### end requires
 

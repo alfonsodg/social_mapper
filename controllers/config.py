@@ -1,5 +1,12 @@
 # -*- coding: utf-8 -*-
 
+if False:
+    import Field, T, settings, IS_IN_DB, DAL, SQLFORM
+    import Session, Request, Response, auth, db, service, redirect, URL
+    session = Session()
+    request = Request()
+    response = Response()
+
 import xlrd
 
 UPLOAD_PATH = 'applications/social_mapper/uploads'
@@ -11,23 +18,33 @@ restrictions = auth.has_membership('root') or \
     auth.has_membership('configuracion')
 
 ### required - do no delete
-
-
 def user():
+    """
+    User management
+    """
     return dict(form=auth())
 
 
 def download():
+    """
+    Download Procedures
+    """
     return response.download(request, db)
 
 
 def call():
+    """
+    Expose service
+    """
     return service()
 ### end requires
 
 
 @auth.requires(restrictions)
 def tags():
+    """
+    Manage tags
+    """
     form = SQLFORM(db.tag)
     if form.process().accepted:
         response.flash = T('Tag Accepted')
@@ -39,6 +56,9 @@ def tags():
 
 @auth.requires(restrictions)
 def answer_types():
+    """
+    Manage answer types
+    """
     form = SQLFORM(db.answer_types)
     if form.process().accepted:
         response.flash = T('Answer Type Accepted')
@@ -50,6 +70,9 @@ def answer_types():
 
 @auth.requires(restrictions)
 def gis_layers():
+    """
+    Add GIS Layers
+    """
     max_val = db.gis_layers.priority.max()
     result = db().select(max_val).first()[max_val]
     db.gis_layers.priority.default = result + 5
@@ -63,6 +86,9 @@ def gis_layers():
 
 @auth.requires(restrictions)
 def data_types():
+    """
+    Add Attachment Type
+    """
     form = SQLFORM(db.data_types)
     if form.process().accepted:
         response.flash = T('Data Type Accepted')
@@ -74,6 +100,9 @@ def data_types():
 
 @auth.requires(restrictions)
 def periods():
+    """
+    Period of Time
+    """
     form = SQLFORM(db.periods)
     if form.process().accepted:
         response.flash = T('Period Accepted')
@@ -85,6 +114,9 @@ def periods():
 
 @auth.requires(restrictions)
 def environments():
+    """
+    Kind of environment
+    """
     form = SQLFORM(db.environments)
     if form.process().accepted:
         response.flash = T('Environment Accepted')
@@ -96,6 +128,10 @@ def environments():
 
 @auth.requires(restrictions)
 def areas():
+    """
+    Name of Area, the areas can be referenced for another area, building a
+    tree
+    """
     form = SQLFORM(db.areas)
     if form.process().accepted:
         response.flash = T('Areas Accepted')
@@ -107,9 +143,9 @@ def areas():
 
 @auth.requires(restrictions)
 def places():
-    # form = SQLFORM(db.places)
-    # if form.process().accepted:
-    #    response.flash = T('Places Accepted')
+    """
+    Name of a place
+    """
     form2 = SQLFORM.grid(db.places,
                          create=True,
                          )
@@ -119,6 +155,9 @@ def places():
 
 @auth.requires(restrictions)
 def groups():
+    """
+    Group of work, study or analysis
+    """
     form = SQLFORM(db.groups)
     if form.process().accepted:
         response.flash = T('Groups Accepted')
@@ -130,6 +169,9 @@ def groups():
 
 @auth.requires(restrictions)
 def individuals():
+    """
+    People to study
+    """
     form = SQLFORM(db.individuals)
     if form.process().accepted:
         response.flash = T('People Accepted')
@@ -141,6 +183,9 @@ def individuals():
 
 @auth.requires(restrictions)
 def topics():
+    """
+    Topic of the Project (Title which groups activities)
+    """
     form = SQLFORM(db.topics)
     if form.process().accepted:
         response.flash = T('Activities Accepted')
@@ -152,6 +197,9 @@ def topics():
 
 @auth.requires(restrictions)
 def activities():
+    """
+    Activities or questions
+    """
     form = SQLFORM(db.activities)
     if form.process().accepted:
         response.flash = T('Activities Accepted')
@@ -163,6 +211,9 @@ def activities():
 
 @auth.requires(restrictions)
 def choices():
+    """
+    Choices
+    """
     form = SQLFORM(db.choices)
     if form.process().accepted:
         response.flash = T('Choices Accepted')
@@ -174,6 +225,9 @@ def choices():
 
 @auth.requires(restrictions)
 def projects():
+    """
+    Project: create or edit
+    """
     form = SQLFORM(db.projects)
     if form.process().accepted:
         response.flash = T('Projects Accepted')
@@ -185,6 +239,9 @@ def projects():
 
 @auth.requires(restrictions)
 def project_tree():
+    """
+    Relation between topic and activity
+    """
     form = SQLFORM.factory(
         Field('project_name', label=T('Project Name'),
               comment=T('Ingrese el nombre del proyecto'),
@@ -245,6 +302,9 @@ def book_tree(book):
 
 
 def excel_process(filedata, projectname):
+    """
+    Read excel file and gets data
+    """
     filename = '%s/%s' % (UPLOAD_PATH, filedata)
     book = xlrd.open_workbook(filename)
     data = book_tree(book)
