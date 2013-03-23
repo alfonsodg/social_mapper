@@ -14,11 +14,13 @@ hostname = socket.gethostname()
 
 if not request.env.web2py_runtime_gae:
     ## if NOT running on Google App Engine use SQLite or other DB
-    #db = DAL('sqlite://storage.sqlite',pool_size=1,check_reserved=['all'])
+    # db = DAL('sqlite://storage.sqlite',pool_size=1,check_reserved=['all'])
     if hostname == 'endeavour':
-        db = DAL('postgres://alfonsodg:alfonsodg@localhost/cima',pool_size=1,check_reserved=['all'])#, migrate_enabled=False)
+        db = DAL('postgres://alfonsodg:alfonsodg@localhost/cima',
+                 pool_size=1, check_reserved=['all'])
     else:
-        db = DAL('postgres://cima:cima@localhost/cima',pool_size=1,check_reserved=['all'])
+        db = DAL('postgres://cima:cima@localhost/cima',
+                 pool_size=1, check_reserved=['all'])
 else:
     ## connect to Google BigTable (optional 'google:datastore://namespace')
     db = DAL('google:datastore')
@@ -66,7 +68,7 @@ auth.settings.registration_requires_verification = False
 auth.settings.registration_requires_approval = False
 auth.settings.reset_password_requires_verification = True
 
-#auth.settings.actions_disabled.append('register')
+# auth.settings.actions_disabled.append('register')
 
 ## if you need to use OpenID, Facebook, MySpace, Twitter, Linkedin, etc.
 ## register with janrain.com, write your domain:api_key in private/janrain.key
@@ -111,181 +113,222 @@ POPUP = '''"<div><strong>Nombre:</strong> <br/>" + feature.attributes.NOMBRE +
 "<br/><strong>Categoria:</strong> <br/>" + feature.attributes.CATEGORIA +
 "<br/><strong>Coordenadas:</strong> <br/>" + utmcoord +"</div>"'''
 
+
 db.define_table('tag',
-    Field('name', label=T('Name'), comment=T('Denominación del TAG')),
-    format='%(name)s')
+                Field('name', label=T('Name'), comment=T(
+                      'Denominación del TAG')),
+                format='%(name)s'
+                )
 
 
 db.define_table('answer_types',
-    Field('name', label=T('Name'), comment=T('Tipo de respuesta')),
-    format='%(name)s')
+                Field('name', label=T('Name'),
+                      comment=T('Tipo de respuesta')),
+                format='%(name)s')
 
 
 db.define_table('data_types',
-    Field('name', label=T('Name'), comment=T('Tipo de dato')),
-    format='%(name)s')
+                Field('name', label=T('Name'),
+                      comment=T('Tipo de dato')),
+                format='%(name)s')
 
 
 db.define_table('gis_layers',
-    Field('name', label=T('Name'), comment=T('Nombre de la capa')),
-    Field('file_data', label=T('File Data'), comment=T('Archivo de datos')),
-    #Field('color_fill', label=T('Color Fill'), comment=T('Color (#00FF00)'), default="#0000AA"),
-    #Field('color_line', label=T('Color Line'), comment=T('Color (#00FF00)'), default="#000000"),
-    Field('style_data', 'text',label=T('Style Data'), comment=T('Presentación de Datos'), default=STYLE),
-    Field('rule_data', 'text',label=T('Rule Data'), comment=T('Reglas de Datos=titulo,condición,propiedad,valor,estilo|'), default=None),
-    Field('popup', 'text',label=T('Popup Design'), comment=T('Diseño de Popup')),
-    Field('priority', 'integer', label=T('Order'), comment=T('Posicion')),
-    Field('status', label=T('Status'), comment=T('Estado'), default=1),
-    format='%(name)s')
+                Field('name', label=T('Name'),
+                      comment=T('Nombre de la capa')),
+                Field('file_data', label=T('File Data'),
+                      comment=T('Archivo de datos')),
+                Field('style_data', 'text', label=T(
+                      'Style Data'), comment=T('Presentación de Datos'),
+                      default=STYLE),
+                Field('rule_data', 'text', label=T('Rule Data'),
+                      comment=T('Reglas de Datos'),
+                      default=None),
+                Field('popup', 'text', label=T('Popup Design'), comment=T(
+                      'Diseño de Popup')),
+                Field('priority', 'integer', label=T(
+                      'Order'), comment=T('Posicion')),
+                Field('status', label=T('Status'), comment=T(
+                      'Estado'), default=1),
+                format='%(name)s')
 
 
 db.define_table('contents',
-    Field('name', 'string', label=T('Name'), comment=T('Denominacion del adjunto')),
-    Field('description', 'text', label=T('Description')),
-    Field('data_type', db.data_types, label=T('Data Type'), comment=T('Tipo de dato contenido')),
-    #Field('table_reference', 'string', label=T('Reference Table')),
-    #Field('id_reference', 'integer', label=T('Reference ID')),
-    Field('file_content', 'upload', label=T('Content'), comment=T('Archivo origen')),
-    format = '%(name)s'
-)
+                Field('name', 'string', label=T('Name'), comment=T(
+                      'Denominacion del adjunto')),
+                Field('description', 'text', label=T('Description')),
+                Field('data_type', db.data_types, label=T('Data Type'),
+                      comment=T('Tipo de dato contenido')),
+                Field('file_content', 'upload', label=T('Content'),
+                      comment=T('Archivo origen')),
+                format='%(name)s'
+                )
 
 
 db.define_table('periods',
-    Field('name', 'string', label=T('Name'), notnull=True),# comment=T('Denominacion del periodo')),
-    Field('description', 'text', label=T('Description')),# comment=T('Descripcion del periodo')),
-    Field('start_date', 'date', label=T('Start Date'), comment=T('Fecha de inicio del periodo')),
-    Field('end_date', 'date', label=T('End Date'), comment=T('Fecha de culminacion del periodo')),
-    format = '%(name)s'
-)
+                Field('name', 'string', label=T(
+                      'Name'), notnull=True),
+                Field('description', 'text', label=T('Description')),
+                Field('start_date', 'date', label=T('Start Date'), comment=T(
+                      'Fecha de inicio del periodo')),
+                Field('end_date', 'date', label=T('End Date'), comment=T(
+                      'Fecha de culminacion del periodo')),
+                format='%(name)s'
+                )
 
 
 db.define_table('environments',
-    Field('name', 'string', label=T('Name'), notnull=True),# comment=T('Denominacion del medio ambiente')),
-    Field('description', 'text', label=T('Description')),# comment=T('Descripcion del medio ambiente')),
-    #Field('dependence', db.environments, label=T('Dependence')),
-    Field('priority', 'integer', label=T('Priority'), comment=T('Orden de visualizacion')),
-    format = '%(name)s'
-)
+                Field('name', 'string', label=T('Name'), notnull=True),
+                Field('description', 'text', label=T(
+                      'Description')),
+                Field('priority', 'integer', label=T('Priority'),
+                      comment=T('Orden de visualizacion')),
+                format='%(name)s'
+                )
 
 
 db.define_table('areas',
-    Field('name', 'string', label=T('Name'), comment=T('Denominacion del area/zona'), notnull=True),
-    Field('description', 'text', label=T('Description')),
-    #Field('coordinates', 'text', label=T('Coordinates'), comment=T('Coordenadas(Puntos)')),
-    Field('environment', 'integer', label=T('Environment'), comment=T('Tipo de medio ambiente (autocompletado)')),
-    #Field('environment', db.environments, widget=SQLFORM.widgets.autocomplete, label=T('Environment')),
-    Field('dependence', 'integer', label=T('Dependence'), comment=T('Dependencia con otra areas (autocompletado)')),
-    #Field('dependence', 'integer', notnull=False, widget=SQLFORM.widgets.autocomplete, label=T('Dependence')),
-    Field('priority', 'integer', label=T('Priority'), comment=T('Orden de visualizacion')),
-    format = '%(name)s'
-)
+                Field('name', 'string', label=T(
+                      'Name'), comment=T('Denominacion del area/zona'),
+                      notnull=True),
+                Field('description', 'text', label=T('Description')),
+                Field('environment', 'integer', label=T(
+                      'Environment'), comment=T('Tipo de medio ambiente')),
+                Field('dependence', 'integer', label=T('Dependence'),
+                      comment=T(
+                          'Dependencia con otra areas (autocompletado)')),
+                Field('priority', 'integer', label=T('Priority'), comment=T(
+                    'Orden de visualizacion')),
+                format='%(name)s'
+                )
 
 
 db.define_table('groups',
-    Field('name', 'string', label=T('Name'), notnull=True),
-    Field('description', 'text', label=T('Description')),
-    #Field('dependence', db.environments, label=T('Dependence')),
-    Field('priority', 'integer', label=T('Priority'), comment=T('Orden de visualizacion')),
-    format = '%(name)s'
-)
+                Field('name', 'string', label=T('Name'), notnull=True),
+                Field('description', 'text', label=T('Description')),
+                Field('priority', 'integer', label=T('Priority'), comment=T(
+                      'Orden de visualizacion')),
+                format='%(name)s'
+                )
 
 
 db.define_table('individuals',
-    Field('name', 'string', label=T('Name'), notnull=True),
-    Field('description', 'text', label=T('Description')),
-    #Field('dependence', db.environments, label=T('Dependence')),
-    Field('priority', 'integer', label=T('Priority'), comment=T('Orden de visualizacion')),
-    format = '%(name)s'
-)
+                Field('name', 'string', label=T('Name'), notnull=True),
+                Field('description', 'text', label=T('Description')),
+                Field('priority', 'integer', label=T('Priority'), comment=T(
+                      'Orden de visualizacion')),
+                format='%(name)s'
+                )
 
 
 db.define_table('places',
-    Field('name', 'string', label=T('Name'), comment=T('Denominacion del lugar/pueblo/centro poblado'), notnull=True),
-    Field('description', 'text', label=T('Description')),
-    Field('coordinates', 'text', label=T('Coordinates'), comment=T('Coordenadas(Puntos) del lugar de estudio')),
-    Field('area', 'integer', label=T('Area'), comment=T('Area/Zona de ubicacion')),
-    Field('priority', 'integer', label=T('Priority'), comment=T('Orden de visualizacion')),
-    format = '%(name)s'
-)
+                Field('name', 'string', label=T('Name'), comment=T(
+                      'Denominacion del lugar/pueblo/centro poblado'),
+                      notnull=True),
+                Field('description', 'text', label=T('Description')),
+                Field('coordinates', 'text', label=T('Coordinates'), comment=T(
+                      'Coordenadas(Puntos) del lugar de estudio')),
+                Field('area', 'integer', label=T('Area'), comment=T(
+                      'Area/Zona de ubicacion')),
+                Field('priority', 'integer', label=T('Priority'), comment=T(
+                      'Orden de visualizacion')),
+                format='%(name)s'
+                )
 
 
 db.define_table('topics',
-    Field('name', 'string', label=T('Name'), comment=T('Denominacion del Topico'), notnull=True),
-    Field('description', 'text', label=T('Description')),
-    #Field('coordinates', 'text', label=T('Coordinates')),
-    Field('dependence', 'integer', label=T('Dependence') , comment=T('Topico de nivel superior')),
-    Field('priority', 'integer', label=T('Priority'), comment=T('Orden de visualizacion')),
-    format = '%(name)s'
-)
+                Field('name', 'string', label=T(
+                      'Name'), comment=T('Denominacion del Topico'),
+                      notnull=True),
+                Field('description', 'text', label=T('Description')),
+                Field('dependence', 'integer', label=T('Dependence'),
+                      comment=T('Topico de nivel superior')),
+                Field('priority', 'integer', label=T('Priority'), comment=T(
+                      'Orden de visualizacion')),
+                format='%(name)s'
+                )
 
 
 db.define_table('activities',
-    Field('name', 'string', label=T('Question'), comment=T('Pregunta a desarrollar'), notnull=True),
-    Field('description', 'text', label=T('Description')),
-    Field('kind', db.answer_types, label=T('Type'), comment=T('Tipo de dato')),
-    Field('option_data', 'text', label=T('Options'), comment=T('Opciones, separadas por barra en orden deseado')),
-    Field('score_data', 'string', label=T('Scores'), comment=T('Puntaje, separados por barra en orden según opción')),
-    #Field('topic', db.topics, label=T('Topic')),
-    Field('tags', 'list:reference tag', label=T('Tags'), comment=T('Tags / Palabras clave')),
-    Field('priority', 'integer', label=T('Priority'), comment=T('Orden de visualizacion')),
-    format = '%(id)s-%(name)s'
-)
-
-
-#db.define_table('choices',
-    #Field('name', 'string', label=T('Name'), comment=T('Denominacion de la opción'), notnull=True),
-    #Field('description', 'text', label=T('Description')),
-    ##Field('activity', db.activities, label=T('Activity')),
-    #Field('kind', db.answer_types, label=T('Type'), comment=T('Tipo de dato')),
-    #Field('option_data', 'text', label=T('Options'), comment=T('Opciones, separadas por barra en orden deseado')),
-    #Field('score_data', 'string', label=T('Scores'), comment=T('Puntaje, separados por barra en orden según opción')),
-    ##Field('priority', 'integer', label=T('Priority'), comment=T('Orden de visualizacion')),
-    #format = '%(name)s'
-#)
+                Field('name', 'string', label=T(
+                      'Question'), comment=T('Pregunta a desarrollar'),
+                      notnull=True),
+                Field('description', 'text', label=T('Description')),
+                Field('kind', db.answer_types, label=T(
+                      'Type'), comment=T('Tipo de dato')),
+                Field('option_data', 'text', label=T('Options'), comment=T(
+                      'Opciones, separadas por barra en orden deseado')),
+                Field('score_data', 'string', label=T('Scores'), comment=T(
+                      'Puntaje, separados por barra en orden según opción')),
+                Field('tags', 'list:reference tag', label=T('Tags'), comment=T(
+                      'Tags / Palabras clave')),
+                Field('priority', 'integer', label=T('Priority'), comment=T(
+                      'Orden de visualizacion')),
+                format='%(id)s-%(name)s'
+                )
 
 
 db.define_table('projects',
-    Field('name', 'string', label=T('Name'), comment=T('Denominacion del proyecto'), notnull=True),
-    Field('description', 'text', label=T('Description')),
-    format = '%(name)s'
-)
+                Field('name', 'string', label=T(
+                      'Name'), comment=T('Denominacion del proyecto'),
+                      notnull=True),
+                Field('description', 'text', label=T('Description')),
+                format='%(name)s'
+                )
 
 
 db.define_table('project_tree',
-    Field('project', db.projects, label=T('Project'), comment=T('Seleccione el proyecto')),
-    Field('topic', db.topics, label=T('Topic'), comment=T('Seleccione el topico')),
-    Field('activity', db.activities, label=T('Activity'), comment=T('Seleccione la actividad')),
-    #Field('choice', db.choices, label=T('Choice'), comment=T('Seleccione la(s) opcion(es)')),
-    Field('priority', 'integer', label=T('Priority'), comment=T('Orden de visualizacion')),
-    format = lambda value: project_tree_value(value, mode=1)
-    #format = '%(topic)s - %(activity)s'
-)
+                Field('project', db.projects, label=T('Project'), comment=T(
+                      'Seleccione el proyecto')),
+                Field('topic', db.topics, label=T('Topic'), comment=T(
+                      'Seleccione el topico')),
+                Field('activity', db.activities, label=T('Activity'),
+                      comment=T('Seleccione la actividad')),
+                Field('priority', 'integer', label=T('Priority'),
+                      comment=T('Orden de visualizacion')),
+                format=lambda value: project_tree_value(value, mode=1)
+                )
 
 
 db.define_table('main_data',
-    Field('register_time', 'datetime', default=now, label=T('Time')),
-    Field('register_user', db.auth_user, label=T('Input User')),
-    Field('name', 'string', label=T('Name'), comment=T('Denominación del Estudio'), notnull=True),
-    Field('description', 'text', label=T('Description')),
-    Field('project', db.projects, label=T('Projects'), comment=T('Proyecto desarrollado')),
-    Field('period', db.periods, label=T('Period'), comment=T('Periodo del estudio')),
-    Field('place', db.places, label=T('Place'), comment=T('Lugar de estudio')),
-    format = '%(name)s'
-)
+                Field(
+                'register_time', 'datetime', default=now, label=T('Time')),
+                Field('register_user', db.auth_user, label=T('Input User')),
+                Field('name', 'string', label=T(
+                      'Name'), comment=T('Denominación del Estudio'),
+                      notnull=True),
+                Field('description', 'text', label=T('Description')),
+                Field('project', db.projects, label=T('Projects'), comment=T(
+                      'Proyecto desarrollado')),
+                Field('period', db.periods, label=T('Period'), comment=T(
+                      'Periodo del estudio')),
+                Field('place', db.places, label=T('Place'),
+                      comment=T('Lugar de estudio')),
+                format='%(name)s'
+                )
 
 db.define_table('detail_data',
-    Field('register_time', 'datetime', default=now, label=T('Time')),
-    Field('register_user', db.auth_user, label=T('Input User')),
-    Field('reference', db.main_data, label=T('Reference'), comment=T('Lugar de estudio')),
-    Field('study_group', 'integer', label=T('Group'), comment=T('Grupo objeto de estudio')),
-    Field('individual', 'integer', label=T('Person'), comment=T('Sujeto de estudio')),
-    Field('element_tree', db.project_tree, label=T('Activity'), comment=T('Actividad seleccionada')),
-    Field('choice', 'text', label=T('Answer'), comment=T('Desarrollo de la actividad (Respuesta)'), notnull=True),
-    Field('comments', 'text', label=T('Comment'), comment=T('Comentarios')),
-    Field('value_data', 'double', label=T('Score'), comment=T('Valor Asignado')),
-    Field('content_data', 'integer', label=T('Content'), comment=T('Archivo adjunto')),
-    format = '%(id)s'
-)
+                Field(
+                'register_time', 'datetime', default=now, label=T('Time')),
+                Field('register_user', db.auth_user, label=T('Input User')),
+                Field('reference', db.main_data, label=T('Reference'),
+                      comment=T('Lugar de estudio')),
+                Field('study_group', 'integer', label=T('Group'), comment=T(
+                      'Grupo objeto de estudio')),
+                Field('individual', 'integer', label=T('Person'), comment=T(
+                      'Sujeto de estudio')),
+                Field('element_tree', db.project_tree, label=T('Activity'),
+                      comment=T('Actividad seleccionada')),
+                Field('choice', 'text', label=T('Answer'), comment=T(
+                      'Desarrollo de la actividad (Respuesta)'), notnull=True),
+                Field('comments', 'text', label=T('Comment'),
+                      comment=T('Comentarios')),
+                Field('value_data', 'double', label=T('Score'), comment=T(
+                      'Valor Asignado')),
+                Field('content_data', 'integer', label=T('Content'), comment=T(
+                      'Archivo adjunto')),
+                format='%(id)s'
+                )
 
 
 def project_tree_value(id_val, mode=0):
@@ -300,38 +343,45 @@ def project_tree_value(id_val, mode=0):
     return '%s - %s' % (topic, activity)
 
 
-#answer_type = {
-        #1: T('Text'),
-        #2: T('Mutiple-One'),
-        #3: T('Mutiple-Multiple'),
-        #4: T('Mutiple-Order'),
-    #}
-
-#data_type = {
-        #1: T('Image'),
-        #2: T('Doc'),
-        #3: T('Map'),
-    #}
-
-#db.choices.kind.requires = IS_IN_SET(answer_type)
-#db.contents.data_type.requires = IS_IN_SET(data_type)
-#db.choices.kind.requires = IS_IN_DB(db, 'answer_types.id')
-db.contents.data_type.requires = IS_IN_DB(db, 'data_types.id' , '%(name)s')
-#db.areas.requires = IS_IN_DB(db, 'areas.id')
-#db.topics.requires = IS_IN_DB(db, 'topics.id')
-#db.detail_data.requires = IS_IN_DB(db, 'contents.id')
-#db.zones.dependence.requires = IS_IN_DB(db,'zones.id','%(name)s')
-#db.detail_data.study_group.requires = IS_IN_DB(db,'groups.id','%(name)s')
-#db.detail_data.individual.requires = IS_IN_DB(db,'individuals.id','%(name)s')
+# db.choices.kind.requires = IS_IN_SET(answer_type)
+# db.contents.data_type.requires = IS_IN_SET(data_type)
+# db.choices.kind.requires = IS_IN_DB(db, 'answer_types.id')
+db.contents.data_type.requires = IS_IN_DB(db, 'data_types.id', '%(name)s')
+# db.areas.requires = IS_IN_DB(db, 'areas.id')
+# db.topics.requires = IS_IN_DB(db, 'topics.id')
+# db.detail_data.requires = IS_IN_DB(db, 'contents.id')
+# db.zones.dependence.requires = IS_IN_DB(db,'zones.id','%(name)s')
+# db.detail_data.study_group.requires = IS_IN_DB(db,'groups.id','%(name)s')
+# db.detail_data.individual.requires = IS_IN_DB(db,'individuals.id','%(name)s')
 db.project_tree.id.represent = lambda value, row: project_tree_value(value)
 db.contents.data_type.represent = lambda value, row: db.data_types(value).name
-db.areas.environment.widget = SQLFORM.widgets.autocomplete(request, db.environments.name, limitby=(0,10), id_field= db.environments.id, min_length=2)
-db.areas.dependence.widget = SQLFORM.widgets.autocomplete(request, db.areas.name, limitby=(0,10), id_field= db.areas.id, min_length=2)
-db.places.area.widget = SQLFORM.widgets.autocomplete(request, db.areas.name, limitby=(0,10), id_field= db.areas.id, min_length=2)
-db.topics.dependence.widget = SQLFORM.widgets.autocomplete(request, db.topics.name, limitby=(0,10), id_field= db.topics.id, min_length=2)
-db.project_tree.topic.widget = SQLFORM.widgets.autocomplete(request, db.topics.name, limitby=(0,10), id_field= db.topics.id, min_length=2)
-db.project_tree.activity.widget = SQLFORM.widgets.autocomplete(request, db.activities.name, limitby=(0,10), id_field= db.activities.id, min_length=2)
-db.detail_data.reference.widget = SQLFORM.widgets.autocomplete(request, db.main_data.name, limitby=(0,10), id_field= db.main_data.id, min_length=2)
-db.detail_data.study_group.widget = SQLFORM.widgets.autocomplete(request, db.groups.name, limitby=(0,10), id_field= db.groups.id, min_length=2)
-db.detail_data.individual.widget = SQLFORM.widgets.autocomplete(request, db.individuals.name, limitby=(0,10), id_field= db.individuals.id, min_length=2)
-db.detail_data.content_data.widget = SQLFORM.widgets.autocomplete(request, db.contents.name, limitby=(0,10), id_field= db.contents.id, min_length=2)
+db.areas.environment.widget = SQLFORM.widgets.autocomplete(
+    request, db.environments.name, limitby=(0, 10),
+    id_field= db.environments.id, min_length=2)
+db.areas.dependence.widget = SQLFORM.widgets.autocomplete(
+    request, db.areas.name, limitby=(0, 10),
+    id_field= db.areas.id, min_length=2)
+db.places.area.widget = SQLFORM.widgets.autocomplete(
+    request, db.areas.name, limitby=(0, 10),
+    id_field= db.areas.id, min_length=2)
+db.topics.dependence.widget = SQLFORM.widgets.autocomplete(
+    request, db.topics.name, limitby=(0, 10),
+    id_field= db.topics.id, min_length=2)
+db.project_tree.topic.widget = SQLFORM.widgets.autocomplete(
+    request, db.topics.name, limitby=(0, 10),
+    id_field= db.topics.id, min_length=2)
+db.project_tree.activity.widget = SQLFORM.widgets.autocomplete(
+    request, db.activities.name, limitby=(0, 10),
+    id_field= db.activities.id, min_length=2)
+db.detail_data.reference.widget = SQLFORM.widgets.autocomplete(
+    request, db.main_data.name, limitby=(0, 10),
+    id_field= db.main_data.id, min_length=2)
+db.detail_data.study_group.widget = SQLFORM.widgets.autocomplete(
+    request, db.groups.name, limitby=(0, 10),
+    id_field= db.groups.id, min_length=2)
+db.detail_data.individual.widget = SQLFORM.widgets.autocomplete(
+    request, db.individuals.name, limitby=(0, 10),
+    id_field= db.individuals.id, min_length=2)
+db.detail_data.content_data.widget = SQLFORM.widgets.autocomplete(
+    request, db.contents.name, limitby=(0, 10),
+    id_field= db.contents.id, min_length=2)
