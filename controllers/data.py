@@ -99,23 +99,24 @@ def format_data():
     # places = [(str(elem.id), elem.name) for elem in data_places]
     # db.patients.patient.requires = IS_IN_SET(patients)
     form = SQLFORM.factory(
-        Field('project_id', label=T('Project Name'),
+        Field('project_id', db.projects, label=T('Project Name'),
               comment=T('Ingrese el nombre del proyecto'),
-              widget=SQLFORM.widgets.autocomplete(request,
-                                                  db.projects.name, limitby=(
-                                                      0, 10),
-                                                  id_field=db.projects.id,
-                                                  min_length=2),
+              
+              #widget=SQLFORM.widgets.autocomplete(request,
+                                                  #db.projects.name, limitby=(
+                                                      #0, 10),
+                                                  #id_field=db.projects.id,
+                                                  #min_length=2),
               requires=IS_IN_DB(db, 'projects.id', '%(name)s')
               ),
-        Field('place_id', label=T('Place Name'),
+        Field('place_id', db.places, label=T('Place Name'),
               comment=T('Ingrese el nombre del lugar'),
-              widget=SQLFORM.widgets.autocomplete(request,
-                                                  db.places.name, limitby=(
-                                                      0, 10),
-                                                  id_field=db.places.id,
-                                                  min_length=2),
-              # requires=IS_IN_DB(db, 'places.id', '%(name)s')
+              #widget=SQLFORM.widgets.autocomplete(request,
+                                                  #db.places.name, limitby=(
+                                                      #0, 10),
+                                                  #id_field=db.places.id,
+                                                  #min_length=2),
+              requires=IS_IN_DB(db, 'places.id', '%(name)s')
               ),
         Field('topic_id', label=T('Topic Name'),
               comment=T('Ingrese el nombre del topico'),
@@ -164,6 +165,7 @@ def format_data():
                 [row.project_tree.id, row.activities.name,
                  row.activities.option_data])
         if project_id is not '' and place_id is not '':
+            print project_id, place_id
             results = db((db.main_data.project == project_id)
                          & (db.main_data.place == place_id)).select(
                              db.groups.name, db.individuals.name,
@@ -182,7 +184,6 @@ def format_data():
                              ),
                              orderby = db.detail_data.id
                          )
-            # print results
             for row in results:
                 # print row
                 data_val.setdefault(
@@ -207,7 +208,7 @@ def design_data():
                            Field('process_file',
                                  'upload', uploadfolder=UPLOAD_PATH),
                            )
-    print form
+    #print form
     form.vars.register_user = auth.user.id
     if form.process().accepted:
         data = {}
@@ -282,7 +283,7 @@ def excel_process(filedata, data):
             if line[0].find(':') >= 1:
                 study_group, individual = line[0].split(':')
             else:
-                study_group = None
+                study_group = line[0]
                 individual = None
             topic_id = db.topics(db.topics.name == line[1]).id
             activity_id = db.activities(db.activities.name == line[3]).id

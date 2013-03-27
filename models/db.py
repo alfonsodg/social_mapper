@@ -263,7 +263,7 @@ db.define_table('activities',
                       notnull=True),
                 Field('description', 'text', label=T('Description')),
                 Field('kind', db.answer_types, label=T(
-                      'Type'), comment=T('Tipo de dato')),
+                      'Type'), comment=T('Tipo de respuesta')),
                 Field('option_data', 'text', label=T('Options'), comment=T(
                       'Opciones, separadas por barra en orden deseado')),
                 Field('score_data', 'string', label=T('Scores'), comment=T(
@@ -320,7 +320,7 @@ db.define_table('detail_data',
                 'register_time', 'datetime', default=now, label=T('Time')),
                 Field('register_user', db.auth_user, label=T('Input User')),
                 Field('reference', db.main_data, label=T('Reference'),
-                      comment=T('Lugar de estudio')),
+                      comment=T('Denominación del estudio')),
                 Field('study_group', 'integer', label=T('Group'), comment=T(
                       'Grupo objeto de estudio')),
                 Field('individual', 'integer', label=T('Person'), comment=T(
@@ -355,6 +355,18 @@ def project_tree_value(id_val, mode=0):
     return '%s - %s' % (topic, activity)
 
 
+db.tag.name.requires = IS_NOT_IN_DB(db, 'tag.name')
+db.projects.name.requires = IS_NOT_IN_DB(db, 'projects.name')
+db.places.name.requires = IS_NOT_IN_DB(db, 'places.name')
+db.periods.name.requires = IS_NOT_IN_DB(db, 'periods.name')
+db.individuals.name.requires = IS_NOT_IN_DB(db, 'individuals.name')
+db.groups.name.requires = IS_NOT_IN_DB(db, 'groups.name')
+db.areas.name.requires = IS_NOT_IN_DB(db, 'areas.name')
+db.environments.name.requires = IS_NOT_IN_DB(db, 'environments.name')
+db.contents.name.requires = IS_NOT_IN_DB(db, 'contents.name')
+db.gis_layers.name.requires = IS_NOT_IN_DB(db, 'gis_layers.name')
+db.answer_types.name.requires = IS_NOT_IN_DB(db, 'answer_types.name')
+db.data_types.name.requires = IS_NOT_IN_DB(db, 'data_types.name')
 # db.choices.kind.requires = IS_IN_SET(answer_type)
 # db.contents.data_type.requires = IS_IN_SET(data_type)
 # db.choices.kind.requires = IS_IN_DB(db, 'answer_types.id')
@@ -365,8 +377,13 @@ db.contents.data_type.requires = IS_IN_DB(db, 'data_types.id', '%(name)s')
 # db.zones.dependence.requires = IS_IN_DB(db,'zones.id','%(name)s')
 # db.detail_data.study_group.requires = IS_IN_DB(db,'groups.id','%(name)s')
 # db.detail_data.individual.requires = IS_IN_DB(db,'individuals.id','%(name)s')
+db.topics.dependence.represent = lambda value, row: None if value is None else db.topics(value).name
+#db.topics.dependence.represent = lambda value, row: db.topics[value].name or None
 db.project_tree.id.represent = lambda value, row: project_tree_value(value)
 db.contents.data_type.represent = lambda value, row: db.data_types(value).name
+db.detail_data.study_group.represent = lambda value, row: db.groups(value).name
+db.detail_data.individual.represent = lambda value, row: db.individuals(value).name
+db.detail_data.content_data.represent = lambda value, row: None if value is None else db.contents(value).name
 db.areas.environment.widget = SQLFORM.widgets.autocomplete(
     request, db.environments.name, limitby=(0, 10),
     id_field= db.environments.id, min_length=2)
