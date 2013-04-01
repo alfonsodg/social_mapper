@@ -8,6 +8,9 @@ if False:
     response = Response()
 
 import xlrd
+import requests
+from os.path import basename
+
 
 UPLOAD_PATH = 'applications/social_mapper/uploads'
 EXCEL_FILE = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
@@ -165,7 +168,7 @@ def format_data():
                 [row.project_tree.id, row.activities.name,
                  row.activities.option_data])
         if project_id is not '' and place_id is not '':
-            print project_id, place_id
+            #print project_id, place_id
             results = db((db.main_data.project == project_id)
                          & (db.main_data.place == place_id)).select(
                              db.groups.name, db.individuals.name,
@@ -246,6 +249,8 @@ def book_tree(book):
             # Get Cols
             for col in range(sheet.ncols):
                 valid_data = sheet.cell_type(pos, col)
+                #print valid_data
+                #print sheet.cell_value(pos, col)
                 try:
                     sample_source = int(sheet.cell_value(pos, col))
                 except:
@@ -260,6 +265,9 @@ def book_tree(book):
                         pass
                 if sample_source:
                     data_row.append(sample_source)
+                else:
+                    if valid_data == 2 and sample_source == 0:
+                        data_row.append(sample_source)
             data_col.append(data_row)
     return data_col
 
@@ -274,7 +282,18 @@ def excel_process(filedata, data):
     elems = len(data_excel)
     if elems <= 0:
         return T('Archivo sin registros procesables o con problemas.')
+    #data['project'] = form.vars.project
+    #data['name'] = form.vars.name
+    #data['description'] = form.vars.description
+    #data['period'] = form.vars.period
+    #data['place'] = form.vars.place
     main_id = db.main_data.update_or_insert(**data)
+    if main_id is None:
+        main_id = db.main_data((db.main_data.name == data['name']) &
+            (db.main_data.project == data['project']) &
+            (db.main_data.period == data['period']) &
+            (db.main_data.place == data['place'])
+            ).id
     count = 0
     try:
         for line in data_excel:
@@ -295,6 +314,27 @@ def excel_process(filedata, data):
                 answer = line[4]
             except:
                 answer = ''
+            try:
+                content_data = requests.get(line[5])
+                name_data = basename(line[5])
+                #name_data = name_data.split('.')[0]
+            except:
+                content_data = False
+                content_id = None
+            if content_data:
+                contentfile = '%s/%s' % (UPLOAD_PATH, name_data)
+                open(contentfile, 'w').write(content_data.content)
+                stream = open(contentfile, 'rb')
+                #content_id = db.contents.update_or_insert(
+                #file_content=db.contents.file_content.store(
+                #stream, name_data),
+                #name=name_data)
+                content_id = db.contents(db.contents.name==name_data)
+                if content_id is None:
+                    content_id = db.contents.update_or_insert(
+                        file_content=stream, name=name_data)
+                #if content_id is None:
+                    #content_id = db.contents(db.contents.name==name_data).id
             if study_group is not None:
                 group_id = db.groups.update_or_insert(**{'name': study_group})
                 if group_id is None:
@@ -309,14 +349,16 @@ def excel_process(filedata, data):
                 value_detail = {'reference': main_id,
                                 'element_tree': element_id, 'choice': answer,
                                 'study_group': group_id,
-                                'individual': individual_id
+                                'individual': individual_id,
+                                'content_data': content_id,
                                 }
                 status = db.detail_data.update_or_insert(**value_detail)
                 if status is not None:
                     count += 1
         return_message = T(
             'Archivo analizado. Número de registros procesados: %s' % count)
-    except:
+    except Exception, error:
+        print error
         return_message = T(
             'Error en el procesamiento del archivo. Revise los datos!')
     return return_message
