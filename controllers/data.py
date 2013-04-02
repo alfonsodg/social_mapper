@@ -287,13 +287,13 @@ def excel_process(filedata, data):
     #data['description'] = form.vars.description
     #data['period'] = form.vars.period
     #data['place'] = form.vars.place
-    main_id = db.main_data.update_or_insert(**data)
-    if main_id is None:
-        main_id = db.main_data((db.main_data.name == data['name']) &
+    #main_id = db.main_data.update_or_insert(**data)
+    db((db.main_data.name == data['name']) &
             (db.main_data.project == data['project']) &
             (db.main_data.period == data['period']) &
             (db.main_data.place == data['place'])
-            ).id
+            ).delete()
+    main_id = db.main_data.insert(**data)
     count = 0
     try:
         for line in data_excel:
@@ -306,8 +306,8 @@ def excel_process(filedata, data):
                 individual = None
             topic_id = db.topics(db.topics.name == line[1]).id
             activity_id = db.activities(db.activities.name == line[3]).id
-            element_id = db.topics((db.project_tree.topic == topic_id) & (
-                db.project_tree.activity == activity_id)).id
+            element_id = db.project_tree((db.project_tree.topic == topic_id) &
+                (db.project_tree.activity == activity_id)).id
             group_id = None
             individual_id = None
             try:
@@ -325,14 +325,14 @@ def excel_process(filedata, data):
                 contentfile = '%s/%s' % (UPLOAD_PATH, name_data)
                 open(contentfile, 'w').write(content_data.content)
                 stream = open(contentfile, 'rb')
-                #content_id = db.contents.update_or_insert(
-                #file_content=db.contents.file_content.store(
-                #stream, name_data),
-                #name=name_data)
                 content_id = db.contents(db.contents.name==name_data)
                 if content_id is None:
+                    #content_id = db.contents.update_or_insert(
+                    #    file_content=stream, name=name_data)
                     content_id = db.contents.update_or_insert(
-                        file_content=stream, name=name_data)
+                    file_content=db.contents.file_content.store(
+                    stream, contentfile),
+                    name=name_data)
                 #if content_id is None:
                     #content_id = db.contents(db.contents.name==name_data).id
             if study_group is not None:
@@ -358,7 +358,7 @@ def excel_process(filedata, data):
         return_message = T(
             'Archivo analizado. Número de registros procesados: %s' % count)
     except Exception, error:
-        print error
+        #print error
         return_message = T(
             'Error en el procesamiento del archivo. Revise los datos!')
     return return_message

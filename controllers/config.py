@@ -255,7 +255,9 @@ def project_tree():
     if form.process().accepted:
         projectname = form.vars.project_name
         filename = form.vars.process_file
-        file_type = request.vars.process_file.type
+        file_type = None
+        if request.vars.process_file != '':
+            file_type = request.vars.process_file.type
         if file_type == EXCEL_FILE or file_type == OLD_EXCEL_FILE:
             excel_process(filename, projectname)
             response.flash = 'Archivo Procesado!'
