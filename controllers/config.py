@@ -40,6 +40,18 @@ def call():
 ### end requires
 
 
+def check_places(form):
+    #place = form.vars.name
+    #area = form.vars.area
+    #data = db(db.places.name==place) & (db.places.area==area)).select()
+    query = db.places.name == form.vars.name
+    query &= db.places.area == form.vars.area
+    if db(query).count():
+        form.errors.user = T("Relation Between Place/Name already exists!")
+    return
+    #print data
+
+
 @auth.requires(restrictions)
 def tags():
     """
@@ -146,10 +158,12 @@ def places():
     """
     Name of a place
     """
+    form = SQLFORM(db.places)
+    if form.process(onvalidation=check_places).accepted:
+        response.flash = T('Place Accepted')
     form2 = SQLFORM.grid(db.places,
-                         create=True,
+                         create=False,
                          )
-    form = ''
     return dict(form=form, form2=form2)
 
 

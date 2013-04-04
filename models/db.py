@@ -378,6 +378,7 @@ db.contents.data_type.requires = IS_IN_DB(db, 'data_types.id', '%(name)s')
 # db.detail_data.study_group.requires = IS_IN_DB(db,'groups.id','%(name)s')
 # db.detail_data.individual.requires = IS_IN_DB(db,'individuals.id','%(name)s')
 db.topics.dependence.represent = lambda value, row: None if value is None else db.topics(value).name
+db.places.area.represent = lambda value, row: None if value is None else db.areas(value).name
 #db.topics.dependence.represent = lambda value, row: db.topics[value].name or None
 #db.project_tree.id.represent = lambda value, row: None if value is None else project_tree_value(value)
 db.contents.data_type.represent = lambda value, row: None if value is None else db.data_types(value).name
