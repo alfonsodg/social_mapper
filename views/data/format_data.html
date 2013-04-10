@@ -20,7 +20,6 @@
 {{if place_name:}}
 {{ncoord = place_coords.split(',')}}
 {{if len(ncoord) > 1:}}
-{{print ncoord, len(ncoord)}}
 {{f_url = 'map?zoom=14&lon=%s&lat=%s&origin=utm' % (ncoord[0].strip(), ncoord[1].strip())}}
 {{else:}}
 {{f_url = 'map'}}

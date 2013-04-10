@@ -55,6 +55,7 @@ information =  [
         (T('Projects'), False, URL('data', 'format_data')),
     ]),
     (T('GIS'), False, False,[
+        (T('Search Place'), False, URL('gis', 'search_map')),
         (T('Maps'), False, A(T('Maps'), _href=URL('gis','map'), _target="_blank")),
     ]),
 ]

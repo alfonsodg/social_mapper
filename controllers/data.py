@@ -97,10 +97,14 @@ def format_data():
     """
     General Report view / form
     """
-    # data_places = db(db.places.id==request.vars.project_id).select(
-    # db.places.id, db.places.name)
-    # places = [(str(elem.id), elem.name) for elem in data_places]
-    # db.patients.patient.requires = IS_IN_SET(patients)
+    data_places = db(db.main_data.project==request.vars.project_id).select(
+        db.places.id, db.places.name,
+        left=db.places.on(
+        db.places.id == db.main_data.place),
+        )
+    #print data_places
+    places = [(str(elem.id), elem.name) for elem in data_places]
+    #db.patients.patient.requires = IS_IN_SET(patients)
     form = SQLFORM.factory(
         Field('project_id', db.projects, label=T('Project Name'),
               comment=T('Ingrese el nombre del proyecto'),
@@ -119,7 +123,8 @@ def format_data():
                                                       #0, 10),
                                                   #id_field=db.places.id,
                                                   #min_length=2),
-              requires=IS_IN_DB(db, 'places.id', '%(name)s')
+              requires=IS_IN_SET(places)
+              #requires=IS_IN_DB(db, 'places.id', '%(name)s')
               ),
         Field('topic_id', label=T('Topic Name'),
               comment=T('Ingrese el nombre del topico'),
@@ -131,6 +136,7 @@ def format_data():
               # requires=IS_IN_DB(db, 'topics.id', '%(name)s')
               ),
     )
+    form.attributes['_id'] = 'format_data'
     tree_base = []
     tree_data = {}
     data_val = {}

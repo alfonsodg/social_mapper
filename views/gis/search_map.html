@@ -1,0 +1,41 @@
+{{extend 'layout_auxiliar.html'}}
+
+<h2>Busqueda de Lugares</h2>
+
+
+{{=form.custom.begin}}
+<table border=0>
+<tr>
+<td>Lugar:</td><td>{{=form.custom.widget.place_id}}</td>
+<td>{{=form.custom.submit}}</td>
+</tr>
+</table>
+{{=form.custom.end}}
+
+{{if place_name:}}
+{{ncoord = place_coords.split(',')}}
+{{if len(ncoord) > 1:}}
+{{f_url = 'map?zoom=14&lon=%s&lat=%s&origin=utm' % (ncoord[0].strip(), ncoord[1].strip())}}
+{{else:}}
+{{f_url = 'map'}}
+{{pass}}
+<h2>
+{{=A(place_name, _href=URL('gis', f_url), _target="_blank")}}
+</h2></br>
+{{pass}}
+
+
+
+<script type="text/javascript">
+jQuery(function() {
+// iterates over all form widgets
+jQuery(".w2p_fw").each(function (){
+// set title for the widget taken from the comment column
+jQuery(this).attr('title',jQuery(this).next().html());
+// clear the comment (optional)
+jQuery(this).next().html('');
+// create the tooltip with title attribute set
+jQuery(this).tooltip();
+});
+});
+</script>

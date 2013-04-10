@@ -55,3 +55,28 @@ def map():
         map_origin = 'sphericalm'
     return dict(layer_data=layer_data, map_lon=map_lon, map_lat=map_lat,
                 map_zoom=map_zoom, map_origin=map_origin)
+
+
+def search_map():
+    """
+    
+    """
+    form = SQLFORM.factory(
+        Field('place_id', db.places, label=T('Place Name'),
+              comment=T('Ingrese el nombre del lugar'),
+              widget=SQLFORM.widgets.autocomplete(request,
+                                                  db.places.name, limitby=(
+                                                      0, 10),
+                                                  id_field=db.places.id,
+                                                  min_length=2),
+              #requires=IS_IN_DB(db, 'places.id', '%(name)s')
+              ),
+    )
+    place_name = False
+    place_coords = False
+    if form.process().accepted:
+        place_id = form.vars.place_id
+        if place_id is not '':
+            place_name = db.places[place_id].name
+            place_coords = db.places[place_id].coordinates
+    return dict(form=form, place_name=place_name, place_coords=place_coords)
