@@ -46,8 +46,9 @@
 {{if key_data in tree_data:}}
 <ol type='1'>
 {{for part in tree_data[key_data]:}}
-<li>{{=part[1]}}</li>
+
 {{if part[0] in data_val:}}
+<li>{{=part[1]}}</li>
 {{components = data_val[part[0]]}}
 {{for reply in components:}}
 <table border=2>
