@@ -158,17 +158,26 @@ def format_data():
         if topic_id is not '':
             topic_mode = True
             topic_id = int(topic_id)
-        results = db(
-        ).select(db.topics.ALL, orderby=db.topics.priority|db.topics.id)
+        #results = db(db.project_tree.project==project_id).select(
+            #db.topics.ALL,
+            #left=db.topics.on(
+                #db.project_tree.topic == db.topics.id),
+            #orderby=db.topics.priority|db.topics.id)
+        results = db(db.topics.project==project_id).select(
+            db.topics.id, db.topics.name,
+            orderby=db.topics.priority|db.topics.id
+        )
         for row in results:
             tree_base.append({row.id: row.name})
         # Get Results from project_tree
-        results = db().select(db.project_tree.topic, db.activities.name,
+        results = db(db.project_tree.project==project_id).select(
+                              db.project_tree.topic, db.activities.name,
                               db.project_tree.project, db.project_tree.id,
                               db.activities.option_data,
                               left=db.activities.on(
                               db.project_tree.activity == db.activities.id),
                               orderby=db.project_tree.priority)
+        #print results
         for row in results:
             tree_data.setdefault(row.project_tree.topic, list()).append(
                 [row.project_tree.id, row.activities.name,

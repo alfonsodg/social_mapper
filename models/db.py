@@ -244,11 +244,22 @@ db.define_table('places',
                 )
 
 
+db.define_table('projects',
+                Field('name', 'string', label=T(
+                      'Name'), comment=T('Denominacion del proyecto'),
+                      notnull=True),
+                Field('description', 'text', label=T('Description')),
+                format='%(name)s'
+                )
+
+
 db.define_table('topics',
                 Field('name', 'string', label=T(
                       'Name'), comment=T('Denominacion del Topico'),
                       notnull=True),
                 Field('description', 'text', label=T('Description')),
+                Field('project', db.projects, label=T('Project'), comment=T(
+                      'Seleccione el proyecto')),
                 Field('dependence', 'integer', label=T('Dependence'),
                       comment=T('Topico de nivel superior')),
                 Field('priority', 'integer', label=T('Priority'), comment=T(
@@ -273,15 +284,6 @@ db.define_table('activities',
                 Field('priority', 'integer', label=T('Priority'), comment=T(
                       'Orden de visualizacion')),
                 format='%(id)s-%(name)s'
-                )
-
-
-db.define_table('projects',
-                Field('name', 'string', label=T(
-                      'Name'), comment=T('Denominacion del proyecto'),
-                      notnull=True),
-                Field('description', 'text', label=T('Description')),
-                format='%(name)s'
                 )
 
 
@@ -394,6 +396,9 @@ db.areas.dependence.widget = SQLFORM.widgets.autocomplete(
 db.places.area.widget = SQLFORM.widgets.autocomplete(
     request, db.areas.name, limitby=(0, 10),
     id_field= db.areas.id, min_length=2)
+db.topics.project.widget = SQLFORM.widgets.autocomplete(
+    request, db.projects.name, limitby=(0, 10),
+    id_field= db.projects.id, min_length=2)
 db.topics.dependence.widget = SQLFORM.widgets.autocomplete(
     request, db.topics.name, limitby=(0, 10),
     id_field= db.topics.id, min_length=2)

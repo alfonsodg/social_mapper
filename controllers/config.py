@@ -343,11 +343,15 @@ def excel_process(filedata, projectname):
                 if col not in topics:
                     if last_topic in topics:
                         value_topic = {'name': col, 'dependence':
-                                       topics[last_topic], 'priority': order}
+                                       topics[last_topic], 'priority': order,
+                                       'project':projectname
+                                        }
                     else:
                         value_topic = {'name': col,
                                        'dependence': last_topic,
-                                       'priority': order}
+                                       'priority': order,
+                                       'project':projectname
+                                       }
                     reference = db.topics.update_or_insert(**value_topic)
                     if reference is None:
                         reference = db.topics((db.topics.name == col)).id
