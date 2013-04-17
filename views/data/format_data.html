@@ -16,6 +16,7 @@
 
 {{if project_name:}}
 <h2>{{=project_name}}</h2></br>
+<h3>{{=project_description}}</h3>
 {{pass}}
 {{if place_name:}}
 {{ncoord = place_coords.split(',')}}
@@ -46,21 +47,29 @@
 {{if key_data in tree_data:}}
 <ol type='1'>
 {{for part in tree_data[key_data]:}}
-
 {{if part[0] in data_val:}}
 <li>{{=part[1]}}</li>
 {{components = data_val[part[0]]}}
 {{for reply in components:}}
+{{if len(reply[3]) > 0:}}
 <table border=2>
 <tr>
-<td>{{=reply[0]}}</td>
+<td>{{=reply[0]}}<br>
 {{if reply[1] is not None:}}
-<td>{{=reply[1]}}</td>
+{{=reply[1]}}
 {{pass}}
-{{space=reply[2].split('|')}}
+</td>
+{{if reply[2] is not None:}}
+<td>{{=reply[2]}}</td>
+{{pass}}
+{{space=reply[3].split('|')}}
 {{heads=[]}}
 {{if part[2] is not None:}}
 {{heads=part[2].split('|')}}
+{{pass}}
+{{else:}}
+{{space=[]}}
+{{heads=[]}}
 {{pass}}
 <td>
 <table border=1>
@@ -76,6 +85,9 @@
 </tr>
 </table>
 </td>
+{{if reply[4] is not None:}}
+<td>{{=A(db.contents[reply[4]].name, _href=URL('show', args=db.contents[reply[4]].id))}}</td>
+{{pass}}
 </tr>
 </table>
 {{pass}}

@@ -46,6 +46,14 @@ def call():
 
 
 @auth.requires(restrictions)
+def show():
+    contents = db.contents(request.args(0,cast=int)) or redirect(URL('index'))
+    name_data = contents.file_content
+    contentfile = '%s/%s' % (UPLOAD_PATH, name_data)
+    return response.stream(open(contentfile,'rb'), chunk_size=10**6)
+
+
+@auth.requires(restrictions)
 def main_data():
     """
     Manage Project Main data
@@ -70,11 +78,12 @@ def detail_data():
     db.detail_data.register_user.default = auth.user.id
     db.detail_data.register_user.writable = False
     db.detail_data.register_time.writable = False
-    form = SQLFORM(db.detail_data)
-    if form.process().accepted:
-        response.flash = T('Row Accepted')
+    form = False
+    #form = SQLFORM(db.detail_data)
+    #if form.process().accepted:
+    #    response.flash = T('Row Accepted')
     form2 = SQLFORM.grid(db.detail_data,
-                         create=False,
+                         create=True,
                          )
     return dict(form=form, form2=form2)
 
@@ -141,6 +150,7 @@ def format_data():
     tree_data = {}
     data_val = {}
     project_name = False
+    project_description = False
     place_name = False
     place_coords = False
     topic_mode = False
@@ -152,6 +162,7 @@ def format_data():
         topic_id = form.vars.topic_id
         if project_id is not '':
             project_name = db.projects[project_id].name
+            project_description = db.projects[project_id].description
         if place_id is not '':
             place_name = db.places[place_id].name
             place_coords = db.places[place_id].coordinates
@@ -188,7 +199,8 @@ def format_data():
                          & (db.main_data.place == place_id)).select(
                              db.groups.name, db.individuals.name,
                              db.detail_data.element_tree,
-                             db.detail_data.choice,
+                             db.detail_data.choice, db.groups.description,
+                             db.detail_data.content_data,
                              left=(
                                  db.detail_data.on(
                                      db.main_data.id ==
@@ -206,10 +218,13 @@ def format_data():
                 # print row
                 data_val.setdefault(
                     row.detail_data.element_tree, list()).append(
-                        [row.groups.name, row.individuals.name,
-                         row.detail_data.choice])
+                        [row.groups.name, row.groups.description,
+                            row.individuals.name, row.detail_data.choice,
+                            row.detail_data.content_data])
     return dict(form=form, tree_base=tree_base, tree_data=tree_data,
-                project_name=project_name, data_val=data_val,
+                project_name=project_name,
+                project_description=project_description,
+                data_val=data_val,
                 place_name=place_name, topic_id=topic_id,
                 topic_mode=topic_mode, place_coords=place_coords)
 
@@ -330,26 +345,30 @@ def excel_process(filedata, data):
             except:
                 answer = ''
             try:
-                content_data = requests.get(line[5])
-                name_data = basename(line[5])
-                #name_data = name_data.split('.')[0]
+                value_data = line[5]
             except:
-                content_data = False
-                content_id = None
-            if content_data:
-                contentfile = '%s/%s' % (UPLOAD_PATH, name_data)
-                open(contentfile, 'w').write(content_data.content)
-                stream = open(contentfile, 'rb')
-                content_id = db.contents(db.contents.name==name_data)
-                if content_id is None:
-                    #content_id = db.contents.update_or_insert(
-                    #    file_content=stream, name=name_data)
-                    content_id = db.contents.update_or_insert(
-                    file_content=db.contents.file_content.store(
-                    stream, contentfile),
-                    name=name_data)
+                value_data = None
+            #try:
+                #content_data = requests.get(line[5])
+                #name_data = basename(line[5])
+                ##name_data = name_data.split('.')[0]
+            #except:
+                #content_data = False
+                #content_id = None
+            #if content_data:
+                #contentfile = '%s/%s' % (UPLOAD_PATH, name_data)
+                #open(contentfile, 'w').write(content_data.content)
+                #stream = open(contentfile, 'rb')
+                #content_id = db.contents(db.contents.name==name_data)
                 #if content_id is None:
-                    #content_id = db.contents(db.contents.name==name_data).id
+                    ##content_id = db.contents.update_or_insert(
+                    ##    file_content=stream, name=name_data)
+                    #content_id = db.contents.update_or_insert(
+                    #file_content=db.contents.file_content.store(
+                    #stream, contentfile),
+                    #name=name_data)
+                ##if content_id is None:
+                    ##content_id = db.contents(db.contents.name==name_data).id
             if study_group is not None:
                 group_id = db.groups.update_or_insert(**{'name': study_group})
                 if group_id is None:
@@ -365,7 +384,8 @@ def excel_process(filedata, data):
                                 'element_tree': element_id, 'choice': answer,
                                 'study_group': group_id,
                                 'individual': individual_id,
-                                'content_data': content_id,
+                                #'content_data': content_id,
+                                'value_data': value_data
                                 }
                 status = db.detail_data.update_or_insert(**value_detail)
                 if status is not None:
