@@ -78,26 +78,12 @@ def detail_data():
     db.detail_data.register_user.default = auth.user.id
     db.detail_data.register_user.writable = False
     db.detail_data.register_time.writable = False
-    form = False
+    form = ''
     #form = SQLFORM(db.detail_data)
     #if form.process().accepted:
     #    response.flash = T('Row Accepted')
     form2 = SQLFORM.grid(db.detail_data,
                          create=True,
-                         )
-    return dict(form=form, form2=form2)
-
-
-@auth.requires(restrictions)
-def content_data():
-    """
-    Attachment input
-    """
-    form = SQLFORM(db.contents)
-    if form.process().accepted:
-        response.flash = T('Contents Accepted')
-    form2 = SQLFORM.grid(db.contents,
-                         create=False,
                          )
     return dict(form=form, form2=form2)
 

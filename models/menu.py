@@ -32,7 +32,7 @@ config = [
         (T('Tags'), False, URL('config', 'tags')),
         (T('Answer Types'), False, URL('config', 'answer_types')),
         (T('Data Types'), False, URL('config', 'data_types')),
-        (T('Content Data'), False, URL('data', 'content_data')),
+        (T('Content Data'), False, URL('config', 'content_data')),
         (T('---Nivel 3---'), False, False),
         (T('Environments'), False, URL('config', 'environments')),
         (T('Areas'), False, URL('config', 'areas')),

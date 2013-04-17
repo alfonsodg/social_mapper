@@ -81,6 +81,21 @@ def answer_types():
 
 
 @auth.requires(restrictions)
+def content_data():
+    """
+    Attachment input
+    """
+    #form = SQLFORM(db.contents)
+    #if form.process().accepted:
+        #response.flash = T('Contents Accepted')
+    form = ''
+    form2 = SQLFORM.grid(db.contents,
+                         #create=False,
+                         )
+    return dict(form=form, form2=form2)
+
+
+@auth.requires(restrictions)
 def gis_layers():
     """
     Add GIS Layers
@@ -144,9 +159,10 @@ def areas():
     Name of Area, the areas can be referenced for another area, building a
     tree
     """
-    form = SQLFORM(db.areas)
-    if form.process().accepted:
-        response.flash = T('Areas Accepted')
+    #form = SQLFORM(db.areas)
+    #if form.process().accepted:
+        #response.flash = T('Areas Accepted')
+    form = ''
     form2 = SQLFORM.grid(db.areas,
                          create=False,
                          )
@@ -158,11 +174,12 @@ def places():
     """
     Name of a place
     """
-    form = SQLFORM(db.places)
-    if form.process(onvalidation=check_places).accepted:
-        response.flash = T('Place Accepted')
+    #form = SQLFORM(db.places)
+    #if form.process(onvalidation=check_places).accepted:
+        #response.flash = T('Place Accepted')
+    form = ''
     form2 = SQLFORM.grid(db.places,
-                         create=False,
+                         #create=False,
                          )
     return dict(form=form, form2=form2)
 
@@ -172,9 +189,10 @@ def groups():
     """
     Group of work, study or analysis
     """
-    form = SQLFORM(db.groups)
-    if form.process().accepted:
-        response.flash = T('Groups Accepted')
+    #form = SQLFORM(db.groups)
+    #if form.process().accepted:
+        #response.flash = T('Groups Accepted')
+    form = ''
     form2 = SQLFORM.grid(db.groups,
                          create=False,
                          )
@@ -186,9 +204,10 @@ def individuals():
     """
     People to study
     """
-    form = SQLFORM(db.individuals)
-    if form.process().accepted:
-        response.flash = T('People Accepted')
+    #form = SQLFORM(db.individuals)
+    #if form.process().accepted:
+        #response.flash = T('People Accepted')
+    form = ''
     form2 = SQLFORM.grid(db.individuals,
                          create=False,
                          )
@@ -200,11 +219,12 @@ def topics():
     """
     Topic of the Project (Title which groups activities)
     """
-    form = SQLFORM(db.topics)
-    if form.process().accepted:
-        response.flash = T('Activities Accepted')
+    #form = SQLFORM(db.topics)
+    #if form.process().accepted:
+        #response.flash = T('Activities Accepted')
+    form = ''
     form2 = SQLFORM.grid(db.topics,
-                         create=False,
+                         #create=False,
                          )
     return dict(form=form, form2=form2)
 
@@ -214,27 +234,28 @@ def activities():
     """
     Activities or questions
     """
-    form = SQLFORM(db.activities)
-    if form.process().accepted:
-        response.flash = T('Activities Accepted')
+    #form = SQLFORM(db.activities)
+    #if form.process().accepted:
+        #response.flash = T('Activities Accepted')
+    form = ''
     form2 = SQLFORM.grid(db.activities,
-                         create=False,
+                         #create=False,
                          )
     return dict(form=form, form2=form2)
 
 
-@auth.requires(restrictions)
-def choices():
-    """
-    Choices
-    """
-    form = SQLFORM(db.choices)
-    if form.process().accepted:
-        response.flash = T('Choices Accepted')
-    form2 = SQLFORM.grid(db.choices,
-                         create=False,
-                         )
-    return dict(form=form, form2=form2)
+#@auth.requires(restrictions)
+#def choices():
+    #"""
+    #Choices
+    #"""
+    #form = SQLFORM(db.choices)
+    #if form.process().accepted:
+        #response.flash = T('Choices Accepted')
+    #form2 = SQLFORM.grid(db.choices,
+                         #create=False,
+                         #)
+    #return dict(form=form, form2=form2)
 
 
 @auth.requires(restrictions)
