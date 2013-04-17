@@ -388,7 +388,7 @@ db.detail_data.study_group.represent = lambda value, row: None if value is None 
 db.detail_data.individual.represent = lambda value, row: None if value is None else db.individuals(value).name
 db.detail_data.content_data.represent = lambda value, row: None if value is None else db.contents(value).name
 db.areas.environment.represent = lambda value, row: None if value is None else db.environments(value).name
-db.areas.environment.dependence = lambda value, row: None if value is None else db.areas(value).name
+db.areas.dependence.represent = lambda value, row: None if value is None else db.areas(value).name
 db.areas.environment.widget = SQLFORM.widgets.autocomplete(
     request, db.environments.name, limitby=(0, 10),
     id_field= db.environments.id, min_length=2)
