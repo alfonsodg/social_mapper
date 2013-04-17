@@ -164,7 +164,7 @@ def areas():
         #response.flash = T('Areas Accepted')
     form = ''
     form2 = SQLFORM.grid(db.areas,
-                         create=False,
+                         #create=False,
                          )
     return dict(form=form, form2=form2)
 
@@ -194,7 +194,7 @@ def groups():
         #response.flash = T('Groups Accepted')
     form = ''
     form2 = SQLFORM.grid(db.groups,
-                         create=False,
+                         #create=False,
                          )
     return dict(form=form, form2=form2)
 
@@ -209,7 +209,7 @@ def individuals():
         #response.flash = T('People Accepted')
     form = ''
     form2 = SQLFORM.grid(db.individuals,
-                         create=False,
+                         #create=False,
                          )
     return dict(form=form, form2=form2)
 
