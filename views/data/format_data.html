@@ -86,7 +86,10 @@
 </table>
 </td>
 {{if reply[4] is not None:}}
+{{try:}}
 <td>{{=A(db.contents[reply[4]].name, _href=URL('show', args=db.contents[reply[4]].id))}}</td>
+{{except:}}
+<td>ERROR</td>
 {{pass}}
 </tr>
 </table>

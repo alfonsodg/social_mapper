@@ -357,6 +357,18 @@ def project_tree_value(id_val, mode=0):
     return '%s - %s' % (topic, activity)
 
 
+def content_data_value(id_val):
+    """
+    Content Data Representation
+    """
+    try:
+        val_content_data = db.contents(value).name
+    except:
+        val_content_data = T("ERROR!!... Dato No EXISTENTE")
+    return '%s' % val_content_data
+        
+
+
 db.tag.name.requires = IS_NOT_IN_DB(db, 'tag.name')
 db.projects.name.requires = IS_NOT_IN_DB(db, 'projects.name')
 #db.places.name.requires = IS_NOT_IN_DB(db, 'places.name')
@@ -386,7 +398,8 @@ db.places.area.represent = lambda value, row: None if value is None else db.area
 db.contents.data_type.represent = lambda value, row: None if value is None else db.data_types(value).name
 db.detail_data.study_group.represent = lambda value, row: None if value is None else db.groups(value).name
 db.detail_data.individual.represent = lambda value, row: None if value is None else db.individuals(value).name
-db.detail_data.content_data.represent = lambda value, row: None if value is None else db.contents(value).name
+#db.detail_data.content_data.represent = lambda value, row: None if value is None else db.contents(value).name
+db.detail_data.content_data.represent = lambda value, row: None if value is None else content_data_value(value)
 db.areas.environment.represent = lambda value, row: None if value is None else db.environments(value).name
 db.areas.dependence.represent = lambda value, row: None if value is None else db.areas(value).name
 db.areas.environment.widget = SQLFORM.widgets.autocomplete(
