@@ -364,7 +364,7 @@ def content_data_value(id_val):
     try:
         val_content_data = db.contents(value).name
     except:
-        val_content_data = T("ERROR!!... Dato No EXISTENTE")
+        val_content_data = ''
     return '%s' % val_content_data
         
 
