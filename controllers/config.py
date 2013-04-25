@@ -179,7 +179,7 @@ def places():
     #    response.flash = T('Place Accepted')
     form = ''
     form2 = SQLFORM.grid(db.places,
-                         create=False,
+                         #create=False,
                          )
     return dict(form=form, form2=form2)
 
