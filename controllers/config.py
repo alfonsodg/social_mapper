@@ -174,9 +174,10 @@ def places():
     """
     Name of a place
     """
-    form = SQLFORM(db.places)
-    if form.process(onvalidation=check_places).accepted:
-        response.flash = T('Place Accepted')
+    #form = SQLFORM(db.places)
+    #if form.process(onvalidation=check_places).accepted:
+    #    response.flash = T('Place Accepted')
+    form = ''
     form2 = SQLFORM.grid(db.places,
                          create=False,
                          )
