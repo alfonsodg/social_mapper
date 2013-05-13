@@ -373,7 +373,7 @@ def topic_value(id_val):
     Content Data Representation
     """
     try:
-        val_topic = db.topics(value).name
+        val_topic = db.topics(id_val).name
     except:
         val_topic = T('Inconsistency')
     return '%s' % val_topic
