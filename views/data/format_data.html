@@ -87,7 +87,7 @@
 </td>
 {{if reply[4] is not None:}}
 {{try:}}
-<td>{{=A(db.contents[reply[4]].name, _href=URL('show', args=db.contents[reply[4]].id))}}</td>
+<td>{{=A(db.contents[reply[4]].name, _href=URL('show', args=db.contents[reply[4]].id), _target="_blank")}}</td>
 {{except:}}
 <td></td>
 {{pass}}
