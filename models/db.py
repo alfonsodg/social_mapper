@@ -375,7 +375,7 @@ def topic_value(id_val):
     try:
         val_topic = db.topics(id_val).name
     except:
-        val_topic = T('Inconsistency')
+        val_topic = T('ERROR: Inconsistency')
     return '%s' % val_topic
 
 
