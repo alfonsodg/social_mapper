@@ -366,7 +366,17 @@ def content_data_value(id_val):
     except:
         val_content_data = ''
     return '%s' % val_content_data
-        
+
+
+def topic_value(id_val):
+    """
+    Content Data Representation
+    """
+    try:
+        val_topic = db.topics(value).name
+    except:
+        val_topic = T('Inconsistency')
+    return '%s' % val_topic
 
 
 db.tag.name.requires = IS_NOT_IN_DB(db, 'tag.name')
@@ -391,7 +401,7 @@ db.contents.data_type.requires = IS_IN_DB(db, 'data_types.id', '%(name)s')
 # db.zones.dependence.requires = IS_IN_DB(db,'zones.id','%(name)s')
 # db.detail_data.study_group.requires = IS_IN_DB(db,'groups.id','%(name)s')
 # db.detail_data.individual.requires = IS_IN_DB(db,'individuals.id','%(name)s')
-db.topics.dependence.represent = lambda value, row: None if value is None else db.topics(value).name
+db.topics.dependence.represent = lambda value, row: None if value is None else topic_value(value)
 db.places.area.represent = lambda value, row: None if value is None else db.areas(value).name
 #db.topics.dependence.represent = lambda value, row: db.topics[value].name or None
 #db.project_tree.id.represent = lambda value, row: None if value is None else project_tree_value(value)
