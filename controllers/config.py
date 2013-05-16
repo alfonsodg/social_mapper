@@ -102,7 +102,10 @@ def gis_layers():
     """
     max_val = db.gis_layers.priority.max()
     result = db().select(max_val).first()[max_val]
-    db.gis_layers.priority.default = result + 5
+    try:
+        db.gis_layers.priority.default = result + 5
+    except:
+        db.gis_layers.priority.default = 1
     form = ''
     form2 = SQLFORM.grid(db.gis_layers,
                          create=True,
