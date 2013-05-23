@@ -76,15 +76,23 @@
 <tr>
 {{for head in heads:}}
 <td>
-{{for elemh in head.split('#'):}}
-<tr><td><strong>{{=elemh}}</strong></td></tr>
+<tr>
+{{for head_part in head.split('#'):}}
+<td><strong>{{=head_part}}</strong></td>
 {{pass}}
+</tr>
 </td>
 {{pass}}
 </tr>
 <tr>
 {{for field in space:}}
-<td>{{=field}}</td>
+<td>
+<tr>
+{{for field_part in field.split('#'):}}
+<td>{{=field_part}}</td>
+{{pass}}
+</tr>
+</td>
 {{pass}}
 </tr>
 </table>
