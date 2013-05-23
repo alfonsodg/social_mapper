@@ -75,7 +75,11 @@
 <table border=1>
 <tr>
 {{for head in heads:}}
-<td><strong>{{=head}}</strong></td>
+<td>
+{{for elemh in head.split('#'):}}
+<tr><td><strong>{{=elemh}}</strong></td></tr>
+{{pass}}
+</td>
 {{pass}}
 </tr>
 <tr>
