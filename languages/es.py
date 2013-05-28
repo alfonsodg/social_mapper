@@ -59,6 +59,7 @@
 'Archivo analizado. Número de registros procesados: %s': 'Archivo analizado. Número de registros procesados: %s',
 'Archivo analizado. Número de registros procesados: 0': 'Archivo analizado. Número de registros procesados: 0',
 'Archivo analizado. Número de registros procesados: 21': 'Archivo analizado. Número de registros procesados: 21',
+'Archivo analizado. Número de registros procesados: 3': 'Archivo analizado. Número de registros procesados: 3',
 'Archivo analizado. Número de registros procesados: 70': 'Archivo analizado. Número de registros procesados: 70',
 'Archivo de datos': 'Archivo de datos',
 'Archivo origen': 'Archivo origen',

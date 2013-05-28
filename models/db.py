@@ -273,7 +273,7 @@ db.define_table('activities',
                       'Question'), comment=T('Pregunta a desarrollar'),
                       notnull=True),
                 Field('description', 'text', label=T('Description')),
-                Field('kind', db.answer_types, label=T(
+                Field('kind', 'integer', label=T(
                       'Type'), comment=T('Tipo de respuesta')),
                 Field('option_data', 'text', label=T('Options'), comment=T(
                       'Opciones, separadas por barra en orden deseado')),
@@ -445,3 +445,6 @@ db.detail_data.individual.widget = SQLFORM.widgets.autocomplete(
 db.detail_data.content_data.widget = SQLFORM.widgets.autocomplete(
     request, db.contents.name, limitby=(0, 10),
     id_field= db.contents.id, min_length=2)
+db.activities.kind.widget = SQLFORM.widgets.autocomplete(
+    request, db.answer_types.name, limitby=(0, 10),
+    id_field= db.answer_types.id, min_length=2)
