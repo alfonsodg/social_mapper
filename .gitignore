@@ -3,6 +3,7 @@ errors/*
 private/*
 sessions/*
 uploads/*
+.idea/*
 databases/*.table
 databases/*.log
 *.pyc

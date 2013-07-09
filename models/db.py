@@ -23,7 +23,8 @@ hostname = socket.gethostname()
 if not request.env.web2py_runtime_gae:
     ## if NOT running on Google App Engine use SQLite or other DB
     # db = DAL('sqlite://storage.sqlite',pool_size=1,check_reserved=['all'])
-    if hostname == 'endeavour':
+    if (hostname == 'endeavour' or hostname == 'echelon'
+		or hostname == 'localhost'):
         db = DAL('postgres://alfonsodg:alfonsodg@localhost/cima',
                  pool_size=1, check_reserved=['all'])
     else:
@@ -378,6 +379,16 @@ def topic_value(id_val):
         val_topic = T('ERROR: Inconsistency')
     return '%s' % val_topic
 
+def name_data(table, id_val):
+    """
+    Content Data Representation
+    """
+    try:
+        value_data = table(id_val).name
+    except:
+        value_data = ''
+    return '%s' % value_data
+
 
 db.tag.name.requires = IS_NOT_IN_DB(db, 'tag.name')
 db.projects.name.requires = IS_NOT_IN_DB(db, 'projects.name')
@@ -401,17 +412,17 @@ db.contents.data_type.requires = IS_IN_DB(db, 'data_types.id', '%(name)s')
 # db.zones.dependence.requires = IS_IN_DB(db,'zones.id','%(name)s')
 # db.detail_data.study_group.requires = IS_IN_DB(db,'groups.id','%(name)s')
 # db.detail_data.individual.requires = IS_IN_DB(db,'individuals.id','%(name)s')
-db.topics.dependence.represent = lambda value, row: None if value is None else topic_value(value)
-db.places.area.represent = lambda value, row: None if value is None else db.areas(value).name
+db.topics.dependence.represent = lambda value, row: None if value is None else name_data(db.topics, value)
+db.places.area.represent = lambda value, row: None if value is None else name_data(db.areas, value)
 #db.topics.dependence.represent = lambda value, row: db.topics[value].name or None
 #db.project_tree.id.represent = lambda value, row: None if value is None else project_tree_value(value)
-db.contents.data_type.represent = lambda value, row: None if value is None else db.data_types(value).name
-db.detail_data.study_group.represent = lambda value, row: None if value is None else db.groups(value).name
-db.detail_data.individual.represent = lambda value, row: None if value is None else db.individuals(value).name
+db.contents.data_type.represent = lambda value, row: None if value is None else name_data(db.data_types, value)
+db.detail_data.study_group.represent = lambda value, row: None if value is None else name_data(db.groups, value)
+db.detail_data.individual.represent = lambda value, row: None if value is None else name_data(db.individuals, value)
 #db.detail_data.content_data.represent = lambda value, row: None if value is None else db.contents(value).name
-db.detail_data.content_data.represent = lambda value, row: None if value is None else content_data_value(value)
-db.areas.environment.represent = lambda value, row: None if value is None else db.environments(value).name
-db.areas.dependence.represent = lambda value, row: None if value is None else db.areas(value).name
+db.detail_data.content_data.represent = lambda value, row: None if value is None else name_data(db.contents, value)
+db.areas.environment.represent = lambda value, row: None if value is None else name_data(db.environments, value)
+db.areas.dependence.represent = lambda value, row: None if value is None else name_data(db.areas, value)
 db.areas.environment.widget = SQLFORM.widgets.autocomplete(
     request, db.environments.name, limitby=(0, 10),
     id_field= db.environments.id, min_length=2)
