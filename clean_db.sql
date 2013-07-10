@@ -1,0 +1,15 @@
+delete from projects;
+delete from periods;
+delete from tag;
+delete from answer_types;
+delete from data_types;
+delete from contents;
+delete from environments;
+delete from areas;
+delete from groups;
+delete from individuals;
+delete from topics;
+delete from activities;
+delete from project_tree;
+delete from main_data;
+delete from detail_data;

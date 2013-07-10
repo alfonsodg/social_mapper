@@ -147,6 +147,8 @@
 'Environment': 'Environment',
 'Environment Accepted': 'Environment Accepted',
 'Environments': 'Environments',
+'Error. Revise las actividades!': 'Error. Revise las actividades!',
+'ERROR: Inconsistency': 'ERROR: Inconsistency',
 'Errors': 'Errors',
 'Errors in form, please check it out.': 'Errors in form, please check it out.',
 'Estado': 'Estado',

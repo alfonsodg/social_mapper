@@ -126,6 +126,8 @@
 'Environment': 'Environment',
 'Environment Accepted': 'Environment Accepted',
 'Environments': 'Environments',
+'Error. Revise las actividades!': 'Error. Revise las actividades!',
+'ERROR: Inconsistency': 'ERROR: Inconsistency',
 'Errors': 'Erreurs',
 'Estado': 'Estado',
 'export as csv file': 'exporter sous forme de fichier csv',

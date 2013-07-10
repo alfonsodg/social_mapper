@@ -350,8 +350,17 @@ def excel_process(filedata, projectname):
     data = book_tree(book)
     topics = {}
     reference = None
-    order = 1
-    norder = 1
+    priority_cnt = db((db.project_tree.priority > 0) & (
+        db.project_tree.project == projectname)).select(
+        db.project_tree.priority)
+    if len(priority_cnt) < 1:
+        order = 1
+        norder = 1
+    else:
+        order = priority_cnt.last().priority
+        norder = priority_cnt.last().priority
+    #order = 1
+    #norder = 1
     # Row in Data
     for line in data:
         kind = True
@@ -389,13 +398,16 @@ def excel_process(filedata, projectname):
         value_question = None
         if elems == 2:
             value_question = {'priority': question[0],
-                              'name': question[1]
+                              'name': question[1],
+                              'project': projectname
                               }
         elif elems == 3:
             if question[2] == '-':
                 question[2] = ''
             value_question = {'priority': question[0],
-                              'name': question[1], 'option_data': question[2]
+                              'name': question[1],
+                              'option_data': question[2],
+                              'project': projectname
                               }
         elif elems == 4:
             if question[2] == '-':
@@ -403,8 +415,10 @@ def excel_process(filedata, projectname):
             if question[3] == '-':
                 question[3] = ''
             value_question = {'priority': question[0],
-                              'name': question[1], 'option_data': question[2],
-                              'score_data': question[3]
+                              'name': question[1],
+                              'option_data': question[2],
+                              'score_data': question[3],
+                              'project': projectname
                               }
         elif elems == 5:
             if question[2] == '-':
@@ -412,8 +426,11 @@ def excel_process(filedata, projectname):
             if question[3] == '-':
                 question[3] = ''
             value_question = {'priority': question[0],
-                              'name': question[1], 'option_data': question[2],
-                              'score_data': question[3], 'tags': []
+                              'name': question[1],
+                              'option_data': question[2],
+                              'score_data': question[3],
+                              'tags': [],
+                              'project': projectname
                               }
             for tag in question[4].split(','):
                 temp = {'name': tag}
@@ -422,10 +439,11 @@ def excel_process(filedata, projectname):
                     tag_id = db.tag(db.tag.name == tag).id
                 value_question['tags'].append(tag_id)
         if value_question:
-            reference = db.activities.update_or_insert(**value_question)
-            if reference is None:
-                reference = db.activities(
-                    (db.activities.name == question[1])).id
+            reference = db.activities.insert(**value_question)
+            #reference = db.activities.update_or_insert(**value_question)
+            #if reference is None:
+                #reference = db.activities(
+                    #(db.activities.name == question[1])).id
             value_tree = {'project': projectname,
                           'topic': topics[last_topic],
                           'activity': reference,

@@ -24,7 +24,7 @@ if not request.env.web2py_runtime_gae:
     ## if NOT running on Google App Engine use SQLite or other DB
     # db = DAL('sqlite://storage.sqlite',pool_size=1,check_reserved=['all'])
     if (hostname == 'endeavour' or hostname == 'echelon'
-		or hostname == 'localhost'):
+        or hostname == 'localhost'):
         db = DAL('postgres://alfonsodg:alfonsodg@localhost/cima',
                  pool_size=1, check_reserved=['all'])
     else:
@@ -274,6 +274,8 @@ db.define_table('activities',
                       'Question'), comment=T('Pregunta a desarrollar'),
                       notnull=True),
                 Field('description', 'text', label=T('Description')),
+                Field('project', db.projects, label=T('Project'), comment=T(
+                      'Seleccione el proyecto')),
                 Field('kind', 'integer', label=T(
                       'Type'), comment=T('Tipo de respuesta')),
                 Field('option_data', 'text', label=T('Options'), comment=T(

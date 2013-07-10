@@ -201,6 +201,8 @@
 'Environment Accepted': 'Environment Accepted',
 'Environments': 'Environments',
 'Error logs for "%(app)s"': 'Error logs voor "%(app)s"',
+'Error. Revise las actividades!': 'Error. Revise las actividades!',
+'ERROR: Inconsistency': 'ERROR: Inconsistency',
 'errors': 'errors',
 'Errors': 'Errors',
 'Estado': 'Estado',

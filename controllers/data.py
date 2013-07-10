@@ -10,6 +10,7 @@ if False:
 import xlrd
 import requests
 from os.path import basename
+from gluon.contrib.pyfpdf import FPDF, HTMLMixin
 
 
 UPLOAD_PATH = 'applications/social_mapper/uploads'
@@ -164,6 +165,7 @@ def format_data():
             db.topics.id, db.topics.name,
             orderby=db.topics.priority|db.topics.id
         )
+        #print results
         for row in results:
             tree_base.append({row.id: row.name})
         # Get Results from project_tree
@@ -304,82 +306,122 @@ def excel_process(filedata, data):
     #data['period'] = form.vars.period
     #data['place'] = form.vars.place
     #main_id = db.main_data.update_or_insert(**data)
-    db((db.main_data.name == data['name']) &
-            (db.main_data.project == data['project']) &
-            (db.main_data.period == data['period']) &
-            (db.main_data.place == data['place'])
-            ).delete()
-    main_id = db.main_data.insert(**data)
+    #db((db.main_data.name == data['name']) &
+            #(db.main_data.project == data['project']) &
+            #(db.main_data.period == data['period']) &
+            #(db.main_data.place == data['place'])
+            #).delete()
+    main_id = db.main_data.update_or_insert(**data)
+    if main_id is None:
+        main_id = db.main_data(
+            (db.main_data.name == data['name']) &
+            (db.main_data.project == data['project'])).id
     count = 0
-    try:
-        for line in data_excel:
-            if len(line) < 4:
-                continue
-            if line[0].find(':') >= 1:
-                study_group, individual = line[0].split(':')
-            else:
-                study_group = line[0]
-                individual = None
-            topic_id = db.topics(db.topics.name == line[1]).id
-            activity_id = db.activities(db.activities.name == line[3]).id
-            element_id = db.project_tree((db.project_tree.topic == topic_id) &
-                (db.project_tree.activity == activity_id)).id
-            group_id = None
-            individual_id = None
-            try:
-                answer = line[4]
-            except:
-                answer = ''
-            try:
-                value_data = line[5]
-            except:
-                value_data = None
-            #try:
-                #content_data = requests.get(line[5])
-                #name_data = basename(line[5])
-                ##name_data = name_data.split('.')[0]
-            #except:
-                #content_data = False
-                #content_id = None
-            #if content_data:
-                #contentfile = '%s/%s' % (UPLOAD_PATH, name_data)
-                #open(contentfile, 'w').write(content_data.content)
-                #stream = open(contentfile, 'rb')
-                #content_id = db.contents(db.contents.name==name_data)
-                #if content_id is None:
-                    ##content_id = db.contents.update_or_insert(
-                    ##    file_content=stream, name=name_data)
-                    #content_id = db.contents.update_or_insert(
-                    #file_content=db.contents.file_content.store(
-                    #stream, contentfile),
-                    #name=name_data)
-                ##if content_id is None:
-                    ##content_id = db.contents(db.contents.name==name_data).id
-            if study_group is not None:
-                group_id = db.groups.update_or_insert(**{'name': study_group})
-                if group_id is None:
-                    group_id = db.groups(db.groups.name == study_group).id
-            if individual is not None:
-                individual_id = db.individuals.update_or_insert(
-                    **{'name': individual})
-                if individual_id is None:
-                    individual_id = db.individuals(
-                        db.individuals.name == individual).id
-            if main_id is not None:
-                value_detail = {'reference': main_id,
-                                'element_tree': element_id, 'choice': answer,
-                                'study_group': group_id,
-                                'individual': individual_id,
-                                #'content_data': content_id,
-                                'value_data': value_data
-                                }
-                status = db.detail_data.update_or_insert(**value_detail)
-                if status is not None:
-                    count += 1
-        return_message = T(
-            'Archivo analizado. Número de registros procesados: %s' % count)
-    except Exception, error:
-        #print error
-        return_message = T(
-            'Error en el procesamiento del archivo. Revise los datos!')
+    check_id = 1
+    #print "main:", main_id
+    #print data_excel
+    #try:
+    for line in data_excel:
+        if len(line) < 4:
+            continue
+        if line[0].find(':') >= 1:
+            study_group, individual = line[0].split(':')
+        else:
+            study_group = line[0]
+            individual = None
+        topic_id = db.topics((db.topics.name == line[1]) & (db.topics.project == data['project'])).id
+        #print "--------"
+        #print "Valores:",topic_id
+        #print "pregunta:", line[3]
+        activities_data = db((db.activities.name == line[3]) & (db.activities.project == data['project'])).select(db.activities.id)
+        activities_count = len(activities_data.as_list())
+        #print "data:",activities_data, "cuenta:",activities_count
+        #print activities_count,"ALLL"
+        if activities_count == 1:
+            activity_id = activities_data[0].id
+            check_id = activity_id
+        elif activities_count > 1:
+            activity_id = check_id + 1
+            check_id = activity_id
+            #elems = [part['id'] for part in activities_data.as_list()]
+        else:
+            return_message = T('Error. Revise las actividades!')
+        #activity_id = db.activities(db.activities.name == line[3]).id
+        #print line[3], topic_id, activity_id
+        element_id = db.project_tree((db.project_tree.topic == topic_id) &
+            (db.project_tree.activity == activity_id)).id
+        group_id = None
+        individual_id = None
+        try:
+            answer = line[4]
+        except:
+            answer = ''
+        try:
+            value_data = line[5]
+        except:
+            value_data = None
+        #try:
+            #content_data = requests.get(line[5])
+            #name_data = basename(line[5])
+            ##name_data = name_data.split('.')[0]
+        #except:
+            #content_data = False
+            #content_id = None
+        #if content_data:
+            #contentfile = '%s/%s' % (UPLOAD_PATH, name_data)
+            #open(contentfile, 'w').write(content_data.content)
+            #stream = open(contentfile, 'rb')
+            #content_id = db.contents(db.contents.name==name_data)
+            #if content_id is None:
+                ##content_id = db.contents.update_or_insert(
+                ##    file_content=stream, name=name_data)
+                #content_id = db.contents.update_or_insert(
+                #file_content=db.contents.file_content.store(
+                #stream, contentfile),
+                #name=name_data)
+            ##if content_id is None:
+                ##content_id = db.contents(db.contents.name==name_data).id
+        if study_group is not None:
+            group_id = db.groups.update_or_insert(**{'name': study_group})
+            if group_id is None:
+                group_id = db.groups(db.groups.name == study_group).id
+        if individual is not None:
+            individual_id = db.individuals.update_or_insert(
+                **{'name': individual})
+            if individual_id is None:
+                individual_id = db.individuals(
+                    db.individuals.name == individual).id
+        if main_id is not None:
+            value_detail = {'reference': main_id,
+                            'element_tree': element_id, 'choice': answer,
+                            'study_group': group_id,
+                            'individual': individual_id,
+                            #'content_data': content_id,
+                            'value_data': value_data
+                            }
+            status = db.detail_data.update_or_insert(**value_detail)
+            if status is not None:
+                count += 1
+    return_message = T(
+        'Archivo analizado. Número de registros procesados: %s' % count)
+    #except Exception, error:
+    #    print error
+    #    return_message = T(
+    #        'Error en el procesamiento del archivo. Revise los datos!')
     return return_message
+
+
+def demo():
+    topics = db(db.topics.priority > 0).select(db.topics.priority)
+    last_value = topics.last().priority
+    print last_value,'<----Valor'
+    data = db.activities(db.activities.name == "¿Por qué?").id
+    mon = db(db.activities.name == "¿Por qué?").select(db.activities.id)
+    elems = [l['id'] for l in mon.as_list()]
+
+    print data
+    print mon.as_list()
+    print mon
+    print len(mon)
+    print mon[0].id
+

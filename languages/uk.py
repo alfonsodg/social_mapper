@@ -149,6 +149,8 @@
 'Environment Accepted': 'Environment Accepted',
 'Environments': 'Environments',
 'Error!': 'Помилка!',
+'Error. Revise las actividades!': 'Error. Revise las actividades!',
+'ERROR: Inconsistency': 'ERROR: Inconsistency',
 'Errors': 'Помилки',
 'Errors in form, please check it out.': 'У формі є помилка. Виправте її, будь-ласка.',
 'Estado': 'Estado',

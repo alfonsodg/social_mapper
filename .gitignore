@@ -6,5 +6,6 @@ uploads/*
 .idea/*
 databases/*.table
 databases/*.log
+databases.old/*
 *.pyc
 *~

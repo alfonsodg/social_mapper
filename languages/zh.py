@@ -154,6 +154,8 @@
 'Environment Accepted': 'Environment Accepted',
 'Environments': 'Environments',
 'Error logs for "%(app)s"': '"%(app)s"的錯誤紀錄',
+'Error. Revise las actividades!': 'Error. Revise las actividades!',
+'ERROR: Inconsistency': 'ERROR: Inconsistency',
 'Errors': 'Errors',
 'Estado': 'Estado',
 'export as csv file': '以逗號分隔檔(csv)格式匯出',
