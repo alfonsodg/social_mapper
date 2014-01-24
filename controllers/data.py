@@ -1,16 +1,13 @@
 # -*- coding: utf-8 -*-
 
-if False:
-    import Field, T, IS_IN_DB, SQLFORM
-    import Session, Request, Response, auth, db, service
-    session = Session()
-    request = Request()
-    response = Response()
 
 import xlrd
-import requests
-from os.path import basename
-from gluon.contrib.pyfpdf import FPDF, HTMLMixin
+#import plugin_appreport
+#import os
+#from gluon.contrib.fpdf import FPDF, HTMLMixin
+#import requests
+#from os.path import basename
+#from gluon.contrib.pyfpdf import FPDF, HTMLMixin
 
 
 UPLOAD_PATH = 'applications/social_mapper/uploads'
@@ -98,8 +95,13 @@ def format_data():
         left=db.places.on(
         db.places.id == db.main_data.place),
         )
+    data_topics = db(db.topics.project==request.vars.project_id).select(
+        db.topics.id, db.topics.name,
+        )
     #print data_places
     places = [(str(elem.id), elem.name) for elem in data_places]
+    topics = [(str(elem.id), elem.name) for elem in data_topics]
+    topics.append((0,'TODOS'))
     #db.patients.patient.requires = IS_IN_SET(patients)
     form = SQLFORM.factory(
         Field('project_id', db.projects, label=T('Project Name'),
@@ -110,7 +112,7 @@ def format_data():
                                                       #0, 10),
                                                   #id_field=db.projects.id,
                                                   #min_length=2),
-              requires=IS_IN_DB(db, 'projects.id', '%(name)s')
+              requires=IS_IN_DB(db, 'projects.id', '%(name)s', zero=T('Elegir Proyecto'))
               ),
         Field('place_id', db.places, label=T('Place Name'),
               comment=T('Ingrese el nombre del lugar'),
@@ -119,18 +121,20 @@ def format_data():
                                                       #0, 10),
                                                   #id_field=db.places.id,
                                                   #min_length=2),
-              requires=IS_IN_SET(places)
+              requires=IS_IN_SET(places, zero=T('Elegir Poblado'), error_message=T('Hay un problema en su selección'))
               #requires=IS_IN_DB(db, 'places.id', '%(name)s')
               ),
         Field('topic_id', label=T('Topic Name'),
               comment=T('Ingrese el nombre del topico'),
-              widget=SQLFORM.widgets.autocomplete(request,
-                                                  db.topics.name, limitby=(
-                                                      0, 10),
-                                                  id_field=db.topics.id,
-                                                  min_length=2),
+              requires=IS_IN_SET(topics, zero=T('Elegir Tópico'), error_message=T('Hay un problema en su selección')),
+              # widget=SQLFORM.widgets.autocomplete(request,
+              #                                     db.topics.name, limitby=(
+              #                                         0, 10),
+              #                                     id_field=db.topics.id,
+              #                                     min_length=2),
               # requires=IS_IN_DB(db, 'topics.id', '%(name)s')
               ),
+        Field('pdf', 'boolean', label=T('PDF'), comment=T('Exportar a PDF?'))
     )
     form.attributes['_id'] = 'format_data'
     tree_base = []
@@ -142,11 +146,13 @@ def format_data():
     place_coords = False
     topic_mode = False
     topic_id = False
+    pdf = False
     if form.process().accepted:
         # Get Results from topics
         project_id = form.vars.project_id
         place_id = form.vars.place_id
         topic_id = form.vars.topic_id
+        pdf = form.vars.pdf
         if project_id is not '':
             project_name = db.projects[project_id].name
             project_description = db.projects[project_id].description
@@ -154,8 +160,9 @@ def format_data():
             place_name = db.places[place_id].name
             place_coords = db.places[place_id].coordinates
         if topic_id is not '':
-            topic_mode = True
             topic_id = int(topic_id)
+            if topic_id != 0:
+                topic_mode = True
         #results = db(db.project_tree.project==project_id).select(
             #db.topics.ALL,
             #left=db.topics.on(
@@ -209,12 +216,33 @@ def format_data():
                         [row.groups.name, row.groups.description,
                             row.individuals.name, row.detail_data.choice,
                             row.detail_data.content_data])
-    return dict(form=form, tree_base=tree_base, tree_data=tree_data,
-                project_name=project_name,
-                project_description=project_description,
-                data_val=data_val,
-                place_name=place_name, topic_id=topic_id,
-                topic_mode=topic_mode, place_coords=place_coords)
+    if pdf:
+        pass
+        #redirect(URL('listing', vars=dict(html=html)))
+
+        #return plugin_appreport.REPORTPYFPDF(html=static_html)
+        #redirect(URL('report_pisa', vars=dict(html=html)))
+    #     redirect(URL('report_pdf',
+    #                  vars=dict(project_name=project_name,
+    #                            place_name=place_name,
+    #                            tree_base=tree_base,
+    #                            tree_data=tree_data,
+    #                            data_val=data_val,
+    #                            topic_id=topic_id,
+    #                            topic_mode=topic_mode
+    #)))
+        # report_pdf(tree_base, tree_data, project_name,
+        #            project_description, data_val, place_name,
+        #            topic_id, topic_mode)
+    else:
+        return dict(form=form, tree_base=tree_base, tree_data=tree_data,
+                    project_name=project_name,
+                    project_description=project_description,
+                    data_val=data_val,
+                    place_name=place_name, topic_id=topic_id,
+                    topic_mode=topic_mode, place_coords=place_coords)
+
+
 
 
 @auth.requires(restrictions)

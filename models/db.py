@@ -365,7 +365,7 @@ def content_data_value(id_val):
     Content Data Representation
     """
     try:
-        val_content_data = db.contents(value).name
+        val_content_data = db.contents(id_val).name
     except:
         val_content_data = ''
     return '%s' % val_content_data
@@ -392,22 +392,22 @@ def name_data(table, id_val):
     return '%s' % value_data
 
 
-db.tag.name.requires = IS_NOT_IN_DB(db, 'tag.name')
-db.projects.name.requires = IS_NOT_IN_DB(db, 'projects.name')
+db.tag.name.requires = IS_NOT_IN_DB(db, db.tag.name)
+db.projects.name.requires = IS_NOT_IN_DB(db, db.projects.name)
 #db.places.name.requires = IS_NOT_IN_DB(db, 'places.name')
-db.periods.name.requires = IS_NOT_IN_DB(db, 'periods.name')
+db.periods.name.requires = IS_NOT_IN_DB(db, db.periods.name)
 #db.individuals.name.requires = IS_NOT_IN_DB(db, 'individuals.name')
-db.groups.name.requires = IS_NOT_IN_DB(db, 'groups.name')
+db.groups.name.requires = IS_NOT_IN_DB(db, db.groups.name)
 #db.areas.name.requires = IS_NOT_IN_DB(db, 'areas.name')
-db.environments.name.requires = IS_NOT_IN_DB(db, 'environments.name')
-db.contents.name.requires = IS_NOT_IN_DB(db, 'contents.name')
-db.gis_layers.name.requires = IS_NOT_IN_DB(db, 'gis_layers.name')
-db.answer_types.name.requires = IS_NOT_IN_DB(db, 'answer_types.name')
-db.data_types.name.requires = IS_NOT_IN_DB(db, 'data_types.name')
+db.environments.name.requires = IS_NOT_IN_DB(db, db.environments.name)
+db.contents.name.requires = IS_NOT_IN_DB(db, db.contents.name)
+db.gis_layers.name.requires = IS_NOT_IN_DB(db, db.gis_layers.name)
+db.answer_types.name.requires = IS_NOT_IN_DB(db, db.answer_types.name)
+db.data_types.name.requires = IS_NOT_IN_DB(db, db.data_types.name)
 # db.choices.kind.requires = IS_IN_SET(answer_type)
 # db.contents.data_type.requires = IS_IN_SET(data_type)
 # db.choices.kind.requires = IS_IN_DB(db, 'answer_types.id')
-db.contents.data_type.requires = IS_IN_DB(db, 'data_types.id', '%(name)s')
+db.contents.data_type.requires = IS_IN_DB(db, db.data_types.id, '%(name)s')
 # db.areas.requires = IS_IN_DB(db, 'areas.id')
 # db.topics.requires = IS_IN_DB(db, 'topics.id')
 # db.detail_data.requires = IS_IN_DB(db, 'contents.id')
